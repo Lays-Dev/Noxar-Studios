@@ -19,8 +19,10 @@ public class ArtSelection : MonoBehaviour
     }
 
  
-    void ButtonClick()
+    async void ButtonClick()
     {
+        await Awaitable.NextFrameAsync();
+        await Awaitable.NextFrameAsync();
         playerArt.SetActive(true);
         art2.SetActive(false);
     }
@@ -30,5 +32,5 @@ public class ArtSelection : MonoBehaviour
         art2.SetActive(true);
         playerArt.SetActive(false);
     }
-  
+ 
 }
