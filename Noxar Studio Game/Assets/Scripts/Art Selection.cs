@@ -27,8 +27,9 @@ public class ArtSelection : MonoBehaviour
         art2.SetActive(false);
     }
 
-    void Button2()
+    async void Button2()
     {
+        await Awaitable.WaitForSecondsAsync(pageFlipDuration);
         art2.SetActive(true);
         playerArt.SetActive(false);
     }
