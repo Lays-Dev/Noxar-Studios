@@ -2,17 +2,17 @@ using System.Collections;
 using UnityEngine;
 
 /// <summary>
-/// Attach to each "page" GameObject in the right-hand stack.
-/// The page's RectTransform pivot MUST be set to (0, 0.5) so it
-/// rotates around its left edge like a spine.
+/// Flips the current page and reveals the next page.
+/// The page's RectTransform pivot should be set to (0, 0.5)
+/// so it rotates around its left edge like a spine.
 /// </summary>
 [RequireComponent(typeof(RectTransform))]
 public class PageFlip : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private GameObject frontSide;   // buttons/art shown before flip
-    [SerializeField] private GameObject backSide;    // art shown after flip (next page's "underside")
-    [SerializeField] private GameObject nextPage;    // page object to reveal/enable once flip completes
+    [SerializeField] private GameObject backSide;    // art shown after flip
+    [SerializeField] private GameObject nextPage;    // next page to reveal
 
     [Header("Timing")]
     [SerializeField] private float flipDuration = 0.5f;
@@ -25,7 +25,6 @@ public class PageFlip : MonoBehaviour
     private void Awake()
     {
         rect = GetComponent<RectTransform>();
-        // rect.pivot = new Vector2(0f, 0.5f); // enforce spine pivot
     }
 
     // Hook this up to the button's OnClick()
@@ -38,6 +37,7 @@ public class PageFlip : MonoBehaviour
     private IEnumerator FlipRoutine()
     {
         isFlipping = true;
+
         float t = 0f;
         bool swapped = false;
 
@@ -50,7 +50,7 @@ public class PageFlip : MonoBehaviour
 
             rect.localEulerAngles = new Vector3(0f, angle, 0f);
 
-            // Swap visible face at the halfway point so it "turns over"
+            // Change the visible side halfway through the flip
             if (!swapped && angle >= 90f)
             {
                 if (frontSide)
@@ -59,19 +59,42 @@ public class PageFlip : MonoBehaviour
                 if (backSide)
                     backSide.SetActive(true);
 
-                if (nextPage)
-                    nextPage.SetActive(true); // reveal page underneath
-
                 swapped = true;
             }
 
             yield return null;
         }
 
+        // Make sure the page finishes at exactly 180 degrees
         rect.localEulerAngles = new Vector3(0f, 180f, 0f);
 
-        gameObject.SetActive(false); // hide the fully-flipped page
+        // Show the next page
+        if (nextPage)
+        {
+            nextPage.SetActive(true);
+
+            // Reset the next page so its front is active
+            PageFlip nextPageFlip = nextPage.GetComponent<PageFlip>();
+
+            if (nextPageFlip != null)
+                nextPageFlip.ResetPage();
+        }
+
+        // Hide the page that just finished flipping
+        gameObject.SetActive(false);
 
         isFlipping = false;
+    }
+
+    // Resets this page when it is revealed again
+    public void ResetPage()
+    {
+        if (frontSide)
+            frontSide.SetActive(true);
+
+        if (backSide)
+            backSide.SetActive(false);
+
+        rect.localEulerAngles = new Vector3(0f, 0f, 0f);
     }
 }
