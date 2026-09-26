@@ -1,0 +1,1066 @@
+fileFormatVersion: 2
+guid: 786279a3de7885b47ad9e6ebc95bcd56
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6593850299424191784
+    second: 02.Electricity VFX Real_0
+  - first:
+      213: -7407394180104494009
+    second: 02.Electricity VFX Real_1
+  - first:
+      213: 6414146904892492486
+    second: 02.Electricity VFX Real_2
+  - first:
+      213: -9116915154368218057
+    second: 02.Electricity VFX Real_3
+  - first:
+      213: -6636791146687996137
+    second: 02.Electricity VFX Real_4
+  - first:
+      213: -8674047934158869094
+    second: 02.Electricity VFX Real_5
+  - first:
+      213: 5868029310871911993
+    second: 02.Electricity VFX Real_6
+  - first:
+      213: -6423264995762468695
+    second: 02.Electricity VFX Real_7
+  - first:
+      213: -9209984457349900503
+    second: 02.Electricity VFX Real_8
+  - first:
+      213: -6367698636471587687
+    second: 02.Electricity VFX Real_9
+  - first:
+      213: 3584693214623578595
+    second: 02.Electricity VFX Real_10
+  - first:
+      213: 3108845720764937422
+    second: 02.Electricity VFX Real_11
+  - first:
+      213: -4387717910846659880
+    second: 02.Electricity VFX Real_12
+  - first:
+      213: -6884401720535357602
+    second: 02.Electricity VFX Real_13
+  - first:
+      213: -3131611161859303521
+    second: 02.Electricity VFX Real_14
+  - first:
+      213: 6118558465833577875
+    second: 02.Electricity VFX Real_15
+  - first:
+      213: 5167157085716997819
+    second: 02.Electricity VFX Real_16
+  - first:
+      213: 3573360736727345373
+    second: 02.Electricity VFX Real_17
+  - first:
+      213: 7258339228884910516
+    second: 02.Electricity VFX Real_18
+  - first:
+      213: 3139323492119372991
+    second: 02.Electricity VFX Real_19
+  - first:
+      213: 4950284351042348546
+    second: 02.Electricity VFX Real_20
+  - first:
+      213: -4890790398255103006
+    second: 02.Electricity VFX Real_21
+  - first:
+      213: -1910913912640252985
+    second: 02.Electricity VFX Real_22
+  - first:
+      213: -1292959507000306448
+    second: 02.Electricity VFX Real_23
+  - first:
+      213: 3716118609623340094
+    second: 02.Electricity VFX Real_24
+  - first:
+      213: -6067482548265930848
+    second: 02.Electricity VFX Real_25
+  - first:
+      213: -956154422156477895
+    second: 02.Electricity VFX Real_26
+  - first:
+      213: -2309217697910975710
+    second: 02.Electricity VFX Real_27
+  - first:
+      213: 5158373846396573117
+    second: 02.Electricity VFX Real_28
+  - first:
+      213: -7719655260495907530
+    second: 02.Electricity VFX Real_29
+  - first:
+      213: 7902043663053799875
+    second: 02.Electricity VFX Real_30
+  - first:
+      213: -914440860222901474
+    second: 02.Electricity VFX Real_31
+  - first:
+      213: 803255677604166308
+    second: 02.Electricity VFX Real_32
+  - first:
+      213: -8861269193844593968
+    second: 02.Electricity VFX Real_33
+  - first:
+      213: -1551694399495652377
+    second: 02.Electricity VFX Real_34
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 02.Electricity VFX Real_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1698
+        width: 138
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 825384f59ef028b50800000000000000
+      internalID: 6593850299424191784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02.Electricity VFX Real_1
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 1701
+        width: 202
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 744639f3d36a33990800000000000000
+      internalID: -7407394180104494009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02.Electricity VFX Real_2
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 1565
+        width: 187
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cac94b50a0a30950800000000000000
+      internalID: 6414146904892492486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02.Electricity VFX Real_3
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 1807
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73cb18878f53a7180800000000000000
+      internalID: -9116915154368218057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02.Electricity VFX Real_4
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 1694
+        width: 184
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71f54358d9165e3a0800000000000000
+      internalID: -6636791146687996137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02.Electricity VFX Real_5
+      rect:
+        serializedVersion: 2
+        x: 2047
+        y: 1704
+        width: 280
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9defb76c579f9780800000000000000
+      internalID: -8674047934158869094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02.Electricity VFX Real_6
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 1678
+        width: 401
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93eb91e619d6f6150800000000000000
+      internalID: 5868029310871911993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02.Electricity VFX Real_7
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 1513
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a8806da48afbd6a0800000000000000
+      internalID: -6423264995762468695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02.Electricity VFX Real_8
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 1508
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9275ac0ceef8f2080800000000000000
+      internalID: -9209984457349900503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02.Electricity VFX Real_9
+      rect:
+        serializedVersion: 2
+        x: 1316
+        y: 1502
+        width: 12
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99c2f50e3d361a7a0800000000000000
+      internalID: -6367698636471587687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02.Electricity VFX Real_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1152
+        width: 469
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e934667c736fb130800000000000000
+      internalID: 3584693214623578595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02.Electricity VFX Real_11
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 1174
+        width: 509
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec4ffaf26b6d42b20800000000000000
+      internalID: 3108845720764937422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02.Electricity VFX Real_12
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 1147
+        width: 463
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d2ad55aec1bb13c0800000000000000
+      internalID: -4387717910846659880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02.Electricity VFX Real_13
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 1122
+        width: 447
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e57e66c3c11b570a0800000000000000
+      internalID: -6884401720535357602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02.Electricity VFX Real_14
+      rect:
+        serializedVersion: 2
+        x: 2092
+        y: 1081
+        width: 501
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f975ab28d384a84d0800000000000000
+      internalID: -3131611161859303521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02.Electricity VFX Real_15
+      rect:
+        serializedVersion: 2
+        x: 2604
+        y: 1092
+        width: 467
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39d2875d18c79e450800000000000000
+      internalID: 6118558465833577875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02.Electricity VFX Real_16
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 494
+        width: 495
+        height: 447
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb6edc02efd65b740800000000000000
+      internalID: 5167157085716997819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02.Electricity VFX Real_17
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 587
+        width: 469
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd826f658a0279130800000000000000
+      internalID: 3573360736727345373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02.Electricity VFX Real_18
+      rect:
+        serializedVersion: 2
+        x: 2068
+        y: 938
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b1c7f4821dcab460800000000000000
+      internalID: 7258339228884910516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02.Electricity VFX Real_19
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 551
+        width: 512
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb460de451e119b20800000000000000
+      internalID: 3139323492119372991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02.Electricity VFX Real_20
+      rect:
+        serializedVersion: 2
+        x: 1581
+        y: 595
+        width: 520
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 206ed09b361f2b440800000000000000
+      internalID: 4950284351042348546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02.Electricity VFX Real_21
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 616
+        width: 476
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e30d199b0c602cb0800000000000000
+      internalID: -4890790398255103006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02.Electricity VFX Real_22
+      rect:
+        serializedVersion: 2
+        x: 2676
+        y: 750
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c3d9b0cbe11b75e0800000000000000
+      internalID: -1910913912640252985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02.Electricity VFX Real_23
+      rect:
+        serializedVersion: 2
+        x: 2680
+        y: 773
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f45844cd2c7e0ee0800000000000000
+      internalID: -1292959507000306448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02.Electricity VFX Real_24
+      rect:
+        serializedVersion: 2
+        x: 2704
+        y: 630
+        width: 367
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3451d5cf2e429330800000000000000
+      internalID: 3716118609623340094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02.Electricity VFX Real_25
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 127
+        width: 367
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0af2abde4c8fbcba0800000000000000
+      internalID: -6067482548265930848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02.Electricity VFX Real_26
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 128
+        width: 170
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93ab1f47e9e0bb2f0800000000000000
+      internalID: -956154422156477895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02.Electricity VFX Real_27
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 116
+        width: 120
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22398fe0db204ffd0800000000000000
+      internalID: -2309217697910975710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02.Electricity VFX Real_28
+      rect:
+        serializedVersion: 2
+        x: 1878
+        y: 139
+        width: 157
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db5122ddea9369740800000000000000
+      internalID: 5158373846396573117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02.Electricity VFX Real_29
+      rect:
+        serializedVersion: 2
+        x: 2388
+        y: 116
+        width: 169
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6357aa9e0764ed490800000000000000
+      internalID: -7719655260495907530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02.Electricity VFX Real_30
+      rect:
+        serializedVersion: 2
+        x: 2973
+        y: 286
+        width: 9
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c1c2ff38d2b9ad60800000000000000
+      internalID: 7902043663053799875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02.Electricity VFX Real_31
+      rect:
+        serializedVersion: 2
+        x: 2965
+        y: 209
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e13bf4ee1e04f43f0800000000000000
+      internalID: -914440860222901474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02.Electricity VFX Real_32
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 157
+        width: 10
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4aa796f68ccb52b00800000000000000
+      internalID: 803255677604166308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02.Electricity VFX Real_33
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 128
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dae7c10e92760580800000000000000
+      internalID: -8861269193844593968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02.Electricity VFX Real_34
+      rect:
+        serializedVersion: 2
+        x: 1910
+        y: 107
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eb39163a26477ae0800000000000000
+      internalID: -1551694399495652377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      02.Electricity VFX Real_0: 6593850299424191784
+      02.Electricity VFX Real_1: -7407394180104494009
+      02.Electricity VFX Real_10: 3584693214623578595
+      02.Electricity VFX Real_11: 3108845720764937422
+      02.Electricity VFX Real_12: -4387717910846659880
+      02.Electricity VFX Real_13: -6884401720535357602
+      02.Electricity VFX Real_14: -3131611161859303521
+      02.Electricity VFX Real_15: 6118558465833577875
+      02.Electricity VFX Real_16: 5167157085716997819
+      02.Electricity VFX Real_17: 3573360736727345373
+      02.Electricity VFX Real_18: 7258339228884910516
+      02.Electricity VFX Real_19: 3139323492119372991
+      02.Electricity VFX Real_2: 6414146904892492486
+      02.Electricity VFX Real_20: 4950284351042348546
+      02.Electricity VFX Real_21: -4890790398255103006
+      02.Electricity VFX Real_22: -1910913912640252985
+      02.Electricity VFX Real_23: -1292959507000306448
+      02.Electricity VFX Real_24: 3716118609623340094
+      02.Electricity VFX Real_25: -6067482548265930848
+      02.Electricity VFX Real_26: -956154422156477895
+      02.Electricity VFX Real_27: -2309217697910975710
+      02.Electricity VFX Real_28: 5158373846396573117
+      02.Electricity VFX Real_29: -7719655260495907530
+      02.Electricity VFX Real_3: -9116915154368218057
+      02.Electricity VFX Real_30: 7902043663053799875
+      02.Electricity VFX Real_31: -914440860222901474
+      02.Electricity VFX Real_32: 803255677604166308
+      02.Electricity VFX Real_33: -8861269193844593968
+      02.Electricity VFX Real_34: -1551694399495652377
+      02.Electricity VFX Real_4: -6636791146687996137
+      02.Electricity VFX Real_5: -8674047934158869094
+      02.Electricity VFX Real_6: 5868029310871911993
+      02.Electricity VFX Real_7: -6423264995762468695
+      02.Electricity VFX Real_8: -9209984457349900503
+      02.Electricity VFX Real_9: -6367698636471587687
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
