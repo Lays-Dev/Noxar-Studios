@@ -93,14 +93,14 @@ private void WinMinigame()
     tapBox.SetActive(false);
     //minigamePanel.SetActive(false);
     openFridgeImage.SetActive(false);
-    endMinigameButton.gameObject.SetActive(false);
+    endMinigameButton.gameObject.SetActive(true);
 }
 
 private void EndMinigame()
 {
     tapBox.SetActive(false);
-    endMinigameButton.gameObject.SetActive(false);
-    //minigamePanel.SetActive(false);
+    endMinigameButton.gameObject.SetActive(true);
+    minigamePanel.SetActive(false);
     openFridgeImage.SetActive(false);
 }
 }
