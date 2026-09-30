@@ -249,6 +249,7 @@ GameObject:
   - component: {fileID: 380437149}
   - component: {fileID: 380437150}
   - component: {fileID: 380437151}
+  - component: {fileID: 380437152}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -356,6 +357,20 @@ MonoBehaviour:
   m_DefaultActionMap: Touch
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &380437152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 380437148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19a94f93987a97741852ac4a58a24715, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  targetPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &546852002
 GameObject:
   m_ObjectHideFlags: 0
@@ -729,7 +744,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputActions: {fileID: -944628639613478452, guid: 30f8c154109d3244c85f4e6f6dbcd7ba, type: 3}
-  player: {fileID: 380437149}
+  player: {fileID: 380437152}
 --- !u!4 &741952909
 Transform:
   m_ObjectHideFlags: 0

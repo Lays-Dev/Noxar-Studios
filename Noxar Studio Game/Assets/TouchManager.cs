@@ -7,7 +7,7 @@ public class TouchManager : MonoBehaviour
     [Tooltip("Put the player Input Action Map here")]
     [SerializeField] private InputActionAsset inputActions;
     [Tooltip("Put the player gameObject here")]
-    [SerializeField] private Transform player;
+    [SerializeField] private movement player;
 
     private InputAction touchPositionAction;
     private InputAction touchPressAction;
@@ -35,11 +35,12 @@ public class TouchManager : MonoBehaviour
     private void TouchPressed(InputAction.CallbackContext context)
     {
         Vector2 screenPosition = touchPositionAction.ReadValue<Vector2>();
-        Vector3 worldPosition = Camera.main.ScreenToWorldPoint(screenPosition);
-        
-        worldPosition.z = player.position.z;
-        player.position = worldPosition;
 
+        Vector3 worldPosition = Camera.main.ScreenToWorldPoint(screenPosition);
+
+        worldPosition.z = player.transform.position.z;
+
+        player.MoveTo(worldPosition);
         Debug.Log("Screen tapped at: " + worldPosition);
     }
 }
