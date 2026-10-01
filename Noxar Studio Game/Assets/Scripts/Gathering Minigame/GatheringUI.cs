@@ -13,12 +13,13 @@ public class GatheringUI : MonoBehaviour
 [SerializeField] private GameObject openFridgeImage;
 [SerializeField] private RectTransform minigameArea;
 [SerializeField] private GameObject minigamePanel;
+[SerializeField] private GameObject minigameCanvas;
 
 [SerializeField] private int boxesRequired = 3;
 
 void Start()
 {
-    endMinigameButton.gameObject.SetActive(false);
+    //endMinigameButton.gameObject.SetActive(false);
     endMinigameButton.onClick.AddListener(EndMinigame);
 }
 
@@ -93,14 +94,15 @@ private void WinMinigame()
     tapBox.SetActive(false);
     //minigamePanel.SetActive(false);
     openFridgeImage.SetActive(false);
-    endMinigameButton.gameObject.SetActive(false);
+    //endMinigameButton.gameObject.SetActive(false);
 }
 
 private void EndMinigame()
 {
     tapBox.SetActive(false);
-    endMinigameButton.gameObject.SetActive(false);
+    //endMinigameButton.gameObject.SetActive(false);
     //minigamePanel.SetActive(false);
     openFridgeImage.SetActive(false);
+    minigameCanvas.SetActive(false);
 }
 }
