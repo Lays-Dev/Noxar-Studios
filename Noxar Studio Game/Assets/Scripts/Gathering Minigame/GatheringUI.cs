@@ -17,6 +17,8 @@ public class GatheringUI : MonoBehaviour
 
 [SerializeField] private int boxesRequired = 3;
 
+public static bool gatherComplete = false;
+
 void Start()
 {
     //endMinigameButton.gameObject.SetActive(false);
@@ -91,6 +93,8 @@ public void SpawnNewBox()
 private void WinMinigame()
 {
     Debug.Log("Minigame Complete!");
+    gatherComplete = true;
+
     tapBox.SetActive(false);
     //minigamePanel.SetActive(false);
     openFridgeImage.SetActive(false);
