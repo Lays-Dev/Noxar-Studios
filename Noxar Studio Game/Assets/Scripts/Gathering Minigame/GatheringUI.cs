@@ -5,34 +5,41 @@ using UnityEngine.UI;
 
 public class GatheringUI : MonoBehaviour
 {
-    // This panel will close later when a button is pressed.
-[SerializeField] private GameObject instructionsPanel;
-[SerializeField] private GameObject countdownText;
-[SerializeField] private GameObject tapBox;
-[SerializeField] private Button endMinigameButton;
-[SerializeField] private GameObject openFridgeImage;
-[SerializeField] private RectTransform minigameArea;
-[SerializeField] private GameObject minigamePanel;
+    [SerializeField] private GameObject instructionsPanel;
+    [SerializeField] private GameObject countdownText;
 
-[SerializeField] private int boxesRequired = 3;
+    [SerializeField] private Button endMinigameButton;
+    [SerializeField] private GameObject openFridgeImage;
+    [SerializeField] private GameObject minigamePanel;
+    [SerializeField] private Button closeButton;
+    [SerializeField] private GameObject glorboImage;
 
-void Start()
-{
-    endMinigameButton.gameObject.SetActive(false);
-    endMinigameButton.onClick.AddListener(EndMinigame);
-}
+    // Put your buttons here
+    [SerializeField] private Button[] buttons;
 
-private int boxesCompleted = 0;
+    private int buttonsClicked = 0;
 
-    // Function that closes the panel - used for a button.
+    void Start()
+    {
+        endMinigameButton.gameObject.SetActive(false);
+
+        endMinigameButton.onClick.AddListener(EndMinigame);
+        closeButton.onClick.AddListener(CloseInstructions);
+
+        // Turn all buttons off at the start
+        foreach (Button button in buttons)
+        {
+            button.gameObject.SetActive(false);
+            button.onClick.AddListener(ButtonClicked);
+        }
+    }
+
     public void CloseInstructions()
     {
         instructionsPanel.SetActive(false);
         StartCoroutine(Countdown());
-        //Countdown();
     }
 
-    // IEnumerator because this method will run for multiple frames
     private IEnumerator Countdown()
     {
         countdownText.SetActive(true);
@@ -47,60 +54,70 @@ private int boxesCompleted = 0;
 
         yield return new WaitForSeconds(1f);
 
-
         countdownText.SetActive(false);
-        yield return new WaitForSeconds(1f);
+        glorboImage.SetActive(false);
 
-countdownText.SetActive(false);
-
-tapBox.SetActive(true);
+        // Start the random button sequence
+        ActivateRandomButton();
     }
 
-public void SpawnNewBox()
-{
-    boxesCompleted++;
-
-    if (boxesCompleted >= boxesRequired)
+    private void ActivateRandomButton()
     {
-        WinMinigame();
-        return;
+        // Find all buttons that haven't been clicked
+        int remainingButtons = 0;
+
+        foreach (Button button in buttons)
+        {
+            if (!button.gameObject.activeSelf)
+            {
+                remainingButtons++;
+            }
+        }
+
+        if (remainingButtons == 0)
+        {
+            WinMinigame();
+            return;
+        }
+
+        // Pick a random inactive button
+        int randomIndex = Random.Range(0, buttons.Length);
+
+        while (buttons[randomIndex].gameObject.activeSelf)
+        {
+            randomIndex = Random.Range(0, buttons.Length);
+        }
+
+        // Activate it
+        buttons[randomIndex].gameObject.SetActive(true);
     }
 
-    tapBox.SetActive(true);
-    Debug.Log("TapBox Button Appered!");
+    private void ButtonClicked()
+    {
+        buttonsClicked++;
 
-    RectTransform box = tapBox.GetComponent<RectTransform>();
+        // Hide the button that was clicked
+        Button clickedButton = UnityEngine.EventSystems.EventSystem.current
+            .currentSelectedGameObject.GetComponent<Button>();
 
-    float halfWidth = box.rect.width / 2;
-    float halfHeight = box.rect.height / 2;
+        clickedButton.gameObject.SetActive(false);
 
-    float x = Random.Range(
-        -minigameArea.rect.width / 2 + halfWidth,
-        minigameArea.rect.width / 2 - halfWidth
-    );
+        // Activate another random button
+        ActivateRandomButton();
+    }
 
-    float y = Random.Range(
-        -minigameArea.rect.height / 2 + halfHeight,
-        minigameArea.rect.height / 2 - halfHeight
-    );
+    private void WinMinigame()
+    {
+        Debug.Log("Minigame Complete!");
 
-    box.anchoredPosition = new Vector2(x, y);
-}
+        openFridgeImage.SetActive(false);
+        endMinigameButton.gameObject.SetActive(true);
+    }
 
-private void WinMinigame()
-{
-    Debug.Log("Minigame Complete!");
-    tapBox.SetActive(false);
-    //minigamePanel.SetActive(false);
-    openFridgeImage.SetActive(false);
-    endMinigameButton.gameObject.SetActive(true);
-}
-
-private void EndMinigame()
-{
-    tapBox.SetActive(false);
-    endMinigameButton.gameObject.SetActive(true);
-    minigamePanel.SetActive(false);
-    openFridgeImage.SetActive(false);
-}
+    private void EndMinigame()
+    {
+        endMinigameButton.gameObject.SetActive(false);
+        minigamePanel.SetActive(false);
+        openFridgeImage.SetActive(false);
+    }
 }
