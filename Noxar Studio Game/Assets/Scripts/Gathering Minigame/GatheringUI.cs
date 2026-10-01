@@ -7,42 +7,70 @@ public class GatheringUI : MonoBehaviour
 {
     [SerializeField] private GameObject instructionsPanel;
     [SerializeField] private GameObject countdownText;
-
     [SerializeField] private Button endMinigameButton;
     [SerializeField] private GameObject openFridgeImage;
     [SerializeField] private GameObject minigamePanel;
     [SerializeField] private Button closeButton;
     [SerializeField] private GameObject glorboImage;
 
-    // Put your buttons here
-    [SerializeField] private Button[] buttons;
+    // Parent object containing the 4 minigame buttons
+    [SerializeField] private Transform buttonParent;
 
-    private int buttonsClicked = 0;
+    // The buttons will be found automatically
+    private Button[] buttons;
 
-    void Start()
+    [SerializeField] private int clicksRequired = 4;
+
+    private bool[] buttonCompleted;
+
+    private Button currentButton;
+
+    private int clicksRemaining;
+
+    private int buttonsCompleted = 0;
+
+
+private void Start()
+{
+    endMinigameButton.gameObject.SetActive(false);
+
+    endMinigameButton.onClick.AddListener(EndMinigame);
+    closeButton.onClick.AddListener(CloseInstructions);
+
+    // Find the 4 buttons
+    buttons = buttonParent.GetComponentsInChildren<Button>(true);
+
+    Debug.Log("Number of buttons found: " + buttons.Length);
+
+    // Create completed array
+    buttonCompleted = new bool[buttons.Length];
+
+    // Turn all buttons off
+    for (int i = 0; i < buttons.Length; i++)
     {
-        endMinigameButton.gameObject.SetActive(false);
+        int buttonIndex = i;
 
-        endMinigameButton.onClick.AddListener(EndMinigame);
-        closeButton.onClick.AddListener(CloseInstructions);
+        buttons[i].gameObject.SetActive(false);
 
-        // Turn all buttons off at the start
-        foreach (Button button in buttons)
-        {
-            button.gameObject.SetActive(false);
-            button.onClick.AddListener(ButtonClicked);
-        }
+        // Tell this specific button which button it is
+        buttons[i].onClick.AddListener(() => ButtonClicked(buttonIndex));
     }
+}
+
 
     public void CloseInstructions()
     {
         instructionsPanel.SetActive(false);
+
         StartCoroutine(Countdown());
     }
+
 
     private IEnumerator Countdown()
     {
         countdownText.SetActive(true);
+
+        countdownText.GetComponent<TMP_Text>().text = "3";
 
         yield return new WaitForSeconds(1f);
 
@@ -55,69 +83,108 @@ public class GatheringUI : MonoBehaviour
         yield return new WaitForSeconds(1f);
 
         countdownText.SetActive(false);
+
         glorboImage.SetActive(false);
 
-        // Start the random button sequence
+        // Start the button minigame
         ActivateRandomButton();
     }
 
+
     private void ActivateRandomButton()
     {
-        // Find all buttons that haven't been clicked
-        int remainingButtons = 0;
+        Debug.Log("Buttons completed: " + buttonsCompleted);
+        Debug.Log("Buttons available: " + buttons.Length);
 
-        foreach (Button button in buttons)
+        // Make sure there are buttons
+        if (buttons.Length == 0)
         {
-            if (!button.gameObject.activeSelf)
-            {
-                remainingButtons++;
-            }
+            Debug.LogError("No buttons were found!");
+            return;
         }
 
-        if (remainingButtons == 0)
+        // Check if all 4 buttons have been completed
+        if (buttonsCompleted >= buttons.Length)
         {
             WinMinigame();
             return;
         }
 
-        // Pick a random inactive button
-        int randomIndex = Random.Range(0, buttons.Length);
+        int randomIndex;
 
-        while (buttons[randomIndex].gameObject.activeSelf)
+        // Pick a button that has not been completed
+        do
         {
             randomIndex = Random.Range(0, buttons.Length);
         }
+        while (buttonCompleted[randomIndex]);
 
-        // Activate it
-        buttons[randomIndex].gameObject.SetActive(true);
+        // Set the selected button as the current button
+        currentButton = buttons[randomIndex];
+
+        // Reset clicks
+        clicksRemaining = clicksRequired;
+
+        // Activate the button
+        currentButton.gameObject.SetActive(true);
+
+        Debug.Log("Button " + randomIndex + " activated!");
     }
 
-    private void ButtonClicked()
+
+private void ButtonClicked(int buttonIndex)
+{
+    // Make sure the correct button was clicked
+    if (buttons[buttonIndex] != currentButton)
     {
-        buttonsClicked++;
+        return;
+    }
 
-        // Hide the button that was clicked
-        Button clickedButton = UnityEngine.EventSystems.EventSystem.current
-            .currentSelectedGameObject.GetComponent<Button>();
+    clicksRemaining--;
 
-        clickedButton.gameObject.SetActive(false);
+    Debug.Log("Button " + buttonIndex + " clicked!");
+    Debug.Log("Clicks remaining: " + clicksRemaining);
 
-        // Activate another random button
+    if (clicksRemaining <= 0)
+    {
+        // Mark this button as completed
+        buttonCompleted[buttonIndex] = true;
+
+        // Hide the button
+        buttons[buttonIndex].gameObject.SetActive(false);
+
+        // Increase completed count
+        buttonsCompleted++;
+
+        Debug.Log("Button completed!");
+
+        // Choose another button
         ActivateRandomButton();
     }
+}
+
 
     private void WinMinigame()
     {
         Debug.Log("Minigame Complete!");
 
+        if (currentButton != null)
+        {
+            currentButton.gameObject.SetActive(false);
+        }
+
         openFridgeImage.SetActive(false);
+
         endMinigameButton.gameObject.SetActive(true);
     }
+
 
     private void EndMinigame()
     {
         endMinigameButton.gameObject.SetActive(false);
+
         minigamePanel.SetActive(false);
+
         openFridgeImage.SetActive(false);
     }
 }

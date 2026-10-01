@@ -211,6 +211,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &428134784 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1998104078625637126, guid: 3f14c9b4cd22f0d4fbcdab8137398242, type: 3}
+  m_PrefabInstance: {fileID: 3611195906193749899}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &761541520 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6475828798673762118, guid: 3f14c9b4cd22f0d4fbcdab8137398242, type: 3}
+  m_PrefabInstance: {fileID: 3611195906193749899}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1733431756
 GameObject:
   m_ObjectHideFlags: 0
@@ -298,10 +314,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1412542323837381615, guid: 3f14c9b4cd22f0d4fbcdab8137398242, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1931008649709663691, guid: 3f14c9b4cd22f0d4fbcdab8137398242, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4638725037025572163, guid: 3f14c9b4cd22f0d4fbcdab8137398242, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5962049876043560702, guid: 3f14c9b4cd22f0d4fbcdab8137398242, type: 3}
       propertyPath: m_Name
       value: Gathering Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 6475828798673762118, guid: 3f14c9b4cd22f0d4fbcdab8137398242, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7640820382278775505, guid: 3f14c9b4cd22f0d4fbcdab8137398242, type: 3}
+      propertyPath: closeButton
+      value: 
+      objectReference: {fileID: 428134784}
+    - target: {fileID: 7640820382278775505, guid: 3f14c9b4cd22f0d4fbcdab8137398242, type: 3}
+      propertyPath: glorboImage
+      value: 
+      objectReference: {fileID: 761541520}
     - target: {fileID: 8981128671721322817, guid: 3f14c9b4cd22f0d4fbcdab8137398242, type: 3}
       propertyPath: m_Pivot.x
       value: 0
