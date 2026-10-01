@@ -60,6 +60,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "UI",
+            "id": "759287b6-59a3-42b2-b14e-c9e75650e7f2",
+            "actions": [
+                {
+                    "name": "Tap",
+                    "type": "Button",
+                    "id": "784f29d9-1bdd-4d90-9162-76ff6fa54ac7",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "e7545090-cfa3-48cd-abec-5763b8c128a2",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Tap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []
