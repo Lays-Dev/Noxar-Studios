@@ -6,6 +6,7 @@ public class TapBox : MonoBehaviour
     [SerializeField] private float moveSpeed = 200f;
     [SerializeField] private RectTransform minigameArea;
 
+    [SerializeField] private SpriteChanger spriteChanger;
     private int tapsRemaining;
     private GatheringUI gatheringUI;
     private RectTransform box;
@@ -55,6 +56,7 @@ public class TapBox : MonoBehaviour
         {
             gameObject.SetActive(false);
             gatheringUI.SpawnNewBox();
+            spriteChanger.ChangeSprite();
         }
     }
 }

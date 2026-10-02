@@ -211,6 +211,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1376509147 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8707382748595069506, guid: 3f14c9b4cd22f0d4fbcdab8137398242, type: 3}
+  m_PrefabInstance: {fileID: 2576547672114895323}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1376509151 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 113374332539035717, guid: 3f14c9b4cd22f0d4fbcdab8137398242, type: 3}
+  m_PrefabInstance: {fileID: 2576547672114895323}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376509147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1376509153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376509147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b7c238ec8fa20c4386205c8215b9380, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientImage: {fileID: 1376509151}
+  glorboGoo: {fileID: 21300000, guid: a61774112d61c9a4d8f94037581cbd89, type: 3}
+  stardustShaker: {fileID: 21300000, guid: 6064c2e981c7cec45bc47ee1be815419, type: 3}
+  powerCell: {fileID: 21300000, guid: b478445c0b87b384ca8ba95361728841, type: 3}
+  currentSprite: 0
 --- !u!1 &1733431756
 GameObject:
   m_ObjectHideFlags: 0
@@ -298,10 +331,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 113374332539035717, guid: 3f14c9b4cd22f0d4fbcdab8137398242, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a61774112d61c9a4d8f94037581cbd89, type: 3}
+    - target: {fileID: 515080923970911727, guid: 3f14c9b4cd22f0d4fbcdab8137398242, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3cb9399a7a703f34c87e28d60ed3d7c5, type: 3}
     - target: {fileID: 1583363408171465946, guid: 3f14c9b4cd22f0d4fbcdab8137398242, type: 3}
       propertyPath: m_Name
       value: Gathering Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3470234603949758696, guid: 3f14c9b4cd22f0d4fbcdab8137398242, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3cb9399a7a703f34c87e28d60ed3d7c5, type: 3}
     - target: {fileID: 6405610153813253369, guid: 3f14c9b4cd22f0d4fbcdab8137398242, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -382,10 +427,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7226742144908105176, guid: 3f14c9b4cd22f0d4fbcdab8137398242, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 39ae2930c28135e479166d254b599df4, type: 3}
+    - target: {fileID: 8147466104318979054, guid: 3f14c9b4cd22f0d4fbcdab8137398242, type: 3}
+      propertyPath: spriteChanger
+      value: 
+      objectReference: {fileID: 1376509153}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8707382748595069506, guid: 3f14c9b4cd22f0d4fbcdab8137398242, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1376509153}
   m_SourcePrefab: {fileID: 100100000, guid: 3f14c9b4cd22f0d4fbcdab8137398242, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
