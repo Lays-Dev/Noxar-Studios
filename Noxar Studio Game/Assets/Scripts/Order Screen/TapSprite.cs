@@ -8,6 +8,9 @@ public class TapSprite : MonoBehaviour
     public GameObject dish;
     public GameObject currency;
     public Button EndDay;
+
+    // Checks if patron has ordered
+    public static bool patronHasOrdered = false;
     
 
     private void Update()
@@ -31,10 +34,13 @@ public class TapSprite : MonoBehaviour
                 {
                     dish.SetActive(true);
                     currency.SetActive(true);
+                    patronHasOrdered = false;
                     EndDay.gameObject.SetActive(true);
+
                 }
                 else
                 {
+                    patronHasOrdered = true;
                     image.SetActive(true);
                 }
             }

@@ -10,7 +10,15 @@ public class StartGathering : MonoBehaviour
     {
         Debug.Log("Trigger entered");
 
-        canvas.SetActive(true);
-        player.SetActive(false);
+        // Checks if patron has ordered before starting the gathering minigame
+        if (TapSprite.patronHasOrdered)
+        {
+            canvas.SetActive(true);
+            player.SetActive(false);
+        }
+        else
+        {
+            Debug.Log("Patron has not ordered yet.");
+        }
     }
 }
