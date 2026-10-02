@@ -1,10 +1,13 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class TapSprite : MonoBehaviour
 {
     public GameObject image;
     public GameObject dish;
+    public GameObject currency;
+    public Button EndDay;
     
 
     private void Update()
@@ -27,6 +30,8 @@ public class TapSprite : MonoBehaviour
                 if (GatheringUI.gatherComplete)
                 {
                     dish.SetActive(true);
+                    currency.SetActive(true);
+                    EndDay.gameObject.SetActive(true);
                 }
                 else
                 {
