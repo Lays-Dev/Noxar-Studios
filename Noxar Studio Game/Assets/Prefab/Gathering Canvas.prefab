@@ -623,6 +623,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1292226400911906167}
+  - {fileID: 7296692291698515449}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -896,7 +897,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ee094174895497c449cf1622ff53da7a, type: 3}
+  m_Sprite: {fileID: 2129868695561014637, guid: d83080371e319634ca18bfca695e5025, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -973,7 +974,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4c94c6298a6c2384887e71cfbb2dd315, type: 3}
+  m_Sprite: {fileID: 3218730316045147969, guid: 4d8feb0b281b25444a9d9d857a70bfc7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1465,6 +1466,55 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &7580640549593127916
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7296692291698515449}
+  - component: {fileID: 7362369022402233994}
+  m_Layer: 0
+  m_Name: Sprite Changer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7296692291698515449
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7580640549593127916}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 232.49037, y: -210.82553, z: -6.750137}
+  m_LocalScale: {x: 0.9428091, y: 0.9428091, z: 0.9428091}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6405610153813253369}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7362369022402233994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7580640549593127916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b7c238ec8fa20c4386205c8215b9380, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientImage: {fileID: 113374332539035717}
+  glorboGoo: {fileID: 21300000, guid: a61774112d61c9a4d8f94037581cbd89, type: 3}
+  stardustShaker: {fileID: 21300000, guid: a61774112d61c9a4d8f94037581cbd89, type: 3}
+  powerCell: {fileID: 21300000, guid: b478445c0b87b384ca8ba95361728841, type: 3}
+  currentSprite: 0
 --- !u!1 &7815392200759533767
 GameObject:
   m_ObjectHideFlags: 0
@@ -1663,7 +1713,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4c94c6298a6c2384887e71cfbb2dd315, type: 3}
+  m_Sprite: {fileID: 3218730316045147969, guid: 4d8feb0b281b25444a9d9d857a70bfc7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1822,3 +1872,4 @@ MonoBehaviour:
   tapsRequired: 3
   moveSpeed: 500
   minigameArea: {fileID: 1292226400911906167}
+  spriteChanger: {fileID: 7362369022402233994}
