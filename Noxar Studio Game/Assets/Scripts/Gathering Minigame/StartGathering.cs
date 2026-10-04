@@ -14,7 +14,7 @@ public class StartGathering : MonoBehaviour
         if (TapSprite.patronHasOrdered)
         {
             canvas.SetActive(true);
-            player.SetActive(false);
+            player.SetActive(true);
         }
         else
         {
