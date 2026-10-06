@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class TapBox : MonoBehaviour
 {
+    /*
     [SerializeField] private int tapsRequired = 5;
     [SerializeField] private float moveSpeed = 200f;
     [SerializeField] private RectTransform minigameArea;
@@ -59,4 +60,5 @@ public class TapBox : MonoBehaviour
             spriteChanger.ChangeSprite();
         }
     }
+    */
 }
