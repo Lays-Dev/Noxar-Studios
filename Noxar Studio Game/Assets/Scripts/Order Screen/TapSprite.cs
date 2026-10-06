@@ -11,6 +11,7 @@ public class TapSprite : MonoBehaviour
 
     // Checks if patron has ordered
     public static bool patronHasOrdered = false;
+
     
 
     private void Update()
@@ -30,7 +31,7 @@ public class TapSprite : MonoBehaviour
             {
                 Debug.Log("Sprite was tapped!");
                 
-                if (GatheringUI.gatherComplete)
+                if (EndMinigame.gatherComplete)
                 {
                     dish.SetActive(true);
                     currency.SetActive(true);

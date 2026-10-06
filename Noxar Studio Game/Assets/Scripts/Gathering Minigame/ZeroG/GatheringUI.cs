@@ -1,4 +1,4 @@
-using UnityEngine;
+/*using UnityEngine;
 using System.Collections;
 using TMPro;
 using UnityEngine.UI;
@@ -8,7 +8,7 @@ public class GatheringUI : MonoBehaviour
     // This panel will close later when a button is pressed.
 [SerializeField] private GameObject instructionsPanel;
 [SerializeField] private GameObject countdownText;
-[SerializeField] private GameObject tapBox;
+//[SerializeField] private GameObject tapBox;
 [SerializeField] private Button endMinigameButton;
 [SerializeField] private GameObject openFridgeImage;
 [SerializeField] private RectTransform minigameArea;
@@ -69,10 +69,10 @@ public void SpawnNewBox()
         return;
     }
 
-    tapBox.SetActive(true);
+    //tapBox.SetActive(true);
     Debug.Log("TapBox Button Appered!");
 
-    RectTransform box = tapBox.GetComponent<RectTransform>();
+    //RectTransform box = tapBox.GetComponent<RectTransform>();
 
     float halfWidth = box.rect.width / 2;
     float halfHeight = box.rect.height / 2;
@@ -103,10 +103,10 @@ private void WinMinigame()
 
 private void EndMinigame()
 {
-    tapBox.SetActive(false);
+    //tapBox.SetActive(false);
     //endMinigameButton.gameObject.SetActive(false);
     //minigamePanel.SetActive(false);
     openFridgeImage.SetActive(false);
     minigameCanvas.SetActive(false);
 }
-}
+}*/
