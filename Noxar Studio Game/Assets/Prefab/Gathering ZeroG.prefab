@@ -173,6 +173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   instructionsPanel: {fileID: 33076508882679416}
   closeButton: {fileID: 4697541186397654388}
+  tapImage: {fileID: 0}
 --- !u!1 &615557177189736829
 GameObject:
   m_ObjectHideFlags: 0
