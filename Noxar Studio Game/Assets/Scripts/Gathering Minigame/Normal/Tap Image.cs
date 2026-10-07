@@ -10,13 +10,25 @@ public class TapImage : MonoBehaviour
     private RectTransform image;
     private int tapCount = 0;
 
+    private bool gameStarted = false;
+
     private void Start()
     {
         image = GetComponent<RectTransform>();
     }
 
+    // Called when the instructions panel is closed
+    public void StartTapping()
+    {
+        gameStarted = true;
+    }
+
     private void Update()
     {
+        // Don't do anything until the instructions are closed
+        if (!gameStarted)
+            return;
+
         // Rotate back and forth
         float rotation = Mathf.Lerp(
             -28f,

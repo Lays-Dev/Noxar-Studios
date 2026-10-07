@@ -89,7 +89,7 @@ GameObject:
   - component: {fileID: 1292226400911906167}
   - component: {fileID: 3527052819414079387}
   - component: {fileID: 4861526140959424176}
-  - component: {fileID: 3359976025566284196}
+  - component: {fileID: 383487983780091797}
   m_Layer: 5
   m_Name: Gathering Panel
   m_TagString: Untagged
@@ -159,7 +159,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &3359976025566284196
+--- !u!114 &383487983780091797
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -168,18 +168,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 478418211059151429}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56bf6afd4b629fd4ba8e80c896df9c26, type: 3}
+  m_Script: {fileID: 11500000, guid: e45d7efcc3f776f49a749e72392049e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   instructionsPanel: {fileID: 33076508882679416}
-  countdownText: {fileID: 615557177189736829}
-  tapBox: {fileID: 8707382748595069506}
-  endMinigameButton: {fileID: 1365366238335841731}
-  openFridgeImage: {fileID: 5089748936596967117}
-  minigameArea: {fileID: 1292226400911906167}
-  minigamePanel: {fileID: 478418211059151429}
-  minigameCanvas: {fileID: 1583363408171465946}
-  boxesRequired: 6
+  closeButton: {fileID: 4697541186397654388}
 --- !u!1 &615557177189736829
 GameObject:
   m_ObjectHideFlags: 0
@@ -1104,19 +1097,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5723888835070677536}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3359976025566284196}
-        m_TargetAssemblyTypeName: GatheringUI, Assembly-CSharp
-        m_MethodName: CloseInstructions
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &6250751783404688126
 GameObject:
   m_ObjectHideFlags: 0
@@ -1636,7 +1617,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3359976025566284196}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GatheringUI, Assembly-CSharp
         m_MethodName: CloseInstructions
         m_Mode: 1
@@ -1869,7 +1850,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88d7457f7d560944b36b1a2082cb207, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tapsRequired: 3
-  moveSpeed: 500
-  minigameArea: {fileID: 1292226400911906167}
-  spriteChanger: {fileID: 7362369022402233994}
