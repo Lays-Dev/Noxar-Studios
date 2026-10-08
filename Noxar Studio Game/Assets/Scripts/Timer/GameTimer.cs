@@ -1,3 +1,4 @@
+
 using UnityEngine;
 
 public class GameTimer : MonoBehaviour
@@ -8,7 +9,6 @@ public class GameTimer : MonoBehaviour
 
     private void Awake()
     {
-        // Prevent multiple timers from being created
         if (Instance != null)
         {
             Destroy(gameObject);
@@ -17,12 +17,16 @@ public class GameTimer : MonoBehaviour
 
         Instance = this;
 
-        // Keep this timer when changing scenes
         DontDestroyOnLoad(gameObject);
     }
 
     private void Update()
     {
         timeElapsed += Time.deltaTime;
+    }
+
+    public void ResetTimer()
+    {
+        timeElapsed = 0f;
     }
 }
