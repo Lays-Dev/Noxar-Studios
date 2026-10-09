@@ -1,4 +1,4 @@
-
+/*
 using UnityEngine;
 using TMPro;
 
@@ -18,4 +18,4 @@ public class TimerDisplay : MonoBehaviour
 
         timerText.text = minutes.ToString() + ":" + seconds.ToString("00");
     }
-}
+}*/

@@ -4,8 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class NewDay : MonoBehaviour
 {
-    public string startingSceneName = "YourStartingScene";
-
+    public string startingSceneName = "Order Counter Blockout";
     public GameObject loseScreen;
 
     public void StartNewDay()

@@ -1,4 +1,4 @@
-using UnityEngine;
+/*using UnityEngine;
 
 public class TimerPanelTrigger : MonoBehaviour
 {
@@ -18,4 +18,4 @@ public class TimerPanelTrigger : MonoBehaviour
             panelActivated = true;
         }
     }
-}
+}*/
