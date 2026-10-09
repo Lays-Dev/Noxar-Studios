@@ -211,6 +211,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7643321114894195983, guid: 067ca7db7ad529d47b059a85eb2fef65, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+    - target: {fileID: 7643321114894195983, guid: 067ca7db7ad529d47b059a85eb2fef65, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+    - target: {fileID: 7643321114894195983, guid: 067ca7db7ad529d47b059a85eb2fef65, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5102666123095855510, guid: 067ca7db7ad529d47b059a85eb2fef65, type: 3}
     m_RemovedGameObjects: []
@@ -1474,7 +1486,7 @@ SpriteRenderer:
   m_SortingLayerID: 2018794897
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 32467ef9c6bb9c04ca3c824e52a61fcd, type: 3}
+  m_Sprite: {fileID: -1805607826368263383, guid: 3d4b6d5265fa6974ba54aeb9a0e38cdc, type: 3}
   m_Color: {r: 0.8117647, g: 0.8117647, b: 0.76862746, a: 1}
   m_FlipX: 0
   m_FlipY: 0
