@@ -707,7 +707,6 @@ GameObject:
   m_Component:
   - component: {fileID: 233397767}
   - component: {fileID: 233397766}
-  - component: {fileID: 233397768}
   m_Layer: 0
   m_Name: GameTimer
   m_TagString: Untagged
@@ -727,7 +726,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6313cdca152ca64b99d57cea6fb4ac3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeElapsed: 0
+  timeRemaining: 40
+  timerText: {fileID: 728197680}
+  losePanel: {fileID: 550534085}
 --- !u!4 &233397767
 Transform:
   m_ObjectHideFlags: 0
@@ -743,19 +744,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &233397768
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 233397765}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2bc19f443a23c24c8753f8805ed2517, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  panel: {fileID: 550534085}
 --- !u!1 &425310322
 GameObject:
   m_ObjectHideFlags: 0
@@ -1674,6 +1662,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6269235776401626932, guid: 067ca7db7ad529d47b059a85eb2fef65, type: 3}
   m_PrefabInstance: {fileID: 7941616710925515188}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &728197680 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7643321114894195983, guid: 067ca7db7ad529d47b059a85eb2fef65, type: 3}
+  m_PrefabInstance: {fileID: 7941616710925515188}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1018896624
 GameObject:
   m_ObjectHideFlags: 0
