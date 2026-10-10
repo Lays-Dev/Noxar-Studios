@@ -1,3 +1,4 @@
+
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -9,10 +10,7 @@ public class TapSprite : MonoBehaviour
     public GameObject currency;
     public Button EndDay;
 
-    // Checks if patron has ordered
     public static bool patronHasOrdered = false;
-
-    
 
     private void Update()
     {
@@ -21,23 +19,34 @@ public class TapSprite : MonoBehaviour
 
         if (Touchscreen.current.primaryTouch.press.wasPressedThisFrame)
         {
-            Vector2 touchPosition = Touchscreen.current.primaryTouch.position.ReadValue();
+            Vector2 touchPosition =
+                Touchscreen.current.primaryTouch.position.ReadValue();
 
-            Vector2 worldPosition = Camera.main.ScreenToWorldPoint(touchPosition);
+            Vector2 worldPosition =
+                Camera.main.ScreenToWorldPoint(touchPosition);
 
-            RaycastHit2D hit = Physics2D.Raycast(worldPosition, Vector2.zero);
+            RaycastHit2D hit =
+                Physics2D.Raycast(worldPosition, Vector2.zero);
 
-            if (hit.collider != null && hit.collider.gameObject == gameObject)
+            if (hit.collider != null &&
+                hit.collider.gameObject == gameObject)
             {
                 Debug.Log("Sprite was tapped!");
-                
+
                 if (EndMinigame.gatherComplete)
                 {
+                    Debug.Log("Minigame complete, serving patron.");
+
                     dish.SetActive(true);
                     currency.SetActive(true);
                     patronHasOrdered = false;
                     EndDay.gameObject.SetActive(true);
 
+                    // Pause the timer
+                    if (GameTimer.Instance != null)
+                    {
+                        GameTimer.Instance.PauseTimer();
+                    }
                 }
                 else
                 {

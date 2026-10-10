@@ -1,3 +1,4 @@
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,6 +8,8 @@ public class GameTimer : MonoBehaviour
 
     public float timeRemaining = 40f;
     public GameObject losePanel;
+
+    public bool timerRunning = true;
 
     private bool timerFinished = false;
 
@@ -52,7 +55,8 @@ public class GameTimer : MonoBehaviour
 
     private void Update()
     {
-        if (timeRemaining > 0f)
+        // Only count down while the timer is running
+        if (timerRunning && timeRemaining > 0f)
         {
             timeRemaining -= Time.deltaTime;
 
@@ -60,6 +64,7 @@ public class GameTimer : MonoBehaviour
             {
                 timeRemaining = 0f;
                 timerFinished = true;
+                timerRunning = false;
 
                 if (losePanel != null)
                     losePanel.SetActive(true);
@@ -67,10 +72,22 @@ public class GameTimer : MonoBehaviour
         }
     }
 
+    public void PauseTimer()
+    {
+        timerRunning = false;
+    }
+
+    public void ResumeTimer()
+    {
+        if (!timerFinished)
+            timerRunning = true;
+    }
+
     public void ResetTimer()
     {
         timeRemaining = 40f;
         timerFinished = false;
+        timerRunning = true;
 
         if (losePanel != null)
             losePanel.SetActive(false);
