@@ -12,8 +12,6 @@ public class TapSprite : MonoBehaviour
     // Checks if patron has ordered
     public static bool patronHasOrdered = false;
 
-    
-
     private void Update()
     {
         if (Touchscreen.current == null)
@@ -30,14 +28,19 @@ public class TapSprite : MonoBehaviour
             if (hit.collider != null && hit.collider.gameObject == gameObject)
             {
                 Debug.Log("Sprite was tapped!");
-                
+
                 if (EndMinigame.gatherComplete)
                 {
+                    // Pause the timer when the patron is served
+                    if (GameTimer.Instance != null)
+                    {
+                        GameTimer.Instance.PauseTimer();
+                    }
+
                     dish.SetActive(true);
                     currency.SetActive(true);
                     patronHasOrdered = false;
                     EndDay.gameObject.SetActive(true);
-
                 }
                 else
                 {
