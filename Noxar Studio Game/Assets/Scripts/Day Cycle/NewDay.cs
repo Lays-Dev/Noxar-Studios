@@ -8,8 +8,22 @@ public class NewDay : MonoBehaviour
     public GameObject loseScreen;
     public GameObject winScreen;
 
+    // Check which screen the button belongs to
+    public bool comingFromWinScreen = false;
+
+    public static bool level2 = false;
+
     public void StartNewDay()
     {
+        // Only advance to level 2 from the win screen
+        if (comingFromWinScreen && !level2)
+        {
+            level2 = true;
+            Debug.Log("Level 2 activated!");
+        }
+
+        Debug.Log("Level 2 is: " + level2);
+
         // Reset the timer
         if (GameTimer.Instance != null)
         {
@@ -19,7 +33,7 @@ public class NewDay : MonoBehaviour
         // Reset patron order status
         TapSprite.patronHasOrdered = false;
 
-        // Reset gather status
+        // Reset gathering status
         EndMinigame.gatherComplete = false;
 
         // Hide the lose screen
@@ -36,6 +50,5 @@ public class NewDay : MonoBehaviour
 
         // Reload the starting scene
         SceneManager.LoadScene(startingSceneName);
-
     }
 }
