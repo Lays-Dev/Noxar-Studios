@@ -1123,7 +1123,7 @@ PrefabInstance:
     - target: {fileID: 515080923970911727, guid: 3f14c9b4cd22f0d4fbcdab8137398242, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 3cb9399a7a703f34c87e28d60ed3d7c5, type: 3}
+      objectReference: {fileID: 21300000, guid: 4d8feb0b281b25444a9d9d857a70bfc7, type: 3}
     - target: {fileID: 1365366238335841731, guid: 3f14c9b4cd22f0d4fbcdab8137398242, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1143,10 +1143,14 @@ PrefabInstance:
     - target: {fileID: 3470234603949758696, guid: 3f14c9b4cd22f0d4fbcdab8137398242, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 3cb9399a7a703f34c87e28d60ed3d7c5, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 3696526367993635885, guid: 3f14c9b4cd22f0d4fbcdab8137398242, type: 3}
       propertyPath: m_RaycastTarget
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4001138271204047345, guid: 3f14c9b4cd22f0d4fbcdab8137398242, type: 3}
+      propertyPath: m_CullTransparentMesh
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4697541186397654388, guid: 3f14c9b4cd22f0d4fbcdab8137398242, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1243,7 +1247,11 @@ PrefabInstance:
     - target: {fileID: 7226742144908105176, guid: 3f14c9b4cd22f0d4fbcdab8137398242, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 39ae2930c28135e479166d254b599df4, type: 3}
+      objectReference: {fileID: 21300000, guid: d83080371e319634ca18bfca695e5025, type: 3}
+    - target: {fileID: 7362369022402233994, guid: 3f14c9b4cd22f0d4fbcdab8137398242, type: 3}
+      propertyPath: stardustShaker
+      value: 
+      objectReference: {fileID: -3572395051433921054, guid: 36bf479af24d6a143a26ea590e9a863c, type: 3}
     - target: {fileID: 7362369022402233994, guid: 3f14c9b4cd22f0d4fbcdab8137398242, type: 3}
       propertyPath: ingredientImage
       value: 
