@@ -1,15 +1,27 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
+
 public class SceneChange : MonoBehaviour
 {
+    public AudioSource soundEffect;
+
     public void GoToOrderCounter()
     {
-        SceneManager.LoadScene("Order Counter Blockout");
+        StartCoroutine(PlaySoundAndChangeScene("Order Counter Blockout"));
     }
 
     public void GoToKitchen()
     {
-        Debug.Log("Going to Kitchen scene");
-        SceneManager.LoadScene("Kitchen Blockout");
+        StartCoroutine(PlaySoundAndChangeScene("Kitchen Blockout"));
+    }
+
+    IEnumerator PlaySoundAndChangeScene(string sceneName)
+    {
+        soundEffect.Play();
+
+        yield return new WaitWhile(() => soundEffect.isPlaying);
+
+        SceneManager.LoadScene(sceneName);
     }
 }
