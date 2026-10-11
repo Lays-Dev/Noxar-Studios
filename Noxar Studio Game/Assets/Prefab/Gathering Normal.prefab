@@ -1136,6 +1136,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gathering Normal
       objectReference: {fileID: 0}
+    - target: {fileID: 2044566032865165179, guid: 3f14c9b4cd22f0d4fbcdab8137398242, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.36136875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2044566032865165179, guid: 3f14c9b4cd22f0d4fbcdab8137398242, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.36136875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2044566032865165179, guid: 3f14c9b4cd22f0d4fbcdab8137398242, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.36136875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2044566032865165179, guid: 3f14c9b4cd22f0d4fbcdab8137398242, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 452
+      objectReference: {fileID: 0}
+    - target: {fileID: 2044566032865165179, guid: 3f14c9b4cd22f0d4fbcdab8137398242, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -137
+      objectReference: {fileID: 0}
     - target: {fileID: 3359976025566284196, guid: 3f14c9b4cd22f0d4fbcdab8137398242, type: 3}
       propertyPath: tapBox
       value: 
@@ -1164,6 +1184,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5723888835070677536, guid: 3f14c9b4cd22f0d4fbcdab8137398242, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 30644ee506eef5541b58164fa253d637, type: 3}
     - target: {fileID: 6405610153813253369, guid: 3f14c9b4cd22f0d4fbcdab8137398242, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1278,6 +1302,7 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 8707382748595069506, guid: 3f14c9b4cd22f0d4fbcdab8137398242, type: 3}
     - {fileID: 615557177189736829, guid: 3f14c9b4cd22f0d4fbcdab8137398242, type: 3}
+    - {fileID: 3571856589120351204, guid: 3f14c9b4cd22f0d4fbcdab8137398242, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 6405610153813253369, guid: 3f14c9b4cd22f0d4fbcdab8137398242, type: 3}
       insertIndex: -1

@@ -506,7 +506,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &375730303
 Transform:
   m_ObjectHideFlags: 0
@@ -1754,7 +1754,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1766457816
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1886,8 +1886,8 @@ SpriteRenderer:
   m_SortingLayerID: 2018794897
   m_SortingLayer: 1
   m_SortingOrder: 3
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.99215686, g: 0.99215686, b: 0.5882353, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 6b190b69cce5f464bab64dcb53f8c856, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1906,8 +1906,8 @@ Transform:
   m_GameObject: {fileID: 1793267083}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.8872, y: 0.0837, z: 0.04244699}
-  m_LocalScale: {x: 6.61386, y: 2.0889413, z: 1}
+  m_LocalPosition: {x: 2.08, y: -0.13, z: 0.04244699}
+  m_LocalScale: {x: 0.53206533, y: 0.53206533, z: 0.53206533}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1082253588}
@@ -1973,8 +1973,8 @@ SpriteRenderer:
   m_SortingLayerID: 2018794897
   m_SortingLayer: 1
   m_SortingOrder: 3
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.99215686, g: 0.99215686, b: 0.5882353, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 6b190b69cce5f464bab64dcb53f8c856, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1993,8 +1993,8 @@ Transform:
   m_GameObject: {fileID: 1936865119}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.6907, y: -3.5199, z: 0.04244699}
-  m_LocalScale: {x: 9.809952, y: 2.3967912, z: 1}
+  m_LocalPosition: {x: 3.92, y: -3.66, z: 0.04244699}
+  m_LocalScale: {x: 0.59831065, y: 0.59831065, z: 0.59831065}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1082253588}
@@ -2158,7 +2158,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4675564939881347805, guid: 1149231a1a3fadc498a4d8aecddd1c61, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.49445036
+      value: -2.49
       objectReference: {fileID: 0}
     - target: {fileID: 4675564939881347805, guid: 1149231a1a3fadc498a4d8aecddd1c61, type: 3}
       propertyPath: m_LocalPosition.y
