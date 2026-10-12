@@ -1,0 +1,832 @@
+fileFormatVersion: 2
+guid: 629fc7068652c014492ee8393ea80220
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5296535858196939729
+    second: 06._ElectricityVFX_Aura_0
+  - first:
+      213: 2713229678368225538
+    second: 06._ElectricityVFX_Aura_1
+  - first:
+      213: 8035183522189045153
+    second: 06._ElectricityVFX_Aura_2
+  - first:
+      213: 7458834775698802930
+    second: 06._ElectricityVFX_Aura_3
+  - first:
+      213: 726993251691457361
+    second: 06._ElectricityVFX_Aura_4
+  - first:
+      213: 8254427967947392483
+    second: 06._ElectricityVFX_Aura_5
+  - first:
+      213: 4421993400898624464
+    second: 06._ElectricityVFX_Aura_6
+  - first:
+      213: 6555576316755184111
+    second: 06._ElectricityVFX_Aura_7
+  - first:
+      213: -236415440017221034
+    second: 06._ElectricityVFX_Aura_8
+  - first:
+      213: -7432232189368562691
+    second: 06._ElectricityVFX_Aura_9
+  - first:
+      213: 1144341465372121752
+    second: 06._ElectricityVFX_Aura_10
+  - first:
+      213: 458341899998212792
+    second: 06._ElectricityVFX_Aura_11
+  - first:
+      213: -7668468262473553391
+    second: 06._ElectricityVFX_Aura_12
+  - first:
+      213: -159116084341225801
+    second: 06._ElectricityVFX_Aura_13
+  - first:
+      213: -1633779935988183394
+    second: 06._ElectricityVFX_Aura_14
+  - first:
+      213: -86185269091141654
+    second: 06._ElectricityVFX_Aura_15
+  - first:
+      213: 7285552329115821979
+    second: 06._ElectricityVFX_Aura_16
+  - first:
+      213: -4521245508618314338
+    second: 06._ElectricityVFX_Aura_17
+  - first:
+      213: 2808000103195041094
+    second: 06._ElectricityVFX_Aura_18
+  - first:
+      213: -844489535107636029
+    second: 06._ElectricityVFX_Aura_19
+  - first:
+      213: 1731982688376624406
+    second: 06._ElectricityVFX_Aura_20
+  - first:
+      213: -5486069895058697312
+    second: 06._ElectricityVFX_Aura_21
+  - first:
+      213: -4469507130003962699
+    second: 06._ElectricityVFX_Aura_22
+  - first:
+      213: 7718625405228590257
+    second: 06._ElectricityVFX_Aura_23
+  - first:
+      213: 802889278575599272
+    second: 06._ElectricityVFX_Aura_24
+  - first:
+      213: -5513770907996697175
+    second: 06._ElectricityVFX_Aura_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 06._ElectricityVFX_Aura_0
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 1605
+        width: 390
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d382fffc43118940800000000000000
+      internalID: 5296535858196939729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 06._ElectricityVFX_Aura_1
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 1584
+        width: 371
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2097f25640457a520800000000000000
+      internalID: 2713229678368225538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 06._ElectricityVFX_Aura_2
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 1584
+        width: 368
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ad662957d4b28f60800000000000000
+      internalID: 8035183522189045153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 06._ElectricityVFX_Aura_3
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1575
+        width: 396
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f88bdbb5ba138760800000000000000
+      internalID: 7458834775698802930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 06._ElectricityVFX_Aura_4
+      rect:
+        serializedVersion: 2
+        x: 2078
+        y: 1566
+        width: 443
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15bec29b28cc61a00800000000000000
+      internalID: 726993251691457361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 06._ElectricityVFX_Aura_5
+      rect:
+        serializedVersion: 2
+        x: 2623
+        y: 1591
+        width: 408
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e5cd85c08e9d8270800000000000000
+      internalID: 8254427967947392483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 06._ElectricityVFX_Aura_6
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 1521
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0db1fa3c1931e5d30800000000000000
+      internalID: 4421993400898624464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 06._ElectricityVFX_Aura_7
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 1078
+        width: 475
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe9082a5de51afa50800000000000000
+      internalID: 6555576316755184111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 06._ElectricityVFX_Aura_8
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 1059
+        width: 398
+        height: 387
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65a1b5ee86518bcf0800000000000000
+      internalID: -236415440017221034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 06._ElectricityVFX_Aura_9
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 1064
+        width: 481
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfb867093386bd890800000000000000
+      internalID: -7432232189368562691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 06._ElectricityVFX_Aura_10
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 1080
+        width: 392
+        height: 365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89a5141ff7481ef00800000000000000
+      internalID: 1144341465372121752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 06._ElectricityVFX_Aura_11
+      rect:
+        serializedVersion: 2
+        x: 2084
+        y: 1065
+        width: 420
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b23217978b5c5600800000000000000
+      internalID: 458341899998212792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 06._ElectricityVFX_Aura_12
+      rect:
+        serializedVersion: 2
+        x: 2605
+        y: 1048
+        width: 441
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11a28eb9eb0249590800000000000000
+      internalID: -7668468262473553391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 06._ElectricityVFX_Aura_13
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 529
+        width: 422
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b64acaa3c4bacdf0800000000000000
+      internalID: -159116084341225801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 06._ElectricityVFX_Aura_14
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 593
+        width: 420
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9e834aedc5a359e0800000000000000
+      internalID: -1633779935988183394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 06._ElectricityVFX_Aura_15
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 530
+        width: 472
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae773f254fecdcef0800000000000000
+      internalID: -86185269091141654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 06._ElectricityVFX_Aura_16
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 546
+        width: 463
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b97e7792e3b7b1560800000000000000
+      internalID: 7285552329115821979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 06._ElectricityVFX_Aura_17
+      rect:
+        serializedVersion: 2
+        x: 2088
+        y: 554
+        width: 454
+        height: 370
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9d997c1a2f4141c0800000000000000
+      internalID: -4521245508618314338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 06._ElectricityVFX_Aura_18
+      rect:
+        serializedVersion: 2
+        x: 2602
+        y: 536
+        width: 438
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64d5338673508f620800000000000000
+      internalID: 2808000103195041094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 06._ElectricityVFX_Aura_19
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 38
+        width: 393
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c4ef5bfd35c744f0800000000000000
+      internalID: -844489535107636029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 06._ElectricityVFX_Aura_20
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 24
+        width: 405
+        height: 361
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61590d1241d390810800000000000000
+      internalID: 1731982688376624406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 06._ElectricityVFX_Aura_21
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 69
+        width: 415
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a3df043f709dd3b0800000000000000
+      internalID: -5486069895058697312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 06._ElectricityVFX_Aura_22
+      rect:
+        serializedVersion: 2
+        x: 1593
+        y: 36
+        width: 423
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b4c90b12fe19f1c0800000000000000
+      internalID: -4469507130003962699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 06._ElectricityVFX_Aura_23
+      rect:
+        serializedVersion: 2
+        x: 2113
+        y: 86
+        width: 382
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b4a4f839e01e1b60800000000000000
+      internalID: 7718625405228590257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 06._ElectricityVFX_Aura_24
+      rect:
+        serializedVersion: 2
+        x: 2620
+        y: 27
+        width: 393
+        height: 366
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aed7738b8f642b00800000000000000
+      internalID: 802889278575599272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 06._ElectricityVFX_Aura_25
+      rect:
+        serializedVersion: 2
+        x: 2702
+        y: 40
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ad49f782962b73b0800000000000000
+      internalID: -5513770907996697175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      06._ElectricityVFX_Aura_0: 5296535858196939729
+      06._ElectricityVFX_Aura_1: 2713229678368225538
+      06._ElectricityVFX_Aura_10: 1144341465372121752
+      06._ElectricityVFX_Aura_11: 458341899998212792
+      06._ElectricityVFX_Aura_12: -7668468262473553391
+      06._ElectricityVFX_Aura_13: -159116084341225801
+      06._ElectricityVFX_Aura_14: -1633779935988183394
+      06._ElectricityVFX_Aura_15: -86185269091141654
+      06._ElectricityVFX_Aura_16: 7285552329115821979
+      06._ElectricityVFX_Aura_17: -4521245508618314338
+      06._ElectricityVFX_Aura_18: 2808000103195041094
+      06._ElectricityVFX_Aura_19: -844489535107636029
+      06._ElectricityVFX_Aura_2: 8035183522189045153
+      06._ElectricityVFX_Aura_20: 1731982688376624406
+      06._ElectricityVFX_Aura_21: -5486069895058697312
+      06._ElectricityVFX_Aura_22: -4469507130003962699
+      06._ElectricityVFX_Aura_23: 7718625405228590257
+      06._ElectricityVFX_Aura_24: 802889278575599272
+      06._ElectricityVFX_Aura_25: -5513770907996697175
+      06._ElectricityVFX_Aura_3: 7458834775698802930
+      06._ElectricityVFX_Aura_4: 726993251691457361
+      06._ElectricityVFX_Aura_5: 8254427967947392483
+      06._ElectricityVFX_Aura_6: 4421993400898624464
+      06._ElectricityVFX_Aura_7: 6555576316755184111
+      06._ElectricityVFX_Aura_8: -236415440017221034
+      06._ElectricityVFX_Aura_9: -7432232189368562691
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
