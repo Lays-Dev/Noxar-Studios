@@ -963,8 +963,8 @@ Transform:
   m_GameObject: {fileID: 231971765}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.3704, y: 1.297, z: 0.016678903}
-  m_LocalScale: {x: 0.9348503, y: 0.9537838, z: 0.059547}
+  m_LocalPosition: {x: -0.4, y: 1.35, z: 0}
+  m_LocalScale: {x: 0.9257, y: 0.9257, z: 0.9257}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1515136932}
@@ -1014,7 +1014,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -6785834166533214994, guid: a5ad9d4cc40967b4e8aeeba568b91a28, type: 3}
-  m_Color: {r: 0.71980923, g: 0.79237074, b: 0.91194963, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2174,7 +2174,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &653322856
 Transform:
   m_ObjectHideFlags: 0
@@ -3984,7 +3984,7 @@ Transform:
   m_GameObject: {fileID: 1737580621}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.39, y: -1.76, z: 0}
+  m_LocalPosition: {x: -6.3, y: -2.17, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4564,6 +4564,18 @@ PrefabInstance:
       value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 6269235776401626932, guid: 067ca7db7ad529d47b059a85eb2fef65, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.8013
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269235776401626932, guid: 067ca7db7ad529d47b059a85eb2fef65, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.8013
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269235776401626932, guid: 067ca7db7ad529d47b059a85eb2fef65, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.8013
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269235776401626932, guid: 067ca7db7ad529d47b059a85eb2fef65, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -4593,7 +4605,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6269235776401626932, guid: 067ca7db7ad529d47b059a85eb2fef65, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 147
+      value: 47
       objectReference: {fileID: 0}
     - target: {fileID: 6269235776401626932, guid: 067ca7db7ad529d47b059a85eb2fef65, type: 3}
       propertyPath: m_AnchoredPosition.y
