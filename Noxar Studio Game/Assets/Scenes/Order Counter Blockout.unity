@@ -619,9 +619,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7940a354553f4a4ead0007f72af80ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingSceneName: Order Counter Blockout
   loseScreen: {fileID: 550534085}
   winScreen: {fileID: 1615839129}
+  dish: {fileID: 0}
+  endDayButton: {fileID: 0}
+  currency: {fileID: 0}
+  galico: {fileID: 0}
+  johnny: {fileID: 0}
   comingFromWinScreen: 0
 --- !u!114 &144677036
 MonoBehaviour:
@@ -764,7 +768,7 @@ GameObject:
   - component: {fileID: 211574109}
   - component: {fileID: 211574108}
   m_Layer: 0
-  m_Name: NewPatron
+  m_Name: Johnny
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1217,9 +1221,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7940a354553f4a4ead0007f72af80ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingSceneName: Order Counter Blockout
   loseScreen: {fileID: 550534085}
   winScreen: {fileID: 1615839129}
+  dish: {fileID: 653322855}
+  endDayButton: {fileID: 1028332100}
+  currency: {fileID: 1500915612}
+  galico: {fileID: 458487229}
+  johnny: {fileID: 211574106}
   comingFromWinScreen: 1
 --- !u!1 &425310322
 GameObject:
@@ -1315,7 +1323,7 @@ GameObject:
   - component: {fileID: 458487234}
   - component: {fileID: 458487235}
   m_Layer: 0
-  m_Name: OldPatron
+  m_Name: Galico
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3366,7 +3374,7 @@ GameObject:
   - component: {fileID: 1500915614}
   - component: {fileID: 1500915616}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Currency
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

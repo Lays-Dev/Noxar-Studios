@@ -1,12 +1,15 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class NewDay : MonoBehaviour
 {
-    public string startingSceneName = "Order Counter Blockout";
-
     public GameObject loseScreen;
     public GameObject winScreen;
+    public GameObject dish;
+    public GameObject endDayButton;
+    public GameObject currency;
+    public GameObject galico;
+    public GameObject johnny;
+
 
     // Check which screen the button belongs to
     public bool comingFromWinScreen = false;
@@ -24,7 +27,7 @@ public class NewDay : MonoBehaviour
 
         Debug.Log("Level 2 is: " + level2);
 
-        // Reset the timer
+        // Reset the timer to 40 seconds
         if (GameTimer.Instance != null)
         {
             GameTimer.Instance.ResetTimer();
@@ -48,7 +51,29 @@ public class NewDay : MonoBehaviour
             winScreen.SetActive(false);
         }
 
-        // Reload the starting scene
-        SceneManager.LoadScene(startingSceneName);
+        // Hide the end day button
+        if (endDayButton != null)
+        {
+            endDayButton.SetActive(false);
+        }
+
+        // Hide the dish
+        if (dish != null)
+        {
+            dish.SetActive(false);
+        }
+
+        if (currency != null)
+        {
+            currency.SetActive(false);
+        }
+
+        if (galico != null)
+        {
+            galico.SetActive(false);
+        }
+
+        johnny.SetActive(true);
+        
     }
 }
