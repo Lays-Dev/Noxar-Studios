@@ -18,9 +18,11 @@ public class SceneChange : MonoBehaviour
 
     IEnumerator PlaySoundAndChangeScene(string sceneName)
     {
-        soundEffect.Play();
-
-        yield return new WaitWhile(() => soundEffect.isPlaying);
+        if (soundEffect != null)
+        {
+            soundEffect.Play();
+            yield return new WaitWhile(() => soundEffect != null && soundEffect.isPlaying);
+        }
 
         SceneManager.LoadScene(sceneName);
     }
