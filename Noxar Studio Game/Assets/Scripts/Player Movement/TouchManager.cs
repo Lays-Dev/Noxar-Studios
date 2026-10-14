@@ -1,4 +1,4 @@
-using UnityEngine;
+/*using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class TouchManager : MonoBehaviour
@@ -43,4 +43,4 @@ public class TouchManager : MonoBehaviour
         player.MoveTo(worldPosition);
         Debug.Log("Screen tapped at: " + worldPosition);
     }
-}
+}*/

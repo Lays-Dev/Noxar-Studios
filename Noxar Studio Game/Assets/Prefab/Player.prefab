@@ -239,7 +239,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 1440548954507089604}
   animator: {fileID: 7203070798719039311}
-  Rigidbody2D: {fileID: 4164916972670468901}
+  rb: {fileID: 4164916972670468901}
 --- !u!95 &7203070798719039311
 Animator:
   serializedVersion: 7
