@@ -8,12 +8,22 @@ public class SceneChange : MonoBehaviour
 
     public void GoToOrderCounter()
     {
-        StartCoroutine(PlaySoundAndChangeScene("Order Counter Blockout"));
+        string sceneName = "Order Counter Blockout";
+
+        if (LevelManager.Instance != null &&
+            LevelManager.level2Unlocked == true)
+        {
+            sceneName = "Level2";
+        }
+
+        StartCoroutine(PlaySoundAndChangeScene(sceneName));
     }
 
     public void GoToKitchen()
     {
-        StartCoroutine(PlaySoundAndChangeScene("Kitchen Blockout"));
+        StartCoroutine(
+            PlaySoundAndChangeScene("Kitchen Blockout")
+        );
     }
 
     IEnumerator PlaySoundAndChangeScene(string sceneName)
@@ -21,7 +31,10 @@ public class SceneChange : MonoBehaviour
         if (soundEffect != null)
         {
             soundEffect.Play();
-            yield return new WaitWhile(() => soundEffect != null && soundEffect.isPlaying);
+
+            yield return new WaitWhile(
+                () => soundEffect != null && soundEffect.isPlaying
+            );
         }
 
         SceneManager.LoadScene(sceneName);
