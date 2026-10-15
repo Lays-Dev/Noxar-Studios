@@ -1,5 +1,6 @@
 
 using UnityEngine;
+using UnityEngine.UI;
 
 // Burner states
 public enum BurnerState
@@ -14,6 +15,11 @@ public class Burner : MonoBehaviour
     // Choose hot or cold burner in the Inspector
     public BurnerState state = BurnerState.Cold;
 
+    [Header("Burner Images")]
+    public Image burnerImage;
+    public Sprite coldSprite;
+    public Sprite hotSprite;
+
     // How many seconds before the state changes
     public float switchInterval = 5f;
 
@@ -24,6 +30,9 @@ public class Burner : MonoBehaviour
     {
         // Start the timer
         timer = switchInterval;
+
+        // Show the correct image at the start
+        UpdateBurnerImage();
     }
 
     private void Update()
@@ -53,7 +62,26 @@ public class Burner : MonoBehaviour
             state = BurnerState.Hot;
         }
 
+        // Update the image whenever the state changes
+        UpdateBurnerImage();
+
         Debug.Log(gameObject.name + " is now " + state);
+    }
+
+ // Change the UI image to match the current state
+    private void UpdateBurnerImage()
+    {
+        if (burnerImage == null)
+            return;
+
+        if (state == BurnerState.Hot)
+        {
+            burnerImage.sprite = hotSprite;
+        }
+        else
+        {
+            burnerImage.sprite = coldSprite;
+        }
     }
 
     // Called when the pot is dropped on this burner

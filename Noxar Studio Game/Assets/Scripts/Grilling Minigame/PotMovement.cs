@@ -24,10 +24,12 @@ public class PotMovement : MonoBehaviour,
     [Header("Game Panels")]
     public GameObject grillingPanel;
     public GameObject loseScreen;
+    public GameObject winScreen;
 
     // The burner the pot is currently on, if any
     private Burner currentBurner;
     [SerializeField] private bool gameLost = false;
+    [SerializeField] private bool gameEnded = false;
     private void Awake()
     {
         // Get the UI image's position and size
@@ -68,10 +70,15 @@ public class PotMovement : MonoBehaviour,
             potBarFill.fillAmount = potValue / 100f;
         }
 
-        // Check if the pot temperature reaches zero
+        // Check for losing
         if (potValue <= 0f)
         {
             LoseGame();
+        }
+        // Check for winning
+        else if (potValue >= 100f)
+        {
+            WinGame();
         }
     }
 
@@ -90,6 +97,17 @@ public class PotMovement : MonoBehaviour,
         {
             loseScreen.SetActive(true);
         }
+    }
+
+    private void WinGame()
+    {
+        gameEnded = true;
+
+        if (grillingPanel != null)
+            grillingPanel.SetActive(false);
+
+        if (winScreen != null)
+            winScreen.SetActive(true);
     }
 
     // Called when the player starts dragging
