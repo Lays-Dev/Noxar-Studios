@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 // IBeginDragHandler detects when the player starts dragging the image
 // IDragHandler updates the image's position while dragging
@@ -17,9 +18,16 @@ public class PotMovement : MonoBehaviour,
     // Temperture change rate per second
     public float valueChangeRate = 5f;
 
+    [Header("Pot UI Bar")]
+    public Image potBarFill;
+
+    [Header("Game Panels")]
+    public GameObject grillingPanel;
+    public GameObject loseScreen;
+
     // The burner the pot is currently on, if any
     private Burner currentBurner;
-
+    [SerializeField] private bool gameLost = false;
     private void Awake()
     {
         // Get the UI image's position and size
@@ -32,23 +40,55 @@ public class PotMovement : MonoBehaviour,
         canvasGroup = GetComponent<CanvasGroup>();
     }
 
-     private void Update()
+
+    private void Update()
     {
-        // Check the burner every frame
+        if (gameLost)
+            return;
+
+        // Change the pot value based on the burner state
         if (currentBurner != null)
         {
             if (currentBurner.state == BurnerState.Hot)
             {
-                // Increase the pot value on a hot burner
                 potValue += valueChangeRate * Time.deltaTime;
             }
             else
             {
-                // Decrease the pot value on a cold burner
                 potValue -= valueChangeRate * Time.deltaTime;
             }
+        }
 
-            Debug.Log("Pot Value: " + potValue);
+        // Keep the pot value between 0 and 100
+        potValue = Mathf.Clamp(potValue, 0f, 100f);
+
+        // Update the UI bar
+        if (potBarFill != null)
+        {
+            potBarFill.fillAmount = potValue / 100f;
+        }
+
+        // Check if the pot temperature reaches zero
+        if (potValue <= 0f)
+        {
+            LoseGame();
+        }
+    }
+
+    private void LoseGame()
+    {
+        gameLost = true;
+
+        // Hide the grilling panel
+        if (grillingPanel != null)
+        {
+            grillingPanel.SetActive(false);
+        }
+
+        // Show the lose screen
+        if (loseScreen != null)
+        {
+            loseScreen.SetActive(true);
         }
     }
 
