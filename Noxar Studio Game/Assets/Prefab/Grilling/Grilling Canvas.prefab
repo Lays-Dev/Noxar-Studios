@@ -302,7 +302,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   potValue: 50
-  valueChangeRate: 5
+  valueChangeRate: 3
   potBarFill: {fileID: 6600530954559464497}
   grillingPanel: {fileID: 4769175698735008567}
   loseScreen: {fileID: 6290959302682325657}
@@ -1089,7 +1089,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &345598833794436416
 RectTransform:
   m_ObjectHideFlags: 0

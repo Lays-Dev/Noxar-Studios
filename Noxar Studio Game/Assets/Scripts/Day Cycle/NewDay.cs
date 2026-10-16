@@ -64,6 +64,7 @@ public void StartNewDay()
     TapSprite.patronHasOrdered = false;
     TapSprite.level2OrderTaken = false;
     EndMinigame.gatherComplete = false;
+    GrillingUIManager.grillingCompleted = false;
 
     // Hide the UI.
     if (loseScreen != null)

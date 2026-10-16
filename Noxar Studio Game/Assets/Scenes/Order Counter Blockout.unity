@@ -913,7 +913,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6313cdca152ca64b99d57cea6fb4ac3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 40
+  timeRemaining: 65
   losePanel: {fileID: 550534085}
   timerRunning: 1
 --- !u!4 &233397767
