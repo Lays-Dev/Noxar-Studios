@@ -45,39 +45,53 @@ public class NewDay : MonoBehaviour
         }
     }
 
-    public void StartNewDay()
+
+public void StartNewDay()
+{
+    // Unlock Level 2 if the player clicked New Day after winning.
+    if (comingFromWinScreen && LevelManager.Instance != null)
     {
-        if (comingFromWinScreen && LevelManager.Instance != null)
-        {
-            LevelManager.Instance.UnlockLevel2();
-        }
-
-        if (GameTimer.Instance != null)
-        {
-            GameTimer.Instance.ResetTimer();
-        }
-
-        TapSprite.patronHasOrdered = false;
-        EndMinigame.gatherComplete = false;
-
-        if (loseScreen != null)
-            loseScreen.SetActive(false);
-
-        if (winScreen != null)
-            winScreen.SetActive(false);
-
-        if (endDayButton != null)
-            endDayButton.SetActive(false);
-
-        if (dish != null)
-            dish.SetActive(false);
-
-        if (currency != null)
-            currency.SetActive(false);
-
-        FindPatrons();
-        UpdatePatron();
+        LevelManager.Instance.UnlockLevel2();
     }
+
+    // Reset the timer.
+    if (GameTimer.Instance != null)
+    {
+        GameTimer.Instance.ResetTimer();
+    }
+
+    // Reset the day's progress.
+    TapSprite.patronHasOrdered = false;
+    TapSprite.level2OrderTaken = false;
+    EndMinigame.gatherComplete = false;
+
+    // Hide the UI.
+    if (loseScreen != null)
+        loseScreen.SetActive(false);
+
+    if (winScreen != null)
+        winScreen.SetActive(false);
+
+    if (endDayButton != null)
+        endDayButton.SetActive(false);
+
+    if (dish != null)
+        dish.SetActive(false);
+
+    if (currency != null)
+        currency.SetActive(false);
+
+    // Choose which scene to load.
+    if (LevelManager.level2Unlocked)
+    {
+        SceneManager.LoadScene("Level2");
+    }
+    else
+    {
+        SceneManager.LoadScene("Order Counter Blockout");
+    }
+}
+
 
     private void FindPatrons()
     {

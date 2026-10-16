@@ -49,16 +49,15 @@ public class PotMovement : MonoBehaviour,
             return;
 
         // Change the pot value based on the burner state
-        if (currentBurner != null)
+        if (currentBurner != null && currentBurner.state == BurnerState.Hot)
         {
-            if (currentBurner.state == BurnerState.Hot)
-            {
-                potValue += valueChangeRate * Time.deltaTime;
-            }
-            else
-            {
-                potValue -= valueChangeRate * Time.deltaTime;
-            }
+            // The pot heats up on a hot burner.
+            potValue += valueChangeRate * Time.deltaTime;
+        }
+        else
+        {
+            // The pot cools down on a cold burner or when not on any burner.
+            potValue -= valueChangeRate * Time.deltaTime;
         }
 
         // Keep the pot value between 0 and 100

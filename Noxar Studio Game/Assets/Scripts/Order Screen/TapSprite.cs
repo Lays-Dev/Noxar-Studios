@@ -11,6 +11,8 @@ public class TapSprite : MonoBehaviour
 
     // Checks if patron has ordered
     public static bool patronHasOrdered = false;
+    // Check if Johnny has ordered
+    public static bool level2OrderTaken = false;
 
     private void Update()
     {
@@ -45,6 +47,7 @@ public class TapSprite : MonoBehaviour
                 else
                 {
                     patronHasOrdered = true;
+                    level2OrderTaken = true;
                     image.SetActive(true);
                 }
             }
