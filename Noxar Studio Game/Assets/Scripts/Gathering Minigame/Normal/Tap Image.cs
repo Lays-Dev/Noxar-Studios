@@ -1,14 +1,17 @@
+
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class TapImage : MonoBehaviour
 {
-    public float speed = 1f;
     public GameObject nextIngredient;
-    public GameObject objectToDestroy;
+    public GameObject armParent; // Reference to the parent GameObject of the arm
 
     private RectTransform image;
     private int tapCount = 0;
+    public bool lastIngredient = false;
+    public GameObject fridgeOpen;
+
 
     private void Start()
     {
@@ -17,16 +20,7 @@ public class TapImage : MonoBehaviour
 
     private void Update()
     {
-        // Rotate back and forth
-        float rotation = Mathf.Lerp(
-            -28f,
-            45f,
-            Mathf.PingPong(Time.time * speed, 1f)
-        );
-
-        image.localRotation = Quaternion.Euler(0f, 0f, rotation);
-
-        // Mobile touch
+        // Check for mobile touch.
         if (Touchscreen.current != null &&
             Touchscreen.current.primaryTouch.press.wasPressedThisFrame)
         {
@@ -34,35 +28,38 @@ public class TapImage : MonoBehaviour
                 Touchscreen.current.primaryTouch.position.ReadValue();
 
             Canvas canvas = GetComponentInParent<Canvas>();
-
             Camera cam = null;
 
-            if (canvas.renderMode != RenderMode.ScreenSpaceOverlay)
+            if (canvas != null &&
+                canvas.renderMode != RenderMode.ScreenSpaceOverlay)
             {
                 cam = canvas.worldCamera;
             }
 
+            // Check whether the ingredient was tapped.
             if (RectTransformUtility.RectangleContainsScreenPoint(
-                image,
-                touchPosition,
-                cam))
+                image, touchPosition, cam))
             {
                 tapCount++;
 
-                Debug.Log("Image tapped: " + tapCount);
+                Debug.Log("Ingredient taps: " + tapCount);
 
-                if (tapCount >= 3)
+                // Require two taps before spawning the next ingredient.
+                if (tapCount >= 2)
                 {
+                    if (lastIngredient)
+                    {
+                        Debug.Log("Last ingredient tapped twice.");
+                        fridgeOpen.SetActive(false);
+                    }
+               
                     if (nextIngredient != null)
                     {
                         nextIngredient.SetActive(true);
-                    }
-                    else
-                    {
-                        Destroy(objectToDestroy);
+
                     }
 
-                    Destroy(gameObject);
+                        armParent.SetActive(false);
                 }
             }
         }
