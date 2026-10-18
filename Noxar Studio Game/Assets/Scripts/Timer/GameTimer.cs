@@ -85,7 +85,7 @@ public class GameTimer : MonoBehaviour
 
     public void ResetTimer()
     {
-        timeRemaining = 40f;
+        timeRemaining = 140f;
         timerFinished = false;
         timerRunning = true;
 
