@@ -11,6 +11,7 @@ public class TapImage : MonoBehaviour
     private int tapCount = 0;
     public bool lastIngredient = false;
     public GameObject fridgeOpen;
+    public AudioSource tapSFX; // Reference to the AudioSource component for tap sound effect
 
 
     private void Start()
@@ -43,10 +44,15 @@ public class TapImage : MonoBehaviour
                 tapCount++;
 
                 Debug.Log("Ingredient taps: " + tapCount);
+                if (tapSFX != null)
+                    {
+                        tapSFX.Play();
+                    }
 
                 // Require two taps before spawning the next ingredient.
                 if (tapCount >= 2)
                 {
+
                     if (lastIngredient)
                     {
                         Debug.Log("Last ingredient tapped twice.");

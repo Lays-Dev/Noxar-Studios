@@ -10,6 +10,10 @@ public class TapSprite : MonoBehaviour
     public GameObject currency;
     public Button EndDay;
 
+    // SFX
+
+    public AudioSource galicoTalkSFX;
+
     // Tracks whether the patron's order has been taken.
     public static bool patronHasOrdered = false;
 
@@ -35,7 +39,12 @@ public class TapSprite : MonoBehaviour
             if (hit.collider != null &&
                 hit.collider.gameObject == gameObject)
             {
+                // SFX HERE
                 Debug.Log("Patron was tapped!");
+                if (galicoTalkSFX != null)
+                {
+                    galicoTalkSFX.Play();
+                }
 
                 // LEVEL 2: PATRON 2
                 if (LevelManager.level2Unlocked)
