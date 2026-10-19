@@ -1660,6 +1660,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 561216823}
     m_Modifications:
+    - target: {fileID: 836699868717459729, guid: 2e7a2b0bdad12b240a475df0ff3643a1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 119
+      objectReference: {fileID: 0}
+    - target: {fileID: 836699868717459729, guid: 2e7a2b0bdad12b240a475df0ff3643a1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324736993543307517, guid: 2e7a2b0bdad12b240a475df0ff3643a1, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 472
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324736993543307517, guid: 2e7a2b0bdad12b240a475df0ff3643a1, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 234
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324736993543307517, guid: 2e7a2b0bdad12b240a475df0ff3643a1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 536
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324736993543307517, guid: 2e7a2b0bdad12b240a475df0ff3643a1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -120
+      objectReference: {fileID: 0}
     - target: {fileID: 3872206643310561793, guid: 2e7a2b0bdad12b240a475df0ff3643a1, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1740,13 +1764,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6338705448628738350, guid: 2e7a2b0bdad12b240a475df0ff3643a1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -9163760087868325276, guid: ce0e28987ae80114fab4083621947739, type: 3}
+    - target: {fileID: 7866691214376902784, guid: 2e7a2b0bdad12b240a475df0ff3643a1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8692131669989845538, guid: 2e7a2b0bdad12b240a475df0ff3643a1, type: 3}
       propertyPath: m_Name
       value: Gathering Normal
       objectReference: {fileID: 0}
     - target: {fileID: 8692131669989845538, guid: 2e7a2b0bdad12b240a475df0ff3643a1, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
