@@ -19,6 +19,7 @@ public class TapSprite : MonoBehaviour
 
     // Tracks whether Patron 2's order has been taken.
     public static bool level2OrderTaken = false;
+    public static float currencyAmount = 0f;
 
     private void Update()
     {
@@ -110,6 +111,8 @@ public class TapSprite : MonoBehaviour
 
         if (currency != null)
             currency.SetActive(true);
+            currencyAmount += 10f;
+            Debug.Log("Currency amount: " + currencyAmount);
 
         patronHasOrdered = false;
 

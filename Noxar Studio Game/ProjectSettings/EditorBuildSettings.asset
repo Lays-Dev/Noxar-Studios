@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Kitchen Blockout.unity
     guid: 750b5e31bd060f04588e33823a48fa62
   - enabled: 1
+    path: Assets/Scenes/Level 2 Instructions.unity
+    guid: 8a300b85e349a1a4b8651bd42fbd17d2
+  - enabled: 1
     path: Assets/Scenes/Level2.unity
     guid: 94d6906cf1376e441946fda7ea0f4918
   m_configObjects:

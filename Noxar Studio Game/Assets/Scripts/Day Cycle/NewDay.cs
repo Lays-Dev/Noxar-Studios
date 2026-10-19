@@ -85,7 +85,7 @@ public void StartNewDay()
     // Choose which scene to load.
     if (LevelManager.level2Unlocked)
     {
-        SceneManager.LoadScene("Level2");
+        SceneManager.LoadScene("Level 2 Instructions");
     }
     else
     {
