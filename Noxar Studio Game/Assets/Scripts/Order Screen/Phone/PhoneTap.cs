@@ -1,3 +1,4 @@
+
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -14,17 +15,31 @@ public class PhoneTap : MonoBehaviour
     [Header("Order")]
     public GameObject phoneOrder;
 
-    // Temporary bool
+    [Header("Level 2 Phone Order")]
+    public GameObject johnnyNPC;
+    public GameObject johnnyOrder;
+    public GameObject johnnyDish;
+    public GameObject johnnyCurrency;
+
     private bool ringStopped = false;
+
+    private void Start()
+    {
+        // Hide Johnny only if the phone order was already taken.
+        if (TapSprite.phoneOrderTaken)
+        {
+            HideJohnny();
+        }
+    }
 
     private void Update()
     {
-
-        // Play the looping ring while the patron is calling
+        // Play the looping ring while the patron is calling.
         if (patronCalling && !ringStopped)
         {
-            if (!audioSource.isPlaying ||
-                audioSource.clip != phoneRingingSFX)
+            if (audioSource != null &&
+                (!audioSource.isPlaying ||
+                 audioSource.clip != phoneRingingSFX))
             {
                 audioSource.clip = phoneRingingSFX;
                 audioSource.loop = true;
@@ -32,55 +47,79 @@ public class PhoneTap : MonoBehaviour
             }
         }
 
-
-        // Check if a touchscreen is available
+        // Check for mobile touch input.
         if (Touchscreen.current == null)
             return;
 
-        // Detect a new tap
-        if (Touchscreen.current.primaryTouch.press.wasPressedThisFrame)
+        if (!Touchscreen.current.primaryTouch.press.wasPressedThisFrame)
+            return;
+
+        Vector2 touchPosition =
+            Touchscreen.current.primaryTouch.position.ReadValue();
+
+        Vector3 worldPosition =
+            Camera.main.ScreenToWorldPoint(touchPosition);
+
+        RaycastHit2D hit = Physics2D.Raycast(
+            worldPosition,
+            Vector2.zero
+        );
+
+        // Only continue if the phone was tapped.
+        if (hit.collider == null ||
+            hit.collider.gameObject != gameObject)
+            return;
+
+        Debug.Log("Phone tapped!");
+
+        // Only answer if the phone is ringing.
+        if (patronCalling)
         {
-            // Get the tap position on the screen
-            Vector2 touchPosition =
-                Touchscreen.current.primaryTouch.position.ReadValue();
-
-            // Convert the screen position to world position
-            Vector3 worldPosition =
-                Camera.main.ScreenToWorldPoint(touchPosition);
-
-            // Check if the tap hits the phone
-            RaycastHit2D hit = Physics2D.Raycast(
-                worldPosition,
-                Vector2.zero
-            );
-
-            if (hit.collider != null &&
-                hit.collider.gameObject == gameObject)
+            // Stop the ringing sound.
+            if (audioSource != null)
             {
-                Debug.Log("Phone tapped!");
-                 // Stop the ringing sound
-                if (patronCalling)
-                {
-                    audioSource.Stop();
-                    audioSource.loop = false;
-                    ringStopped = true;
-
-                    phoneOrder.SetActive(true);
-                    patronCalling = false;
-
-                    TapSprite.patronHasOrdered = true;
-                }
-
-                // Play the normal phone tap sound
-                audioSource.clip = phoneTapSFX;
-                audioSource.Play();
+                audioSource.Stop();
+                audioSource.loop = false;
             }
+
+            ringStopped = true;
+            patronCalling = false;
+
+            // Show the next phone order.
+            if (phoneOrder != null)
+                phoneOrder.SetActive(true);
+
+            // Mark the phone order as taken.
+            TapSprite.phoneOrderTaken = true;
+            TapSprite.patronHasOrdered = true;
+
+            // Hide Johnny's previous order objects.
+            HideJohnny();
+
+            Debug.Log("Phone order answered!");
         }
 
-        // Reset so the ring can play on the next call
-        if (!patronCalling)
+        // Play the phone tap sound.
+        if (audioSource != null && phoneTapSFX != null)
         {
-            ringStopped = false;
+            audioSource.PlayOneShot(phoneTapSFX);
         }
+    }
+
+    private void HideJohnny()
+    {
+        if (johnnyNPC != null)
+            johnnyNPC.SetActive(false);
+
+        if (johnnyOrder != null)
+            johnnyOrder.SetActive(false);
+
+        if (johnnyDish != null)
+            johnnyDish.SetActive(false);
+
+        if (johnnyCurrency != null)
+            johnnyCurrency.SetActive(false);
+
+        Debug.Log("Johnny's previous order objects are hidden.");
     }
 }

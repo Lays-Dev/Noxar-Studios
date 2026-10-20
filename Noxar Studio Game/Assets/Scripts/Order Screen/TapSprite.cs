@@ -27,6 +27,7 @@ public class TapSprite : MonoBehaviour
     public static bool level2OrderTaken = false;
 
     public static float currencyAmount = 0f;
+    public static bool phoneOrderTaken = false;
 
     private void Start()
     {
@@ -164,6 +165,7 @@ public class TapSprite : MonoBehaviour
         // MORE ORDERS REMAIN: ring the phone.
         if (phoneTap != null)
         {
+            TapSprite.phoneOrderTaken = false;
             phoneTap.patronCalling = true;
         }
         else
