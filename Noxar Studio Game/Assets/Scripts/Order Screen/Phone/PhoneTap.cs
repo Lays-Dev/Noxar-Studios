@@ -11,6 +11,9 @@ public class PhoneTap : MonoBehaviour
     public AudioClip phoneTapSFX;
     public AudioClip phoneRingingSFX;
 
+    [Header("Order")]
+    public GameObject phoneOrder;
+
     // Temporary bool
     private bool ringStopped = false;
 
@@ -54,12 +57,15 @@ public class PhoneTap : MonoBehaviour
             if (hit.collider != null &&
                 hit.collider.gameObject == gameObject)
             {
+                Debug.Log("Phone tapped!");
                  // Stop the ringing sound
                 if (patronCalling)
                 {
                     audioSource.Stop();
                     audioSource.loop = false;
                     ringStopped = true;
+
+                    phoneOrder.SetActive(true);
                 }
 
                 // Play the normal phone tap sound

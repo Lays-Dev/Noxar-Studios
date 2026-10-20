@@ -66,6 +66,7 @@ public class TapSprite : MonoBehaviour
                              GrillingUIManager.grillingCompleted)
                     {
                         ServeDish();
+                        //PhoneTap.patronCalling = true;
                     }
                     else
                     {
