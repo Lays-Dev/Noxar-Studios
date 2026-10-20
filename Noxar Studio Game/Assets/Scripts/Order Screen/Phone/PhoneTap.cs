@@ -66,6 +66,9 @@ public class PhoneTap : MonoBehaviour
                     ringStopped = true;
 
                     phoneOrder.SetActive(true);
+                    patronCalling = false;
+
+                    TapSprite.patronHasOrdered = true;
                 }
 
                 // Play the normal phone tap sound

@@ -1240,7 +1240,9 @@ MonoBehaviour:
   dish: {fileID: 653322855}
   currency: {fileID: 1500915612}
   EndDay: {fileID: 1028332102}
+  phoneTap: {fileID: 0}
   galicoTalkSFX: {fileID: 458487236}
+  isFinalOrder: 1
 --- !u!61 &458487233
 BoxCollider2D:
   m_ObjectHideFlags: 0
