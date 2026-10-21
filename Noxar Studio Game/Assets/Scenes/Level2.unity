@@ -600,7 +600,7 @@ SpriteRenderer:
   m_SortingLayerID: 1753435913
   m_SortingLayer: 2
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: fa1d766619abe6d4084ee154f3e9f2db, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9b82628e26deac24c9d3d01710c36454, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -894,10 +894,6 @@ MonoBehaviour:
   phoneTap: {fileID: 751253212}
   galicoTalkSFX: {fileID: 211574113}
   isFinalOrder: 0
-  johnnyNPC: {fileID: 0}
-  johnnyOrder: {fileID: 0}
-  johnnyDish: {fileID: 0}
-  johnnyCurrency: {fileID: 0}
 --- !u!61 &211574111
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1641,10 +1637,6 @@ MonoBehaviour:
   phoneTap: {fileID: 0}
   galicoTalkSFX: {fileID: 0}
   isFinalOrder: 0
-  johnnyNPC: {fileID: 0}
-  johnnyOrder: {fileID: 0}
-  johnnyDish: {fileID: 0}
-  johnnyCurrency: {fileID: 0}
 --- !u!61 &458487233
 BoxCollider2D:
   m_ObjectHideFlags: 0
