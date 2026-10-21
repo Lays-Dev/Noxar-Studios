@@ -894,10 +894,6 @@ MonoBehaviour:
   phoneTap: {fileID: 751253212}
   galicoTalkSFX: {fileID: 211574113}
   isFinalOrder: 0
-  johnnyNPC: {fileID: 0}
-  johnnyOrder: {fileID: 0}
-  johnnyDish: {fileID: 0}
-  johnnyCurrency: {fileID: 0}
 --- !u!61 &211574111
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1641,10 +1637,6 @@ MonoBehaviour:
   phoneTap: {fileID: 0}
   galicoTalkSFX: {fileID: 0}
   isFinalOrder: 0
-  johnnyNPC: {fileID: 0}
-  johnnyOrder: {fileID: 0}
-  johnnyDish: {fileID: 0}
-  johnnyCurrency: {fileID: 0}
 --- !u!61 &458487233
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2598,7 +2590,7 @@ MonoBehaviour:
   patronCalling: 0
   audioSource: {fileID: 751253211}
   phoneTapSFX: {fileID: 8300000, guid: 7b5dab23d9f1573428385be283ef1cfe, type: 3}
-  phoneRingingSFX: {fileID: 8300000, guid: 188faa5981bf1094194b533a488b28ab, type: 3}
+  phoneRingingSFX: {fileID: 8300000, guid: 0ac07857723d4ee489a5f65e4d744fd0, type: 3}
   phoneOrder: {fileID: 1993017874}
   johnnyNPC: {fileID: 211574106}
   johnnyOrder: {fileID: 1417213372}

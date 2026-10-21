@@ -1,0 +1,1378 @@
+fileFormatVersion: 2
+guid: 4efc0db59b256db4fb66985c08a49c03
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4291763723752074408
+    second: 01._Phone_Ringing_Sprite_Sheet_0
+  - first:
+      213: -763281785745609852
+    second: 01._Phone_Ringing_Sprite_Sheet_1
+  - first:
+      213: 3184124525186016380
+    second: 01._Phone_Ringing_Sprite_Sheet_2
+  - first:
+      213: 5235117750941136851
+    second: 01._Phone_Ringing_Sprite_Sheet_3
+  - first:
+      213: -6148148828407600143
+    second: 01._Phone_Ringing_Sprite_Sheet_4
+  - first:
+      213: -6419493063435484732
+    second: 01._Phone_Ringing_Sprite_Sheet_5
+  - first:
+      213: 1437173791954037853
+    second: 01._Phone_Ringing_Sprite_Sheet_6
+  - first:
+      213: 6210575376902772759
+    second: 01._Phone_Ringing_Sprite_Sheet_7
+  - first:
+      213: 1498638338301339889
+    second: 01._Phone_Ringing_Sprite_Sheet_8
+  - first:
+      213: -1285592494169310266
+    second: 01._Phone_Ringing_Sprite_Sheet_9
+  - first:
+      213: 95515448985272071
+    second: 01._Phone_Ringing_Sprite_Sheet_10
+  - first:
+      213: -8285943954145143941
+    second: 01._Phone_Ringing_Sprite_Sheet_11
+  - first:
+      213: -192244095648417507
+    second: 01._Phone_Ringing_Sprite_Sheet_12
+  - first:
+      213: -917257808819644429
+    second: 01._Phone_Ringing_Sprite_Sheet_13
+  - first:
+      213: 4172132171213944614
+    second: 01._Phone_Ringing_Sprite_Sheet_14
+  - first:
+      213: 7260812462032059864
+    second: 01._Phone_Ringing_Sprite_Sheet_15
+  - first:
+      213: -5934444182985942549
+    second: 01._Phone_Ringing_Sprite_Sheet_16
+  - first:
+      213: -5279723975317680672
+    second: 01._Phone_Ringing_Sprite_Sheet_17
+  - first:
+      213: 180675110771819879
+    second: 01._Phone_Ringing_Sprite_Sheet_18
+  - first:
+      213: 9037517345961574583
+    second: 01._Phone_Ringing_Sprite_Sheet_19
+  - first:
+      213: -5402650006551858991
+    second: 01._Phone_Ringing_Sprite_Sheet_20
+  - first:
+      213: -8614573989594378990
+    second: 01._Phone_Ringing_Sprite_Sheet_21
+  - first:
+      213: 1775386608001123819
+    second: 01._Phone_Ringing_Sprite_Sheet_22
+  - first:
+      213: -1860713111117157493
+    second: 01._Phone_Ringing_Sprite_Sheet_23
+  - first:
+      213: 5103391561317887239
+    second: 01._Phone_Ringing_Sprite_Sheet_24
+  - first:
+      213: 2652013009949077538
+    second: 01._Phone_Ringing_Sprite_Sheet_25
+  - first:
+      213: -3659499068062514257
+    second: 01._Phone_Ringing_Sprite_Sheet_26
+  - first:
+      213: 3783559359559743581
+    second: 01._Phone_Ringing_Sprite_Sheet_27
+  - first:
+      213: 7954349641563102988
+    second: 01._Phone_Ringing_Sprite_Sheet_28
+  - first:
+      213: 1505966087220784458
+    second: 01._Phone_Ringing_Sprite_Sheet_29
+  - first:
+      213: -7217259076789854975
+    second: 01._Phone_Ringing_Sprite_Sheet_30
+  - first:
+      213: -1950797142862728986
+    second: 01._Phone_Ringing_Sprite_Sheet_31
+  - first:
+      213: 7376480245981924845
+    second: 01._Phone_Ringing_Sprite_Sheet_32
+  - first:
+      213: -7003030186716714052
+    second: 01._Phone_Ringing_Sprite_Sheet_33
+  - first:
+      213: 5603834683819834929
+    second: 01._Phone_Ringing_Sprite_Sheet_34
+  - first:
+      213: 46421200697454959
+    second: 01._Phone_Ringing_Sprite_Sheet_35
+  - first:
+      213: 3925326626892801989
+    second: 01._Phone_Ringing_Sprite_Sheet_36
+  - first:
+      213: -1786733404957562978
+    second: 01._Phone_Ringing_Sprite_Sheet_37
+  - first:
+      213: -4415507825984027511
+    second: 01._Phone_Ringing_Sprite_Sheet_38
+  - first:
+      213: 4447774913632828351
+    second: 01._Phone_Ringing_Sprite_Sheet_39
+  - first:
+      213: 624086794036837756
+    second: 01._Phone_Ringing_Sprite_Sheet_40
+  - first:
+      213: 1056463755235488131
+    second: 01._Phone_Ringing_Sprite_Sheet_41
+  - first:
+      213: 6396424141102005535
+    second: 01._Phone_Ringing_Sprite_Sheet_42
+  - first:
+      213: 2470588053063480182
+    second: 01._Phone_Ringing_Sprite_Sheet_43
+  - first:
+      213: 8626449851954832385
+    second: 01._Phone_Ringing_Sprite_Sheet_44
+  - first:
+      213: -7603405414236296276
+    second: 01._Phone_Ringing_Sprite_Sheet_45
+  - first:
+      213: 7624133815455085762
+    second: 01._Phone_Ringing_Sprite_Sheet_46
+  - first:
+      213: -4474774630386633378
+    second: 01._Phone_Ringing_Sprite_Sheet_47
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1986
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ac66263e586f8b30800000000000000
+      internalID: 4291763723752074408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 1981
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48b6b1982474865f0800000000000000
+      internalID: -763281785745609852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 1965
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c74625ca268403c20800000000000000
+      internalID: 3184124525186016380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 2475
+        y: 1958
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d7303e8bdfd6a840800000000000000
+      internalID: 5235117750941136851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 2984
+        y: 1949
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fbe78007336daaa0800000000000000
+      internalID: -6148148828407600143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 1597
+        width: 413
+        height: 317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c108db121169e6a0800000000000000
+      internalID: -6419493063435484732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 1077
+        width: 414
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5cebe503fdd1f310800000000000000
+      internalID: 1437173791954037853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 1453
+        width: 78
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 718d3177665603650800000000000000
+      internalID: 6210575376902772759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 1598
+        width: 413
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f8ab39e0ab3cc410800000000000000
+      internalID: 1498638338301339889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 1078
+        width: 440
+        height: 416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cb312b1078a82ee0800000000000000
+      internalID: -1285592494169310266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 1487
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70f34577bc6535100800000000000000
+      internalID: 95515448985272071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 1600
+        width: 413
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b731260efd9620d80800000000000000
+      internalID: -8285943954145143941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 1080
+        width: 413
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d19b5b87303055df0800000000000000
+      internalID: -192244095648417507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1426
+        y: 1470
+        width: 92
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f71ad9f1ee3543f0800000000000000
+      internalID: -917257808819644429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1597
+        y: 1598
+        width: 413
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 627bf25da1466e930800000000000000
+      internalID: 4172132171213944614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1601
+        y: 1078
+        width: 414
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dd762cf67693c460800000000000000
+      internalID: 7260812462032059864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1978
+        y: 1435
+        width: 59
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be95db5257e94ada0800000000000000
+      internalID: -5934444182985942549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 2110
+        y: 1600
+        width: 413
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ed83138407aab6b0800000000000000
+      internalID: -5279723975317680672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 2114
+        y: 1080
+        width: 413
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7650f455e03e18200800000000000000
+      internalID: 180675110771819879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 2545
+        y: 1444
+        width: 513
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b08871b426bb6d70800000000000000
+      internalID: 9037517345961574583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 2465
+        y: 1435
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d0f6b9817ee505b0800000000000000
+      internalID: -5402650006551858991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 2960
+        y: 1398
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21d48e23992e27880800000000000000
+      internalID: -8614573989594378990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 1478
+        y: 1259
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be584eca6b073a810800000000000000
+      internalID: 1775386608001123819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 2622
+        y: 1083
+        width: 413
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8b23fea84b6d26e0800000000000000
+      internalID: -1860713111117157493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 584
+        width: 487
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70d241a0693e2d640800000000000000
+      internalID: 5103391561317887239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 586
+        width: 477
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 220bab518c7ddc420800000000000000
+      internalID: 2652013009949077538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 972
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa3c2488cf8d63dc0800000000000000
+      internalID: -3659499068062514257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 1518
+        y: 584
+        width: 488
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d58b92df037e18430800000000000000
+      internalID: 3783559359559743581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 967
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0fdf94ead6836e60800000000000000
+      internalID: 7954349641563102988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 2036
+        y: 586
+        width: 483
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4d64986d2446e410800000000000000
+      internalID: 1505966087220784458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 2541
+        y: 430
+        width: 513
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10d1afbbb1527db90800000000000000
+      internalID: -7217259076789854975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 2980
+        y: 935
+        width: 82
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e0f1d695506de4e0800000000000000
+      internalID: -1950797142862728986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 951
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ded407293b58e5660800000000000000
+      internalID: 7376480245981924845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 2471
+        y: 944
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbba969162d30de90800000000000000
+      internalID: -7003030186716714052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 583
+        width: 413
+        height: 317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13e381d54f1d4cd40800000000000000
+      internalID: 5603834683819834929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 439
+        width: 78
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f617e9906dbe4a000800000000000000
+      internalID: 46421200697454959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 64
+        width: 440
+        height: 416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c7e35715cf897630800000000000000
+      internalID: 3925326626892801989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 473
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e972e294f6f3437e0800000000000000
+      internalID: -1786733404957562978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 456
+        width: 92
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 984c341d607f8b2c0800000000000000
+      internalID: -4415507825984027511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 1974
+        y: 421
+        width: 59
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbb7af7f7bba9bd30800000000000000
+      internalID: 4447774913632828351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 63
+        width: 414
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7df393f1a339a800800000000000000
+      internalID: 624086794036837756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 66
+        width: 413
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 381f2e0203059ae00800000000000000
+      internalID: 1056463755235488131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 1597
+        y: 64
+        width: 414
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1d3e1bddd9a4c850800000000000000
+      internalID: 6396424141102005535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 2110
+        y: 66
+        width: 413
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6733c299eba494220800000000000000
+      internalID: 2470588053063480182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 2461
+        y: 421
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1042d7a7f6e47b770800000000000000
+      internalID: 8626449851954832385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 2956
+        y: 384
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cabe9217f074b7690800000000000000
+      internalID: -7603405414236296276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 1474
+        y: 245
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c47e3e8f4d5ec960800000000000000
+      internalID: 7624133815455085762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01._Phone_Ringing_Sprite_Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 2618
+        y: 69
+        width: 413
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e55ffd99e2866e1c0800000000000000
+      internalID: -4474774630386633378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      01._Phone_Ringing_Sprite_Sheet_0: 4291763723752074408
+      01._Phone_Ringing_Sprite_Sheet_1: -763281785745609852
+      01._Phone_Ringing_Sprite_Sheet_10: 95515448985272071
+      01._Phone_Ringing_Sprite_Sheet_11: -8285943954145143941
+      01._Phone_Ringing_Sprite_Sheet_12: -192244095648417507
+      01._Phone_Ringing_Sprite_Sheet_13: -917257808819644429
+      01._Phone_Ringing_Sprite_Sheet_14: 4172132171213944614
+      01._Phone_Ringing_Sprite_Sheet_15: 7260812462032059864
+      01._Phone_Ringing_Sprite_Sheet_16: -5934444182985942549
+      01._Phone_Ringing_Sprite_Sheet_17: -5279723975317680672
+      01._Phone_Ringing_Sprite_Sheet_18: 180675110771819879
+      01._Phone_Ringing_Sprite_Sheet_19: 9037517345961574583
+      01._Phone_Ringing_Sprite_Sheet_2: 3184124525186016380
+      01._Phone_Ringing_Sprite_Sheet_20: -5402650006551858991
+      01._Phone_Ringing_Sprite_Sheet_21: -8614573989594378990
+      01._Phone_Ringing_Sprite_Sheet_22: 1775386608001123819
+      01._Phone_Ringing_Sprite_Sheet_23: -1860713111117157493
+      01._Phone_Ringing_Sprite_Sheet_24: 5103391561317887239
+      01._Phone_Ringing_Sprite_Sheet_25: 2652013009949077538
+      01._Phone_Ringing_Sprite_Sheet_26: -3659499068062514257
+      01._Phone_Ringing_Sprite_Sheet_27: 3783559359559743581
+      01._Phone_Ringing_Sprite_Sheet_28: 7954349641563102988
+      01._Phone_Ringing_Sprite_Sheet_29: 1505966087220784458
+      01._Phone_Ringing_Sprite_Sheet_3: 5235117750941136851
+      01._Phone_Ringing_Sprite_Sheet_30: -7217259076789854975
+      01._Phone_Ringing_Sprite_Sheet_31: -1950797142862728986
+      01._Phone_Ringing_Sprite_Sheet_32: 7376480245981924845
+      01._Phone_Ringing_Sprite_Sheet_33: -7003030186716714052
+      01._Phone_Ringing_Sprite_Sheet_34: 5603834683819834929
+      01._Phone_Ringing_Sprite_Sheet_35: 46421200697454959
+      01._Phone_Ringing_Sprite_Sheet_36: 3925326626892801989
+      01._Phone_Ringing_Sprite_Sheet_37: -1786733404957562978
+      01._Phone_Ringing_Sprite_Sheet_38: -4415507825984027511
+      01._Phone_Ringing_Sprite_Sheet_39: 4447774913632828351
+      01._Phone_Ringing_Sprite_Sheet_4: -6148148828407600143
+      01._Phone_Ringing_Sprite_Sheet_40: 624086794036837756
+      01._Phone_Ringing_Sprite_Sheet_41: 1056463755235488131
+      01._Phone_Ringing_Sprite_Sheet_42: 6396424141102005535
+      01._Phone_Ringing_Sprite_Sheet_43: 2470588053063480182
+      01._Phone_Ringing_Sprite_Sheet_44: 8626449851954832385
+      01._Phone_Ringing_Sprite_Sheet_45: -7603405414236296276
+      01._Phone_Ringing_Sprite_Sheet_46: 7624133815455085762
+      01._Phone_Ringing_Sprite_Sheet_47: -4474774630386633378
+      01._Phone_Ringing_Sprite_Sheet_5: -6419493063435484732
+      01._Phone_Ringing_Sprite_Sheet_6: 1437173791954037853
+      01._Phone_Ringing_Sprite_Sheet_7: 6210575376902772759
+      01._Phone_Ringing_Sprite_Sheet_8: 1498638338301339889
+      01._Phone_Ringing_Sprite_Sheet_9: -1285592494169310266
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
