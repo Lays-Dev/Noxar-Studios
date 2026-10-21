@@ -28,6 +28,11 @@ public class TapSprite : MonoBehaviour
 
     public static float currencyAmount = 0f;
     public static bool phoneOrderTaken = false;
+    // Remembers that the Level 2 phone order was completed.
+    public static bool level2PhoneOrderCompleted = false;
+    // Tracks gathering and grilling specifically for the phone order.
+    public static bool phoneOrderGatherComplete = false;
+    public static bool phoneOrderGrillComplete = false;
 
     private void Start()
     {
@@ -78,7 +83,6 @@ public class TapSprite : MonoBehaviour
             if (!level2OrderTaken)
             {
                 TakeOrder();
-                level2OrderTaken = true;
 
                 Debug.Log("Patron 2 order taken!");
             }
@@ -118,6 +122,11 @@ public class TapSprite : MonoBehaviour
     {
         patronHasOrdered = true;
 
+        if (LevelManager.level2Unlocked)
+        {
+            level2OrderTaken = true;
+        }
+
         if (image != null)
         {
             image.SetActive(true);
@@ -148,6 +157,17 @@ public class TapSprite : MonoBehaviour
 
         // The current order is now complete.
         patronHasOrdered = false;
+        // Remember that the Level 2 phone order was completed.
+        if (LevelManager.level2Unlocked &&
+            level2OrderTaken &&
+            TapSprite.phoneOrderTaken &&
+            EndMinigame.gatherComplete &&
+            GrillingUIManager.grillingCompleted)
+        {
+            level2PhoneOrderCompleted = true;
+
+            Debug.Log("Level 2 phone order completed successfully!");
+        }
 
         Debug.Log("Dish served!");
 

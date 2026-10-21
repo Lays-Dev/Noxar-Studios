@@ -89,9 +89,27 @@ public class PhoneTap : MonoBehaviour
             if (phoneOrder != null)
                 phoneOrder.SetActive(true);
 
-            // Mark the phone order as taken.
-            TapSprite.phoneOrderTaken = true;
-            TapSprite.patronHasOrdered = true;
+ 
+                // Mark the phone order as taken.
+                TapSprite.phoneOrderTaken = true;
+                TapSprite.patronHasOrdered = true;
+                // Reset and restart the timer for the phone order.
+                if (GameTimer.Instance != null)
+                {
+                    GameTimer.Instance.ResetTimer();
+                    Debug.Log("Phone order taken! Timer reset and restarted.");
+                }
+
+                // Reset the previous order's minigame progress.
+                EndMinigame.gatherComplete = false;
+                GrillingUIManager.grillingCompleted = false;
+
+                // Reset the phone-specific completion flags.
+                TapSprite.phoneOrderGatherComplete = false;
+                TapSprite.phoneOrderGrillComplete = false;
+
+                Debug.Log("Phone order taken. Gather and grill again!");
+
 
             // Hide Johnny's previous order objects.
             HideJohnny();
