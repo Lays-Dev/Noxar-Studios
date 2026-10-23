@@ -1,3 +1,4 @@
+
 using UnityEngine;
 using TMPro;
 
@@ -11,16 +12,31 @@ public class DeliveryGameManager : MonoBehaviour
     public int asteroidsRequired = 20;
     private int safeAsteroids = 0;
 
+    [Header("Asteroid Spawner")]
+    public AsteroidSpawner asteroidSpawner;
+
     [Header("UI")]
     public TMP_Text hitsText;
     public TMP_Text asteroidsText;
     public GameObject winPanel;
     public GameObject losePanel;
 
+    [Header("Hit Sound Effect")]
+    public AudioSource audioSource;
+    public AudioClip hitSFX;
+
+    public AudioClip loseSFX;
+    
     private bool gameEnded = false;
 
     private void Start()
     {
+        // Find the spawner automatically if one isn't assigned.
+        if (asteroidSpawner == null)
+        {
+            asteroidSpawner = FindFirstObjectByType<AsteroidSpawner>();
+        }
+
         if (winPanel != null)
             winPanel.SetActive(false);
 
@@ -39,6 +55,12 @@ public class DeliveryGameManager : MonoBehaviour
 
         currentHits++;
 
+        // Play the hit sound effect once.
+        if (audioSource != null && hitSFX != null)
+        {
+            audioSource.PlayOneShot(hitSFX);
+        }
+
         Debug.Log("Player hit! Current hits: " + currentHits);
 
         UpdateHitsText();
@@ -49,7 +71,7 @@ public class DeliveryGameManager : MonoBehaviour
         }
     }
 
-    // Called only when an asteroid safely leaves the screen.
+    // Called when an asteroid safely leaves the screen.
     public void RegisterSafeAsteroid()
     {
         if (gameEnded)
@@ -91,6 +113,9 @@ public class DeliveryGameManager : MonoBehaviour
 
         gameEnded = true;
 
+        // Stop spawning and remove all remaining asteroids.
+        StopAndClearAsteroids();
+
         if (winPanel != null)
             winPanel.SetActive(true);
 
@@ -102,11 +127,26 @@ public class DeliveryGameManager : MonoBehaviour
         if (gameEnded)
             return;
 
+        // Set this first so no more hits or deliveries can count.
         gameEnded = true;
 
+        // Stop spawning and destroy every remaining asteroid.
+        StopAndClearAsteroids();
+
         if (losePanel != null)
+        {
+            audioSource.PlayOneShot(loseSFX);
             losePanel.SetActive(true);
+        }
 
         Debug.Log("Delivery failed! You lose!");
+    }
+
+    private void StopAndClearAsteroids()
+    {
+        if (asteroidSpawner != null)
+        {
+            asteroidSpawner.StopSpawningAndClearAsteroids();
+        }
     }
 }
