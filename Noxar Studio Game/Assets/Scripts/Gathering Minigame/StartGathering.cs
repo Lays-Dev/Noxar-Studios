@@ -5,6 +5,13 @@ public class StartGathering : MonoBehaviour
 {
     public GameObject canvas;
     public GameObject player;
+    public GameObject starsGathering;
+
+    private void Awake()
+    {
+        if (TapSprite.patronHasOrdered)
+            starsGathering.SetActive(true);
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {

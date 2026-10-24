@@ -5,6 +5,7 @@ public class StartGrilling : MonoBehaviour
 {
     public GameObject grillingCanvas;
     public GameObject player;
+    public GameObject starsGrilling;
 
     private bool grillingStarted = false;
 
@@ -12,6 +13,12 @@ public class StartGrilling : MonoBehaviour
     {
         // Keep the grilling minigame hidden initially.
         grillingCanvas.SetActive(false);
+        if (LevelManager.level2Unlocked &&
+            TapSprite.level2OrderTaken &&
+            EndMinigame.gatherComplete)
+        {
+            starsGrilling.SetActive(true);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
