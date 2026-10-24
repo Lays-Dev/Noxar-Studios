@@ -207,6 +207,7 @@ GameObject:
   - component: {fileID: 236699502}
   - component: {fileID: 236699501}
   - component: {fileID: 236699504}
+  - component: {fileID: 236699505}
   m_Layer: 5
   m_Name: OrderCounterButton
   m_TagString: Untagged
@@ -425,6 +426,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &236699505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236699499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6ce8d3c5d47c0a49bc6d7f067fa8a74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deliverButton: {fileID: 236699499}
+  pulseSpeed: 2
+  pulseAmount: 0.1
 --- !u!1 &251893117 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8692131669989845538, guid: 2e7a2b0bdad12b240a475df0ff3643a1, type: 3}
