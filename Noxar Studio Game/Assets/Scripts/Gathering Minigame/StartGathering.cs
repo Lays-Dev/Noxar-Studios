@@ -22,6 +22,7 @@ public class StartGathering : MonoBehaviour
         {
             canvas.SetActive(true);
             player.SetActive(true);
+            starsGathering.SetActive(false);
         }
         else
         {

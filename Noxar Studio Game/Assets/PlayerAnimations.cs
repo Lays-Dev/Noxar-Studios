@@ -25,7 +25,7 @@ public class PlayerAnimations : MonoBehaviour
         //yInput is used to determine if the player is moving up or down, it can be named anything
         float yInput = playerMovement.MoveInput.y;
 
-        Debug.Log("Y Input: " + yInput);
+       // Debug.Log("Y Input: " + yInput);
 
         // Checks if the player is moving up
         if (yInput > 0.1f)
