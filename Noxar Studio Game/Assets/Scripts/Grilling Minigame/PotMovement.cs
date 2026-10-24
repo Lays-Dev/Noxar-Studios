@@ -18,6 +18,9 @@ public class PotMovement : MonoBehaviour,
     // Temperture change rate per second
     public float valueChangeRate = 5f;
 
+    [Header("Audio")]
+    [SerializeField] private AudioSource moveAudio;
+
     [Header("Pot UI Bar")]
     public Image potBarFill;
 
@@ -117,6 +120,9 @@ public class PotMovement : MonoBehaviour,
 
         // Stop checking the previous burner while dragging
         currentBurner = null;
+
+        if (moveAudio !=null)
+            moveAudio.Play();
     }
 
     // Called while the player drags the image
@@ -144,6 +150,9 @@ public class PotMovement : MonoBehaviour,
 
         // Allow the image to receive raycasts again
         canvasGroup.blocksRaycasts = true;
+
+        if (moveAudio != null)
+        moveAudio.Stop();
 
        
 
