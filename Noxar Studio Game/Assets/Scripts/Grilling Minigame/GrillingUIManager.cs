@@ -1,4 +1,4 @@
-
+/*
 using UnityEngine;
 
 public class GrillingUIManager : MonoBehaviour
@@ -37,3 +37,4 @@ public class GrillingUIManager : MonoBehaviour
     }
 
 }
+*/

@@ -1,4 +1,4 @@
-
+/*
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -48,3 +48,4 @@ public class EndMinigame : MonoBehaviour
         openFridgeImage.SetActive(true);
     }
 }
+*/

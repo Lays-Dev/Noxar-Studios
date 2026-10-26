@@ -32,6 +32,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Delivery.unity
     guid: 06cc4e1d9ba686d45b43bf24febd3efa
+  - enabled: 1
+    path: Assets/Scenes/Random Gen/Counter.unity
+    guid: 29d36c517b2170a49815a78f012ac669
+  - enabled: 1
+    path: Assets/Scenes/Random Gen/Kitchen.unity
+    guid: fc80918c0ea81f04a9ec91a685a377ec
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 30f8c154109d3244c85f4e6f6dbcd7ba, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -1,4 +1,4 @@
-
+/*
 using UnityEngine;
 
 public class StartGrilling : MonoBehaviour
@@ -61,3 +61,4 @@ public class StartGrilling : MonoBehaviour
         }
     }
 }
+*/

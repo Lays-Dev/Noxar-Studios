@@ -1,4 +1,4 @@
-using UnityEngine;
+/*using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class StartGathering : MonoBehaviour
@@ -30,3 +30,4 @@ public class StartGathering : MonoBehaviour
         }
     }
 }
+*/

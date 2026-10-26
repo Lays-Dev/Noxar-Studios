@@ -1,4 +1,4 @@
-
+/*
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -141,3 +141,4 @@ public class PhoneTap : MonoBehaviour
         Debug.Log("Johnny's previous order objects are hidden.");
     }
 }
+*/

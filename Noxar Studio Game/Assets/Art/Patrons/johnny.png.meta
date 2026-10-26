@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9a5a1c8877b7d734c98a7a24492173aa
+guid: c0203472783d31f439d44e708465689d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 884536864492384696
-    second: PlasmaSoupSparkles_0
+      213: 4465311806538734082
+    second: johnny_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -97,7 +97,33 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -113,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlasmaSoupSparkles_0
+      name: johnny_0
       rect:
         serializedVersion: 2
-        x: 31
-        y: 0
-        width: 186
-        height: 253
+        x: 18
+        y: 11
+        width: 474
+        height: 964
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8b17ece7791864c00800000000000000
-      internalID: 884536864492384696
+      spriteID: 20a59180e69f7fd30800000000000000
+      internalID: 4465311806538734082
       vertices: []
       indices: 
       edges: []
@@ -148,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      PlasmaSoupSparkles_0: 884536864492384696
+      johnny_0: 4465311806538734082
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

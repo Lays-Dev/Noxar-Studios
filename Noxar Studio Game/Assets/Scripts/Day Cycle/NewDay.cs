@@ -1,5 +1,5 @@
 
-using UnityEngine;
+/*using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class NewDay : MonoBehaviour
@@ -137,4 +137,4 @@ public void StartNewDay()
         Debug.Log("Johnny active: " +
             (johnny != null && johnny.activeSelf));
     }
-}
+}*/
