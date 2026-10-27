@@ -142,72 +142,7 @@ public class KitchenManager : MonoBehaviour
                levelManager.completedMinigames.Contains(station.minigame);
     }
 
-    private void InteractWithStation()
-    {
-        if (minigameOpen || nearbyStation == null)
-            return;
-
-        if (!IsStationRequired(nearbyStation))
-        {
-            Debug.Log("This station is not required for this order.");
-            UpdateInteractButton();
-            return;
-        }
-
-        if (IsStationCompleted(nearbyStation))
-        {
-            Debug.Log("This minigame is already complete.");
-            UpdateInteractButton();
-            return;
-        }
-
-        currentMinigame = nearbyStation.minigame;
-
-        if (currentMinigame.minigamePrefab == null)
-        {
-            Debug.LogError(
-                "No prefab assigned for " + currentMinigame.minigameName
-            );
-            return;
-        }
-
-        currentMinigameObject = Instantiate(
-            currentMinigame.minigamePrefab,
-            minigameContainer,
-            false
-        );
-
-        MinigamePanel panel =
-            currentMinigameObject.GetComponent<MinigamePanel>();
-
-        if (panel == null)
-        {
-            Debug.LogError(
-                "The minigame prefab needs a MinigamePanel component."
-            );
-
-            Destroy(currentMinigameObject);
-            currentMinigameObject = null;
-            currentMinigame = null;
-            return;
-        }
-
-        panel.Setup(this);
-
-        minigameOpen = true;
-
-        if (minigamePanel != null)
-            minigamePanel.SetActive(true);
-
-        if (playerMovementScript != null)
-            playerMovementScript.enabled = false;
-
-        if (interactButton != null)
-            interactButton.gameObject.SetActive(false);
-
-        if (returnToCounterButton != null)
-            returnToCounterButton.interactable = false;
-    }
+    
 
     public void CompleteCurrentMinigame()
     {
@@ -269,43 +204,63 @@ public class KitchenManager : MonoBehaviour
         SceneManager.LoadScene("Counter");
     }
 
-    private void OnDestroy()
+private void OnDestroy()
+{
+    // Remove the Return to Counter button listener.
+    if (returnToCounterButton != null)
     {
-        if (interactButton != null)
-            interactButton.onClick.RemoveListener(InteractWithStation);
-
-        if (returnToCounterButton != null)
-            returnToCounterButton.onClick.RemoveListener(ReturnToCounter);
+        returnToCounterButton.onClick.RemoveListener(ReturnToCounter);
     }
+}
 
-    private void OpenMinigame(KitchenMinigameStation station)
+
+private void OpenMinigame(KitchenMinigameStation station)
 {
     currentMinigame = station.minigame;
 
     if (currentMinigame == null ||
         currentMinigame.minigamePrefab == null)
     {
-        Debug.LogError(
-            "The station's MinigameData or Minigame Prefab is missing!"
-        );
+        Debug.LogError("Minigame data or prefab is missing!");
         return;
     }
 
-    // Create the minigame UI inside the Minigame Container.
-    currentMinigameObject = Instantiate(
-        currentMinigame.minigamePrefab,
-        minigameContainer,
-        false
-    );
+    GameObject prefab = currentMinigame.minigamePrefab;
 
-    // Find the MinigamePanel script on the prefab.
+    // Check whether the prefab has its own Canvas.
+    Canvas prefabCanvas = prefab.GetComponentInChildren<Canvas>(true);
+
+    if (prefabCanvas != null)
+    {
+        // A prefab with its own Canvas is spawned independently.
+        currentMinigameObject = Instantiate(prefab);
+    }
+    else
+    {
+        // A UI prefab without its own Canvas goes inside the container.
+        if (minigameContainer == null)
+        {
+            Debug.LogError("Minigame Container is not assigned!");
+            return;
+        }
+
+        currentMinigameObject = Instantiate(
+            prefab,
+            minigameContainer,
+            false
+        );
+    }
+
+    currentMinigameObject.SetActive(true);
+
+    // Find the completion controller on the prefab root.
     MinigamePanel panel =
         currentMinigameObject.GetComponent<MinigamePanel>();
 
     if (panel == null)
     {
         Debug.LogError(
-            "The minigame prefab needs a MinigamePanel component."
+            "The minigame prefab root needs a MinigamePanel component!"
         );
 
         Destroy(currentMinigameObject);
@@ -318,15 +273,16 @@ public class KitchenManager : MonoBehaviour
 
     minigameOpen = true;
 
-
-    // Stop the player moving while playing the minigame.
     if (playerMovementScript != null)
         playerMovementScript.enabled = false;
 
-    // Hide the old Interact button, if one was assigned.
     if (interactButton != null)
         interactButton.gameObject.SetActive(false);
 
+    if (returnToCounterButton != null)
+        returnToCounterButton.interactable = false;
+
     Debug.Log("Opened minigame: " + currentMinigame.minigameName);
 }
+
 }

@@ -303,6 +303,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   potValue: 70
   valueChangeRate: 5
+  moveAudio: {fileID: 0}
   potBarFill: {fileID: 6600530954559464497}
   grillingPanel: {fileID: 4769175698735008567}
   loseScreen: {fileID: 6290959302682325657}
@@ -1083,6 +1084,7 @@ GameObject:
   - component: {fileID: 6903892482043103386}
   - component: {fileID: 1565186143135766075}
   - component: {fileID: 574681311147706982}
+  - component: {fileID: 5206565214307038999}
   m_Layer: 5
   m_Name: Grilling Canvas
   m_TagString: Untagged
@@ -1148,12 +1150,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -1176,6 +1178,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &5206565214307038999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6489086439972893419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c982a053772c7d8438ac74d6caca0b0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  completeButton: {fileID: 6199064061342530838}
 --- !u!1 &6629366664383094932
 GameObject:
   m_ObjectHideFlags: 0

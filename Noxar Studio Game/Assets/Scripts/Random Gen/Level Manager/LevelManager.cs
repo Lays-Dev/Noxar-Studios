@@ -11,9 +11,12 @@ public class LevelManager : MonoBehaviour
     public DishData[] availableDishes;
     public MinigameData[] availableMinigames;
 
-    [Header("Level Settings")]
+    [Header("Random Minigame Count")]
     [Min(1)]
-    public int minigamesPerLevel = 2;
+    public int minMinigames = 1;
+
+    [Min(1)]
+    public int maxMinigames = 2;
 
     [Header("Current Level")]
     public int currentLevel = 1;
@@ -108,11 +111,14 @@ public class LevelManager : MonoBehaviour
             return;
         }
 
-        // Don't request more unique minigames than are available.
-        int amount = Mathf.Min(
-            Mathf.Max(1, minigamesPerLevel),
-            available.Count
-        );
+        // Randomly choose how many minigames this level requires.
+        // Never choose more minigames than are available.
+        int minimum = Mathf.Clamp(minMinigames, 1, available.Count);
+        int maximum = Mathf.Clamp(maxMinigames, minimum, available.Count);
+
+        int amount = Random.Range(minimum, maximum + 1);
+
+        Debug.Log("Randomly selected " + amount + " minigames for this level.");
 
         // Randomly select minigames without duplicates.
         for (int i = 0; i < amount; i++)

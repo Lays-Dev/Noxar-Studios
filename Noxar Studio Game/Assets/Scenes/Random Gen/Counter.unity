@@ -953,7 +953,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &492420711
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1229,6 +1229,11 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!1 &680325423 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5466248786634886412, guid: 02ae87591d8ba1a40966f1250579d263, type: 3}
+  m_PrefabInstance: {fileID: 5872786864001519726}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &688141509
 GameObject:
   m_ObjectHideFlags: 0
@@ -1246,7 +1251,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &688141510
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1455,6 +1460,32 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1026677987781572857, guid: 02ae87591d8ba1a40966f1250579d263, type: 3}
   m_PrefabInstance: {fileID: 5872786864001519726}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &760586104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 680325423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 4
+  m_Spacing: 10
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 1
+  m_ChildControlHeight: 1
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &841501194
 GameObject:
   m_ObjectHideFlags: 0
@@ -2503,6 +2534,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 996afd1a1cc959147afc29a84b2cd774, type: 2}
   availableMinigames:
   - {fileID: 11400000, guid: 3d53e9a40c17a3c4e9225b0b22ee6e3d, type: 2}
+  - {fileID: 11400000, guid: 4a4ee2b7a6482424db7ab7421f9fc8cb, type: 2}
   minigamesPerLevel: 2
   currentLevel: 1
   currentPatron: {fileID: 0}
@@ -3089,7 +3121,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5466248786634886412, guid: 02ae87591d8ba1a40966f1250579d263, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 760586104}
   m_SourcePrefab: {fileID: 100100000, guid: 02ae87591d8ba1a40966f1250579d263, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

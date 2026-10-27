@@ -9,24 +9,42 @@ public class KitchenMinigameStation : MonoBehaviour
     [Header("Station Visibility")]
     public GameObject stationObject;
 
-    private KitchenManager kitchenManager;
+[Header("Manager Reference")]
+public KitchenManager kitchenManager;
 
-    private void Start()
+private void Start()
+{
+    
+    if (kitchenManager == null)
     {
-        kitchenManager = FindFirstObjectByType<KitchenManager>();
-
-        if (minigame == null)
-        {
-            Debug.LogError(
-                name + ": Assign a MinigameData asset!",
-                this
-            );
-            return;
-        }
-
-        // Check whether this minigame was selected for the order.
-        UpdateStationVisibility();
+        Debug.LogError(
+            "KitchenMinigameStation: No active KitchenManager found!",
+            this
+        );
     }
+    else
+    {
+        Debug.Log(
+            "KitchenManager successfully connected to " + gameObject.name,
+            this
+        );
+    }
+
+    // Check the station's minigame assignment.
+    if (minigame == null)
+    {
+        Debug.LogError(
+            gameObject.name + " has no MinigameData assigned!",
+            this
+        );
+    }
+    else
+    {
+        Debug.Log("Station uses minigame: " + minigame.minigameName);
+    }
+
+    UpdateStationVisibility();
+}
 
 
 public void UpdateStationVisibility()
@@ -52,16 +70,35 @@ public void UpdateStationVisibility()
 }
 
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (!other.CompareTag("Player"))
-            return;
+private void OnTriggerEnter2D(Collider2D other)
+{
+    Debug.Log(
+        name + " detected object: " + other.name,
+        this
+    );
 
-        if (kitchenManager != null)
-        {
-            kitchenManager.PlayerEnteredStation(this);
-        }
+    Debug.Log(
+        "Object tag: " + other.tag,
+        this
+    );
+
+    if (!other.CompareTag("Player"))
+    {
+        Debug.Log("Detected object is not tagged Player.");
+        return;
     }
+
+    Debug.Log("PLAYER ENTERED STATION: " + name);
+
+    if (kitchenManager != null)
+    {
+        kitchenManager.PlayerEnteredStation(this);
+    }
+    else
+    {
+        Debug.LogError("KitchenManager reference is missing!", this);
+    }
+}
 
     private void OnTriggerExit2D(Collider2D other)
     {

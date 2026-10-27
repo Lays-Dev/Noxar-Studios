@@ -20,8 +20,8 @@ public class GlorboArm : MonoBehaviour
         // Move the arm up and down repeatedly.
         // Rotate back and forth
         float rotation = Mathf.Lerp(
-            -28f,
-            45f,
+            -30f,
+            30f,
             Mathf.PingPong(Time.time * moveSpeed, 1f)
         );
 

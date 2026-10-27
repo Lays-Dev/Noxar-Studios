@@ -539,7 +539,7 @@ GameObject:
   m_Component:
   - component: {fileID: 403292326}
   m_Layer: 5
-  m_Name: Gathering Minigame
+  m_Name: MinigameContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1281,7 +1281,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.19101018}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1291,7 +1291,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 19.2, y: 3.24}
+  m_Size: {x: 19.2, y: 2.8579798}
   m_EdgeRadius: 0
 --- !u!212 &655915502
 SpriteRenderer:
@@ -1512,11 +1512,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3031461473306451845, guid: 1149231a1a3fadc498a4d8aecddd1c61, type: 3}
       propertyPath: m_Size.y
-      value: 6.298467
+      value: 2.1009455
       objectReference: {fileID: 0}
     - target: {fileID: 3031461473306451845, guid: 1149231a1a3fadc498a4d8aecddd1c61, type: 3}
       propertyPath: m_Offset.y
-      value: -0.12576652
+      value: -2.2245274
       objectReference: {fileID: 0}
     - target: {fileID: 3752542917646829334, guid: 1149231a1a3fadc498a4d8aecddd1c61, type: 3}
       propertyPath: moveAction
@@ -2136,93 +2136,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1612716875
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1612716876}
-  - component: {fileID: 1612716877}
-  m_Layer: 0
-  m_Name: Building Minigame
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1612716876
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1612716875}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.59883344, y: -3.8163347, z: 0}
-  m_LocalScale: {x: 1.2302339, y: 1.2321055, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1612716877
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1612716875}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 2018794897
-  m_SortingLayer: 1
-  m_SortingOrder: 4
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.46666667, g: 0.8666667, b: 0.46666667, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1651778412
 GameObject:
   m_ObjectHideFlags: 0
@@ -2234,7 +2147,7 @@ GameObject:
   - component: {fileID: 1651778414}
   - component: {fileID: 1651778413}
   m_Layer: 0
-  m_Name: Kitchen Manager
+  m_Name: KitchenManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2421,8 +2334,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a574a4bea29f01944ae47cb82d40d2b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minigame: {fileID: 0}
+  minigame: {fileID: 11400000, guid: 4a4ee2b7a6482424db7ab7421f9fc8cb, type: 2}
   stationObject: {fileID: 1602023053}
+  kitchenManager: {fileID: 1651778413}
 --- !u!1 &1841123957
 GameObject:
   m_ObjectHideFlags: 0
@@ -2785,6 +2699,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minigame: {fileID: 11400000, guid: 3d53e9a40c17a3c4e9225b0b22ee6e3d, type: 2}
   stationObject: {fileID: 1841123957}
+  kitchenManager: {fileID: 1651778413}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -2797,7 +2712,6 @@ SceneRoots:
   - {fileID: 237045463}
   - {fileID: 655915500}
   - {fileID: 531166230}
-  - {fileID: 1612716876}
   - {fileID: 1593876890}
   - {fileID: 1110050183}
   - {fileID: 1360208570}

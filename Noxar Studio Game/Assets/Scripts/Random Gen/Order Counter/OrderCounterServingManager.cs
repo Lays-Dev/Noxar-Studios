@@ -138,7 +138,7 @@ public class OrderCounterServingManager : MonoBehaviour
         if (amountEarnedText != null)
         {
             amountEarnedText.text =
-                "Earned: $" + amountEarned;
+                "+" + amountEarned + " Galaxy Cubes!";
         }
 
         // Display the End Day panel.

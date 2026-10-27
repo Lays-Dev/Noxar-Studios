@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98f4b66ac054c9a4498eb74fbb840cd4, type: 3}
+  m_Name: Grilling
+  m_EditorClassIdentifier: 
+  minigameName: Grilling
+  minigameID: Grilling
+  minigameIcon: {fileID: 21300000, guid: ffe918c54d015c9439c63ae08d951bc0, type: 3}
+  minigamePrefab: {fileID: 6489086439972893419, guid: e1e157debbf756f4fa1f2401e238289f, type: 3}
+  availableForRandomSelection: 1
