@@ -45,6 +45,14 @@ public class LevelManager : MonoBehaviour
     public bool levelFinished = false;
     public bool dishServed = false;
 
+    [Header("Level Timer")]
+    public float secondsPerMinigame = 30f;
+    public float timeRemaining = 0f;
+    public string loseSceneName = "Lose";
+
+    private bool timerRunning = false;
+    private bool loseSceneLoading = false;
+
   
 
     private void Awake()
@@ -73,6 +81,49 @@ public class LevelManager : MonoBehaviour
     }
 
     
+
+    private void Update()
+    {
+        // Do nothing if the timer is not running.
+        if (!timerRunning)
+            return;
+
+        // Count down using real time.
+        timeRemaining -= Time.deltaTime;
+
+        // Stop at zero.
+        if (timeRemaining <= 0f)
+        {
+            timeRemaining = 0f;
+            timerRunning = false;
+
+            // Load the Lose scene only once.
+            if (!loseSceneLoading)
+            {
+                loseSceneLoading = true;
+                SceneManager.LoadScene(loseSceneName);
+            }
+        }
+    }
+
+    public void StartLevelTimer()
+    {
+        // Give the player 30 seconds for every required minigame.
+        timeRemaining =
+            requiredMinigames.Count * secondsPerMinigame;
+
+        loseSceneLoading = false;
+        timerRunning = true;
+
+        Debug.Log("Timer started: " + timeRemaining + " seconds");
+    }
+
+    public void PauseLevelTimer()
+    {
+        timerRunning = false;
+
+        Debug.Log("Dish served! Level timer paused at " + timeRemaining + " seconds.");
+    }
 
     
 public void GenerateLevel()
@@ -193,6 +244,9 @@ public void GenerateLevel()
     {
         Debug.Log("Required minigame: " + minigame.minigameName);
     }
+
+    // Start the timer for the new level.
+    StartLevelTimer();
 }
 
 

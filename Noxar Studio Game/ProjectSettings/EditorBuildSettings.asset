@@ -14,22 +14,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 18bf75db16259014d8f1e1c87f96fdac
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Instructions.unity
     guid: 91dc02425105d494d84d0c84136413a3
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Order Counter Blockout.unity
     guid: 74e9dbc5c16b7cd42a8515b381fcd72d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Kitchen Blockout.unity
     guid: 750b5e31bd060f04588e33823a48fa62
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level 2 Instructions.unity
     guid: 8a300b85e349a1a4b8651bd42fbd17d2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level2.unity
     guid: 94d6906cf1376e441946fda7ea0f4918
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Delivery.unity
     guid: 06cc4e1d9ba686d45b43bf24febd3efa
   - enabled: 1
@@ -38,6 +38,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Random Gen/Kitchen.unity
     guid: fc80918c0ea81f04a9ec91a685a377ec
+  - enabled: 1
+    path: Assets/Scenes/Random Gen/Lose.unity
+    guid: 146b5608d605a244da8837db8d333498
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 30f8c154109d3244c85f4e6f6dbcd7ba, type: 3}
   m_UseUCBPForAssetBundles: 0

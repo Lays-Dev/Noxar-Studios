@@ -85,6 +85,7 @@ public class OrderCounterServingManager : MonoBehaviour
 
     public void ServeDish()
     {
+        
         if (levelManager == null)
             return;
 
@@ -106,6 +107,7 @@ public class OrderCounterServingManager : MonoBehaviour
 
         // Mark the dish as served.
         levelManager.dishServed = true;
+        LevelManager.Instance.PauseLevelTimer();
 
         // Make sure the level is marked as finished.
         levelManager.FinishLevel();
