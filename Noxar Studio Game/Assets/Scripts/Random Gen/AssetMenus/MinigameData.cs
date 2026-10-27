@@ -15,6 +15,10 @@ public class MinigameData : ScriptableObject
     public string minigameName;
     public string minigameID;
 
+    [Header("Order Ticket Icons")]
+    [Tooltip("Icon representing this minigame on the order ticket.")]
+    public Sprite minigameIcon;
+
     [Header("Minigame UI")]
     [Tooltip("Prefab containing this minigame's UI.")]
     public GameObject minigamePrefab;

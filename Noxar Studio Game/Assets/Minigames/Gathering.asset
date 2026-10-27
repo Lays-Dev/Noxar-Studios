@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minigameName: Gathering
   minigameID: Gathering
-  minigamePrefab: {fileID: 8692131669989845538, guid: 2e7a2b0bdad12b240a475df0ff3643a1, type: 3}
+  minigameIcon: {fileID: 21300000, guid: 6a03126529aec2e48a43342abbe1128b, type: 3}
+  minigamePrefab: {fileID: 4930567904874061474, guid: ce1e0ec2901c60e4dae6bbdadbce46c1, type: 3}
   availableForRandomSelection: 1
