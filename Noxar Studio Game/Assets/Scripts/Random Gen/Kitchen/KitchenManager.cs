@@ -1,22 +1,32 @@
+
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class KitchenManager : MonoBehaviour
 {
-    [Header("Minigame Display")]
+    [Header("Minigame UI")]
     public Transform minigameContainer;
+    public GameObject minigamePanel;
+    public Button interactButton;
 
-    [Header("Progress UI")]
-    public TMP_Text progressText;
+    [Header("Navigation")]
     public Button returnToCounterButton;
 
+    [Header("Optional UI")]
+    public TMP_Text progressText;
+
+    [Header("Player")]
+    public Behaviour playerMovementScript;
+
     private LevelManager levelManager;
+    private KitchenMinigameStation nearbyStation;
 
     private MinigameData currentMinigame;
     private GameObject currentMinigameObject;
 
-    private bool allComplete = false;
+    private bool minigameOpen = false;
 
     private void Start()
     {
@@ -24,16 +34,14 @@ public class KitchenManager : MonoBehaviour
 
         if (levelManager == null)
         {
-            Debug.LogError(
-                "KitchenManager: LevelManager was not found!"
-            );
+            Debug.LogError("KitchenManager: LevelManager was not found!");
             return;
         }
 
         if (!levelManager.orderTaken)
         {
             Debug.LogWarning(
-                "KitchenManager: Take the patron's order first."
+                "Take the patron's order before entering the kitchen."
             );
             return;
         }
@@ -46,108 +54,175 @@ public class KitchenManager : MonoBehaviour
             return;
         }
 
+        if (minigamePanel != null)
+            minigamePanel.SetActive(false);
+
+        if (interactButton != null)
+        {
+            interactButton.onClick.RemoveListener(InteractWithStation);
+            interactButton.onClick.AddListener(InteractWithStation);
+            interactButton.gameObject.SetActive(false);
+        }
+
         if (returnToCounterButton != null)
         {
-            returnToCounterButton.onClick.RemoveListener(
-                ReturnToCounter
-            );
-
-            returnToCounterButton.onClick.AddListener(
-                ReturnToCounter
-            );
-
-            // The player cannot leave until all minigames are done.
-            returnToCounterButton.interactable = false;
+            returnToCounterButton.onClick.RemoveListener(ReturnToCounter);
+            returnToCounterButton.onClick.AddListener(ReturnToCounter);
+            returnToCounterButton.interactable = true;
         }
 
-        ShowNextMinigame();
+        UpdateProgress();
     }
 
-    public void CompleteCurrentMinigame()
+    public void PlayerEnteredStation(KitchenMinigameStation station)
     {
-        if (levelManager == null || currentMinigame == null)
+        if (minigameOpen || levelManager == null || station == null)
             return;
 
-        // Record this minigame as complete.
-        levelManager.MarkMinigameComplete(currentMinigame);
-
-        // Remove the current minigame UI.
-        if (currentMinigameObject != null)
-        {
-            Destroy(currentMinigameObject);
-            currentMinigameObject = null;
-        }
-
-        currentMinigame = null;
-
-        // Display the next incomplete minigame.
-        ShowNextMinigame();
+        nearbyStation = station;
+        UpdateInteractButton();
     }
 
-    private void ShowNextMinigame()
+    public void PlayerLeftStation(KitchenMinigameStation station)
     {
-        currentMinigame = null;
+        if (nearbyStation != station)
+            return;
 
-        // Find the next required minigame not yet completed.
-        foreach (MinigameData minigame in
-                 levelManager.requiredMinigames)
+        nearbyStation = null;
+        UpdateInteractButton();
+    }
+
+    private void UpdateInteractButton()
+    {
+        if (interactButton == null)
+            return;
+
+        bool canInteract =
+            !minigameOpen &&
+            nearbyStation != null &&
+            IsStationRequired(nearbyStation) &&
+            !IsStationCompleted(nearbyStation);
+
+        interactButton.gameObject.SetActive(canInteract);
+    }
+
+    private bool IsStationRequired(KitchenMinigameStation station)
+    {
+        return station != null &&
+               station.minigame != null &&
+               levelManager.requiredMinigames.Contains(station.minigame);
+    }
+
+    private bool IsStationCompleted(KitchenMinigameStation station)
+    {
+        return station != null &&
+               station.minigame != null &&
+               levelManager.completedMinigames.Contains(station.minigame);
+    }
+
+    private void InteractWithStation()
+    {
+        if (minigameOpen || nearbyStation == null)
+            return;
+
+        if (!IsStationRequired(nearbyStation))
         {
-            if (minigame == null)
-                continue;
-
-            if (levelManager.completedMinigames.Contains(minigame))
-                continue;
-
-            currentMinigame = minigame;
-            break;
-        }
-
-        // No incomplete minigames remain.
-        if (currentMinigame == null)
-        {
-            FinishMinigames();
+            Debug.Log("This station is not required for this order.");
+            UpdateInteractButton();
             return;
         }
 
-        UpdateProgressText();
+        if (IsStationCompleted(nearbyStation))
+        {
+            Debug.Log("This minigame is already complete.");
+            UpdateInteractButton();
+            return;
+        }
 
-        // Check that the selected minigame has a prefab.
+        currentMinigame = nearbyStation.minigame;
+
         if (currentMinigame.minigamePrefab == null)
         {
             Debug.LogError(
-                "No prefab assigned for minigame: " +
-                currentMinigame.minigameName
+                "No prefab assigned for " + currentMinigame.minigameName
             );
             return;
         }
 
-        // Create the selected minigame UI inside the container.
         currentMinigameObject = Instantiate(
             currentMinigame.minigamePrefab,
             minigameContainer,
             false
         );
 
-        // Connect its Complete button to this manager.
         MinigamePanel panel =
             currentMinigameObject.GetComponent<MinigamePanel>();
 
-        if (panel != null)
-        {
-            panel.Setup(this);
-        }
-        else
+        if (panel == null)
         {
             Debug.LogError(
-                "The prefab needs a MinigamePanel component: " +
-                currentMinigame.minigameName
+                "The minigame prefab needs a MinigamePanel component."
             );
+
+            Destroy(currentMinigameObject);
+            currentMinigameObject = null;
+            currentMinigame = null;
+            return;
+        }
+
+        panel.Setup(this);
+
+        minigameOpen = true;
+
+        if (minigamePanel != null)
+            minigamePanel.SetActive(true);
+
+        if (playerMovementScript != null)
+            playerMovementScript.enabled = false;
+
+        if (interactButton != null)
+            interactButton.gameObject.SetActive(false);
+
+        if (returnToCounterButton != null)
+            returnToCounterButton.interactable = false;
+    }
+
+    public void CompleteCurrentMinigame()
+    {
+        if (!minigameOpen || currentMinigame == null)
+            return;
+
+        levelManager.MarkMinigameComplete(currentMinigame);
+
+        if (currentMinigameObject != null)
+            Destroy(currentMinigameObject);
+
+        currentMinigameObject = null;
+        currentMinigame = null;
+        minigameOpen = false;
+
+        if (minigamePanel != null)
+            minigamePanel.SetActive(false);
+
+        if (playerMovementScript != null)
+            playerMovementScript.enabled = true;
+
+        if (returnToCounterButton != null)
+            returnToCounterButton.interactable = true;
+
+        UpdateProgress();
+        UpdateInteractButton();
+
+        if (levelManager.AreAllMinigamesComplete())
+        {
+            levelManager.FinishLevel();
+            Debug.Log("All required minigames are complete!");
         }
     }
 
-    private void UpdateProgressText()
+    private void UpdateProgress()
     {
-        if (progressText == null)
+        if (progressText == null || levelManager == null)
             return;
 
         progressText.text =
@@ -157,48 +232,21 @@ public class KitchenManager : MonoBehaviour
             levelManager.requiredMinigames.Count;
     }
 
-    private void FinishMinigames()
-    {
-        allComplete = levelManager.AreAllMinigamesComplete();
-
-        UpdateProgressText();
-
-        if (allComplete)
-        {
-            levelManager.FinishLevel();
-
-            if (progressText != null)
-                progressText.text = "All minigames complete!";
-
-            if (returnToCounterButton != null)
-                returnToCounterButton.interactable = true;
-
-            Debug.Log(
-                "All required minigames are complete!"
-            );
-        }
-    }
-
     public void ReturnToCounter()
     {
-        if (!allComplete)
-        {
-            Debug.Log(
-                "Complete all minigames before returning."
-            );
+        // Do not leave while actively playing a minigame.
+        if (minigameOpen)
             return;
-        }
 
-        levelManager.ReturnToCounter();
+        SceneManager.LoadScene("OrderCounter");
     }
 
     private void OnDestroy()
     {
+        if (interactButton != null)
+            interactButton.onClick.RemoveListener(InteractWithStation);
+
         if (returnToCounterButton != null)
-        {
-            returnToCounterButton.onClick.RemoveListener(
-                ReturnToCounter
-            );
-        }
+            returnToCounterButton.onClick.RemoveListener(ReturnToCounter);
     }
 }
