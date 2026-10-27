@@ -529,6 +529,41 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &403292325
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 403292326}
+  m_Layer: 5
+  m_Name: Gathering Minigame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &403292326
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403292325}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1360208570}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &505873802
 GameObject:
   m_ObjectHideFlags: 0
@@ -965,7 +1000,7 @@ RectTransform:
   m_GameObject: {fileID: 585373740}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.6482, y: 2.4723, z: 1.6482}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1201178016}
@@ -973,7 +1008,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -797, y: 463}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &585373742
@@ -1040,8 +1075,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -7568600338004489012, guid: 1805e91ed5db09b46a8b6c76588ee0e3, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1477,11 +1512,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3031461473306451845, guid: 1149231a1a3fadc498a4d8aecddd1c61, type: 3}
       propertyPath: m_Size.y
-      value: 2.8336112
+      value: 6.298467
       objectReference: {fileID: 0}
     - target: {fileID: 3031461473306451845, guid: 1149231a1a3fadc498a4d8aecddd1c61, type: 3}
       propertyPath: m_Offset.y
-      value: -1.8581945
+      value: -0.12576652
       objectReference: {fileID: 0}
     - target: {fileID: 3752542917646829334, guid: 1149231a1a3fadc498a4d8aecddd1c61, type: 3}
       propertyPath: moveAction
@@ -1567,6 +1602,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 19a94f93987a97741852ac4a58a24715, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1110050186 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 737804908720191360, guid: 1149231a1a3fadc498a4d8aecddd1c61, type: 3}
+  m_PrefabInstance: {fileID: 1110050183}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110050184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1201178015
@@ -1907,6 +1953,7 @@ RectTransform:
   m_Children:
   - {fileID: 235494671}
   - {fileID: 585373741}
+  - {fileID: 403292326}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2205,12 +2252,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f49312d83a922da4387c23ef6437f6b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minigameContainer: {fileID: 1092823828}
+  minigameContainer: {fileID: 403292326}
   minigamePanel: {fileID: 0}
   interactButton: {fileID: 0}
-  returnToCounterButton: {fileID: 594454060}
+  returnToCounterButton: {fileID: 585373742}
   progressText: {fileID: 237645358}
-  playerMovementScript: {fileID: 0}
+  playerMovementScript: {fileID: 1110050186}
 --- !u!4 &1651778414
 Transform:
   m_ObjectHideFlags: 0

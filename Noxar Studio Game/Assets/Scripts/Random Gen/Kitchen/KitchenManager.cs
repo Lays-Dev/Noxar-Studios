@@ -57,12 +57,6 @@ public class KitchenManager : MonoBehaviour
         if (minigamePanel != null)
             minigamePanel.SetActive(false);
 
-        if (interactButton != null)
-        {
-            interactButton.onClick.RemoveListener(InteractWithStation);
-            interactButton.onClick.AddListener(InteractWithStation);
-            interactButton.gameObject.SetActive(false);
-        }
 
         if (returnToCounterButton != null)
         {
@@ -74,13 +68,30 @@ public class KitchenManager : MonoBehaviour
         UpdateProgress();
     }
 
+
     public void PlayerEnteredStation(KitchenMinigameStation station)
     {
         if (minigameOpen || levelManager == null || station == null)
             return;
 
+        // Check whether this station is required for the current order.
+        if (!IsStationRequired(station))
+        {
+            Debug.Log("This station is not required for the current order.");
+            return;
+        }
+
+        // Do not open a minigame that is already completed.
+        if (IsStationCompleted(station))
+        {
+            Debug.Log("This minigame is already completed.");
+            return;
+        }
+
         nearbyStation = station;
-        UpdateInteractButton();
+
+        // Open the minigame automatically.
+        OpenMinigame(station);
     }
 
     public void PlayerLeftStation(KitchenMinigameStation station)
@@ -238,7 +249,7 @@ public class KitchenManager : MonoBehaviour
         if (minigameOpen)
             return;
 
-        SceneManager.LoadScene("OrderCounter");
+        SceneManager.LoadScene("Counter");
     }
 
     private void OnDestroy()
@@ -249,4 +260,56 @@ public class KitchenManager : MonoBehaviour
         if (returnToCounterButton != null)
             returnToCounterButton.onClick.RemoveListener(ReturnToCounter);
     }
+
+    private void OpenMinigame(KitchenMinigameStation station)
+{
+    currentMinigame = station.minigame;
+
+    if (currentMinigame == null ||
+        currentMinigame.minigamePrefab == null)
+    {
+        Debug.LogError(
+            "The station's MinigameData or Minigame Prefab is missing!"
+        );
+        return;
+    }
+
+    // Create the minigame UI inside the Minigame Container.
+    currentMinigameObject = Instantiate(
+        currentMinigame.minigamePrefab,
+        minigameContainer,
+        false
+    );
+
+    // Find the MinigamePanel script on the prefab.
+    MinigamePanel panel =
+        currentMinigameObject.GetComponent<MinigamePanel>();
+
+    if (panel == null)
+    {
+        Debug.LogError(
+            "The minigame prefab needs a MinigamePanel component."
+        );
+
+        Destroy(currentMinigameObject);
+        currentMinigameObject = null;
+        currentMinigame = null;
+        return;
+    }
+
+    panel.Setup(this);
+
+    minigameOpen = true;
+
+
+    // Stop the player moving while playing the minigame.
+    if (playerMovementScript != null)
+        playerMovementScript.enabled = false;
+
+    // Hide the old Interact button, if one was assigned.
+    if (interactButton != null)
+        interactButton.gameObject.SetActive(false);
+
+    Debug.Log("Opened minigame: " + currentMinigame.minigameName);
+}
 }
