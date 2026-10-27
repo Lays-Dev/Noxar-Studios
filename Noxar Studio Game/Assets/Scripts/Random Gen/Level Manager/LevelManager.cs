@@ -29,6 +29,7 @@ public class LevelManager : MonoBehaviour
     [Header("Order Progress")]
     public bool orderTaken = false;
     public bool levelFinished = false;
+    public bool dishServed = false;
 
     private void Awake()
     {
@@ -85,6 +86,7 @@ public class LevelManager : MonoBehaviour
 
         orderTaken = false;
         levelFinished = false;
+        dishServed = false;
 
         // Collect minigames enabled for random selection.
         List<MinigameData> available = new List<MinigameData>();
@@ -202,6 +204,6 @@ public class LevelManager : MonoBehaviour
 
         GenerateLevel();
 
-        SceneManager.LoadScene("OrderCounter");
+        SceneManager.LoadScene("Counter");
     }
 }

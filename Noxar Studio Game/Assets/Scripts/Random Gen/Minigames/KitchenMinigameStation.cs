@@ -6,55 +6,56 @@ public class KitchenMinigameStation : MonoBehaviour
     [Header("Station Information")]
     public MinigameData minigame;
 
+    [Header("Station Visibility")]
+    public GameObject stationObject;
+
     private KitchenManager kitchenManager;
 
     private void Start()
     {
         kitchenManager = FindFirstObjectByType<KitchenManager>();
 
-        Debug.Log("Station started: " + gameObject.name, this);
-
         if (minigame == null)
         {
             Debug.LogError(
-                gameObject.name + " has no MinigameData assigned!",
+                name + ": Assign a MinigameData asset!",
                 this
             );
-        }
-        else
-        {
-            Debug.Log(
-                gameObject.name + " uses minigame: " +
-                minigame.minigameName,
-                this
-            );
-        }
-
-        if (kitchenManager == null)
-        {
-            Debug.LogError(
-                "No KitchenManager found in the scene!",
-                this
-            );
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        // Log every object entering the trigger, even if it isn't the player.
-        Debug.Log(
-            gameObject.name + " detected: " +
-            other.name + " | Tag: " + other.tag,
-            this
-        );
-
-        if (!other.CompareTag("Player"))
-        {
-            Debug.Log("This object is not tagged Player.");
             return;
         }
 
-        Debug.Log("PLAYER ENTERED STATION: " + gameObject.name);
+        // Check whether this minigame was selected for the order.
+        UpdateStationVisibility();
+    }
+
+
+public void UpdateStationVisibility()
+{
+    if (minigame == null || LevelManager.Instance == null)
+        return;
+
+    // Is this minigame required for the current order?
+    bool isRequired =
+        LevelManager.Instance.requiredMinigames.Contains(minigame);
+
+    // Has this minigame already been completed?
+    bool isCompleted =
+        LevelManager.Instance.completedMinigames.Contains(minigame);
+
+    // Show the station only if it is required and unfinished.
+    bool shouldShow = isRequired && !isCompleted;
+
+    if (stationObject != null)
+    {
+        stationObject.SetActive(shouldShow);
+    }
+}
+
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (!other.CompareTag("Player"))
+            return;
 
         if (kitchenManager != null)
         {
@@ -66,8 +67,6 @@ public class KitchenMinigameStation : MonoBehaviour
     {
         if (!other.CompareTag("Player"))
             return;
-
-        Debug.Log("PLAYER LEFT STATION: " + gameObject.name);
 
         if (kitchenManager != null)
         {

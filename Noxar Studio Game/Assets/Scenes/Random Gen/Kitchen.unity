@@ -2422,6 +2422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minigame: {fileID: 0}
+  stationObject: {fileID: 1602023053}
 --- !u!1 &1841123957
 GameObject:
   m_ObjectHideFlags: 0
@@ -2783,6 +2784,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minigame: {fileID: 11400000, guid: 3d53e9a40c17a3c4e9225b0b22ee6e3d, type: 2}
+  stationObject: {fileID: 1841123957}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

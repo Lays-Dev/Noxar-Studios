@@ -34,8 +34,19 @@ public class KitchenManager : MonoBehaviour
 
         if (levelManager == null)
         {
-            Debug.LogError("KitchenManager: LevelManager was not found!");
+            Debug.LogError("LevelManager was not found!");
             return;
+        }
+
+        // Refresh all station visibility when entering the Kitchen.
+        KitchenMinigameStation[] stations =
+            FindObjectsByType<KitchenMinigameStation>(
+                FindObjectsSortMode.None
+            );
+
+        foreach (KitchenMinigameStation station in stations)
+        {
+            station.UpdateStationVisibility();
         }
 
         if (!levelManager.orderTaken)
@@ -204,6 +215,12 @@ public class KitchenManager : MonoBehaviour
             return;
 
         levelManager.MarkMinigameComplete(currentMinigame);
+
+        // Hide the station whose minigame was just completed.
+        if (nearbyStation != null)
+        {
+            nearbyStation.UpdateStationVisibility();
+        }
 
         if (currentMinigameObject != null)
             Destroy(currentMinigameObject);
