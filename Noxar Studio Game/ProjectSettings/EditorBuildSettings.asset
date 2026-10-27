@@ -41,6 +41,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Random Gen/Lose.unity
     guid: 146b5608d605a244da8837db8d333498
+  - enabled: 1
+    path: Assets/Scenes/Random Gen/Win.unity
+    guid: a100a9f0a4e07744186fd6511758caf5
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 30f8c154109d3244c85f4e6f6dbcd7ba, type: 3}
   m_UseUCBPForAssetBundles: 0

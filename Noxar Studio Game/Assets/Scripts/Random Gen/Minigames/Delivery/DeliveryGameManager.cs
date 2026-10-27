@@ -1,83 +1,58 @@
 
 using UnityEngine;
-using TMPro;
 using UnityEngine.SceneManagement;
 
 public class DeliveryGameManager : MonoBehaviour
 {
-    [Header("Win and Lose")]
-    public int starsNeededToWin = 3;
-    public int maxAsteroidHits = 3;
+    [Header("Hit Settings")]
+    public int maxHits = 3;
+    public int currentHits = 0;
 
-    public string winSceneName = "Win";
+    [Header("Lose Scene")]
     public string loseSceneName = "Lose";
 
-    [Header("UI Counters")]
-    public TMP_Text starCounterText;
-    public TMP_Text hitCounterText;
+    public bool gameEnded = false;
 
-    private int starsCollected = 0;
-    private int asteroidHits = 0;
-    private bool gameEnded = false;
-
-    private void Start()
+    public void RegisterHit()
     {
-        UpdateUI();
-    }
-
-    public void CollectStar()
-    {
+        // Ignore any hits after the game ends.
         if (gameEnded)
             return;
 
-        starsCollected++;
-        UpdateUI();
+        currentHits++;
 
-        Debug.Log("Stars collected: " + starsCollected);
+        Debug.Log("Asteroid hits: " + currentHits);
 
-        if (starsCollected >= starsNeededToWin)
+        // Three hits ends the game.
+        if (currentHits >= maxHits)
         {
             gameEnded = true;
-            Debug.Log("Delivery successful!");
-            SceneManager.LoadScene(winSceneName);
-        }
-    }
-
-    public void RegisterAsteroidHit()
-    {
-        if (gameEnded)
-            return;
-
-        asteroidHits++;
-        UpdateUI();
-
-        Debug.Log("Asteroid hits: " + asteroidHits);
-
-        if (asteroidHits >= maxAsteroidHits)
-        {
-            gameEnded = true;
-            Debug.Log("Delivery failed!");
             SceneManager.LoadScene(loseSceneName);
         }
     }
 
-    private void UpdateUI()
-    {
-        if (starCounterText != null)
-        {
-            starCounterText.text =
-                "Stars: " + starsCollected + " / " + starsNeededToWin;
-        }
+    
+[Header("Star Collection")]
+public int starsCollected = 0;
+public int starsNeeded = 3;
+public string winSceneName = "Win";
 
-        if (hitCounterText != null)
-        {
-            hitCounterText.text =
-                "Hits: " + asteroidHits + " / " + maxAsteroidHits;
-        }
-    }
+public void RegisterStar()
+{
+    // Do nothing if the game has already ended.
+    if (gameEnded)
+        return;
 
-    public bool IsGameEnded()
+    starsCollected++;
+
+    Debug.Log("Stars collected: " + starsCollected);
+
+    // Win when three stars have been collected.
+    if (starsCollected >= starsNeeded)
     {
-        return gameEnded;
+        gameEnded = true;
+        UnityEngine.SceneManagement.SceneManager.LoadScene(winSceneName);
     }
+}
+
 }
