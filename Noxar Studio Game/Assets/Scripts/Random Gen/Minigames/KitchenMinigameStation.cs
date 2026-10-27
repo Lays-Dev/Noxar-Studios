@@ -47,27 +47,44 @@ private void Start()
 }
 
 
+
 public void UpdateStationVisibility()
 {
     if (minigame == null || LevelManager.Instance == null)
         return;
 
+    LevelManager levelManager = LevelManager.Instance;
+
     // Is this minigame required for the current order?
     bool isRequired =
-        LevelManager.Instance.requiredMinigames.Contains(minigame);
+        levelManager.requiredMinigames.Contains(minigame);
 
     // Has this minigame already been completed?
     bool isCompleted =
-        LevelManager.Instance.completedMinigames.Contains(minigame);
+        levelManager.completedMinigames.Contains(minigame);
 
-    // Show the station only if it is required and unfinished.
-    bool shouldShow = isRequired && !isCompleted;
+    // Is this the Delivery minigame?
+    bool isDeliveryMinigame =
+        minigame == levelManager.deliveryMinigame;
+
+    // Delivery must remain locked until the other minigames
+    // are completed.
+    bool deliveryIsLocked =
+        isDeliveryMinigame &&
+        !levelManager.deliveryMinigameUnlocked;
+
+    // Only show a required, unfinished, unlocked station.
+    bool shouldShow =
+        isRequired &&
+        !isCompleted &&
+        !deliveryIsLocked;
 
     if (stationObject != null)
     {
         stationObject.SetActive(shouldShow);
     }
 }
+
 
 
 private void OnTriggerEnter2D(Collider2D other)

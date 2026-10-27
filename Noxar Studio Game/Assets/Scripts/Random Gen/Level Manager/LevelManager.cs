@@ -18,6 +18,17 @@ public class LevelManager : MonoBehaviour
     [Min(1)]
     public int maxMinigames = 2;
 
+    [Header("Phone Patron Special Minigame")]
+    public MinigameData phoneMinigame;
+
+    // Must match the patronName in your Phone PatronData.
+    public string phonePatronName = "Phone";
+
+    [Header("Phone Delivery Minigame")]
+    public MinigameData deliveryMinigame;
+
+    public bool deliveryMinigameUnlocked = false;
+
     [Header("Current Level")]
     public int currentLevel = 1;
     public PatronData currentPatron;
@@ -33,6 +44,8 @@ public class LevelManager : MonoBehaviour
     public bool orderTaken = false;
     public bool levelFinished = false;
     public bool dishServed = false;
+
+  
 
     private void Awake()
     {
@@ -59,68 +72,85 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-    public void GenerateLevel()
+    
+
+    
+public void GenerateLevel()
+{
+    if (availablePatrons == null || availablePatrons.Length == 0 ||
+        availableDishes == null || availableDishes.Length == 0 ||
+        availableMinigames == null || availableMinigames.Length == 0)
     {
-        if (availablePatrons == null ||
-            availablePatrons.Length == 0 ||
-            availableDishes == null ||
-            availableDishes.Length == 0 ||
-            availableMinigames == null ||
-            availableMinigames.Length == 0)
+        Debug.LogError(
+            "LevelManager: Add patrons, dishes, and minigames in the Inspector."
+        );
+        return;
+    }
+
+    // Choose a random patron and dish.
+    currentPatron = availablePatrons[
+        Random.Range(0, availablePatrons.Length)
+    ];
+
+    currentDish = availableDishes[
+        Random.Range(0, availableDishes.Length)
+    ];
+
+    // Reset progress for the new level.
+    requiredMinigames.Clear();
+    completedMinigames.Clear();
+
+    orderTaken = false;
+    levelFinished = false;
+    dishServed = false;
+    deliveryMinigameUnlocked = false;
+
+    // Check whether this is the Phone patron.
+    bool isPhonePatron =
+        currentPatron.patronName == phonePatronName;
+
+    // Add the special minigame first for the Phone patron.
+    if (isPhonePatron)
+    {
+        if (phoneMinigame == null)
         {
             Debug.LogError(
-                "LevelManager: Add patrons, dishes, and minigames in the Inspector."
+                "Phone patron was selected, but Phone Minigame is not assigned!"
             );
             return;
         }
 
-        // Choose a random patron and dish independently.
-        currentPatron = availablePatrons[
-            Random.Range(0, availablePatrons.Length)
-        ];
+        requiredMinigames.Add(phoneMinigame);
+    }
 
-        currentDish = availableDishes[
-            Random.Range(0, availableDishes.Length)
-        ];
+    // Build a list of regular minigames.
+    // Never include the special Phone minigame in random selection.
+    List<MinigameData> available = new List<MinigameData>();
 
-        // Start this level with fresh progress.
-        requiredMinigames.Clear();
-        completedMinigames.Clear();
+    foreach (MinigameData minigame in availableMinigames)
+    {
+        if (minigame == null)
+            continue;
 
-        orderTaken = false;
-        levelFinished = false;
-        dishServed = false;
+        if (!minigame.availableForRandomSelection)
+            continue;
 
-        // Collect minigames enabled for random selection.
-        List<MinigameData> available = new List<MinigameData>();
+        if (minigame == phoneMinigame)
+            continue;
 
-        foreach (MinigameData minigame in availableMinigames)
-        {
-            if (minigame != null &&
-                minigame.availableForRandomSelection)
-            {
-                available.Add(minigame);
-            }
-        }
+        available.Add(minigame);
+    }
 
-        if (available.Count == 0)
-        {
-            Debug.LogError(
-                "LevelManager: No minigames are enabled for random selection."
-            );
-            return;
-        }
-
-        // Randomly choose how many minigames this level requires.
-        // Never choose more minigames than are available.
+    // Choose a random number of regular minigames.
+    // These are additional to the required Phone minigame.
+    if (available.Count > 0)
+    {
         int minimum = Mathf.Clamp(minMinigames, 1, available.Count);
         int maximum = Mathf.Clamp(maxMinigames, minimum, available.Count);
 
         int amount = Random.Range(minimum, maximum + 1);
 
-        Debug.Log("Randomly selected " + amount + " minigames for this level.");
-
-        // Randomly select minigames without duplicates.
+        // Choose regular minigames without duplicates.
         for (int i = 0; i < amount; i++)
         {
             int randomIndex = Random.Range(0, available.Count);
@@ -128,14 +158,43 @@ public class LevelManager : MonoBehaviour
             requiredMinigames.Add(available[randomIndex]);
             available.RemoveAt(randomIndex);
         }
-
-        Debug.Log(
-            "Level " + currentLevel +
-            " generated! Patron: " + currentPatron.patronName +
-            ", Dish: " + currentDish.dishName +
-            ", Minigames: " + requiredMinigames.Count
-        );
     }
+    else if (!isPhonePatron)
+    {
+        Debug.LogError(
+            "No regular minigames are available for this patron!"
+        );
+        return;
+    }
+    // Add Delivery LAST for the Phone patron.
+    if (isPhonePatron)
+    {
+        if (deliveryMinigame == null)
+        {
+            Debug.LogError("Delivery minigame is not assigned!");
+            return;
+        }
+
+        // Make sure Delivery wasn't selected as a regular minigame.
+        requiredMinigames.Remove(deliveryMinigame);
+
+        // Add Delivery as the final required minigame.
+        requiredMinigames.Add(deliveryMinigame);
+    }
+
+    Debug.Log(
+        "Level " + currentLevel +
+        " generated! Patron: " + currentPatron.patronName +
+        ", Dish: " + currentDish.dishName +
+        ", Minigames: " + requiredMinigames.Count
+    );
+
+    foreach (MinigameData minigame in requiredMinigames)
+    {
+        Debug.Log("Required minigame: " + minigame.minigameName);
+    }
+}
+
 
     public void TakeOrder()
     {
@@ -154,25 +213,53 @@ public class LevelManager : MonoBehaviour
     }
 
     public void MarkMinigameComplete(MinigameData minigame)
+{
+    if (minigame == null)
+        return;
+
+    if (!requiredMinigames.Contains(minigame))
+        return;
+
+    // Don't count the same minigame twice.
+    if (!completedMinigames.Contains(minigame))
     {
-        if (minigame == null)
-            return;
+        completedMinigames.Add(minigame);
+    }
 
-        if (!requiredMinigames.Contains(minigame))
-            return;
+    // Check whether Delivery is the final required minigame.
+    if (currentPatron != null &&
+        currentPatron.patronName == phonePatronName &&
+        deliveryMinigame != null &&
+        requiredMinigames.Contains(deliveryMinigame))
+    {
+        bool allOtherMinigamesComplete = true;
 
-        // Don't count the same minigame twice.
-        if (!completedMinigames.Contains(minigame))
+        foreach (MinigameData required in requiredMinigames)
         {
-            completedMinigames.Add(minigame);
+            if (required == deliveryMinigame)
+                continue;
+
+            if (!completedMinigames.Contains(required))
+            {
+                allOtherMinigamesComplete = false;
+                break;
+            }
         }
 
-        Debug.Log(
-            "Completed " + minigame.minigameName +
-            " (" + completedMinigames.Count +
-            "/" + requiredMinigames.Count + ")"
-        );
+        deliveryMinigameUnlocked = allOtherMinigamesComplete;
     }
+
+    Debug.Log(
+        "Completed " + minigame.minigameName +
+        " (" + completedMinigames.Count +
+        "/" + requiredMinigames.Count + ")"
+    );
+
+    if (deliveryMinigameUnlocked)
+    {
+        Debug.Log("All other Phone order minigames are complete! Delivery is unlocked.");
+    }
+}
 
     public bool AreAllMinigamesComplete()
     {

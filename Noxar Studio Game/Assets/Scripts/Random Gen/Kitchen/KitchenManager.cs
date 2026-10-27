@@ -80,30 +80,40 @@ public class KitchenManager : MonoBehaviour
     }
 
 
-    public void PlayerEnteredStation(KitchenMinigameStation station)
+
+public void PlayerEnteredStation(KitchenMinigameStation station)
+{
+    if (minigameOpen || levelManager == null || station == null)
+        return;
+
+    // Check whether this station is required for the current order.
+    if (!IsStationRequired(station))
     {
-        if (minigameOpen || levelManager == null || station == null)
-            return;
-
-        // Check whether this station is required for the current order.
-        if (!IsStationRequired(station))
-        {
-            Debug.Log("This station is not required for the current order.");
-            return;
-        }
-
-        // Do not open a minigame that is already completed.
-        if (IsStationCompleted(station))
-        {
-            Debug.Log("This minigame is already completed.");
-            return;
-        }
-
-        nearbyStation = station;
-
-        // Open the minigame automatically.
-        OpenMinigame(station);
+        Debug.Log("This station is not required for the current order.");
+        return;
     }
+
+    // Block Delivery until every other required minigame is complete.
+    if (station.minigame == levelManager.deliveryMinigame &&
+        !levelManager.deliveryMinigameUnlocked)
+    {
+        Debug.Log("Delivery is locked! Complete the other minigames first.");
+        return;
+    }
+
+    // Do not open a minigame that is already completed.
+    if (IsStationCompleted(station))
+    {
+        Debug.Log("This minigame is already completed.");
+        return;
+    }
+
+    nearbyStation = station;
+
+    // Open the minigame automatically.
+    OpenMinigame(station);
+}
+
 
     public void PlayerLeftStation(KitchenMinigameStation station)
     {
@@ -176,6 +186,17 @@ public class KitchenManager : MonoBehaviour
         UpdateProgress();
         UpdateInteractButton();
 
+        // Refresh every station, including Delivery.
+        KitchenMinigameStation[] stations =
+            FindObjectsByType<KitchenMinigameStation>(
+                FindObjectsSortMode.None
+            );
+
+        foreach (KitchenMinigameStation station in stations)
+        {
+            station.UpdateStationVisibility();
+        }
+
         if (levelManager.AreAllMinigamesComplete())
         {
             levelManager.FinishLevel();
@@ -222,6 +243,13 @@ private void OpenMinigame(KitchenMinigameStation station)
         currentMinigame.minigamePrefab == null)
     {
         Debug.LogError("Minigame data or prefab is missing!");
+        return;
+    }
+
+    if (station.minigame == LevelManager.Instance.deliveryMinigame &&
+    !LevelManager.Instance.deliveryMinigameUnlocked)
+    {
+        Debug.Log("Complete the other Phone order minigames first!");
         return;
     }
 

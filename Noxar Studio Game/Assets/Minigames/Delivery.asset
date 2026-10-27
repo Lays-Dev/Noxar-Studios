@@ -15,5 +15,5 @@ MonoBehaviour:
   minigameName: Delivery
   minigameID: Delivery
   minigameIcon: {fileID: 21300000, guid: 436a1c08161118c4bb646d42dda9fd2a, type: 3}
-  minigamePrefab: {fileID: 0}
+  minigamePrefab: {fileID: 3637049695619756727, guid: 1e519c1b58aabbd478f12065365c8ebe, type: 3}
   availableForRandomSelection: 1
