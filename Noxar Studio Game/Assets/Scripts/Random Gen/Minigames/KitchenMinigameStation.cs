@@ -1,4 +1,4 @@
-
+using System;
 using UnityEngine;
 
 public class KitchenMinigameStation : MonoBehaviour
@@ -9,8 +9,23 @@ public class KitchenMinigameStation : MonoBehaviour
     [Header("Station Visibility")]
     public GameObject stationObject;
 
-[Header("Manager Reference")]
-public KitchenManager kitchenManager;
+    [Header("Manager Reference")]
+    public KitchenManager kitchenManager;
+
+    [Header("Audio")]
+    public AudioSource audioSource;
+
+    [Serializable]
+    public class MinigameSound
+    {
+        public string minigameName;
+        public AudioClip soundEffect;
+    }
+
+    [Header("Minigame Sounds")]
+    public MinigameSound[] minigameSounds;
+
+
 
 private void Start()
 {
@@ -30,6 +45,21 @@ private void Start()
         );
     }
 
+    // Automatically find the audio source if not assigned.
+    if (audioSource == null)
+    {
+        audioSource = GetComponent<AudioSource>();
+
+        if (audioSource == null)
+        {
+            Debug.LogError(
+                "KitchenMinigameStation: No AudioSource found on " +
+                gameObject.name + "!",
+                this
+            );
+        }
+    }
+
     // Check the station's minigame assignment.
     if (minigame == null)
     {
@@ -46,6 +76,50 @@ private void Start()
     UpdateStationVisibility();
 }
 
+    // Play the sound effect associated with this station's minigame.   
+    private void PlayStationSFX()
+    {
+        if (minigame == null)
+        {
+            Debug.LogWarning(
+                "Cannot play sound effect: No minigame assigned to station " +
+                gameObject.name + ".",
+                this
+            );
+            return;
+        }
+
+        if (audioSource == null)
+        {
+            Debug.LogWarning(
+                "Cannot play sound effect: No AudioSource found on station " +
+                gameObject.name + ".",
+                this
+            );
+            return;
+        }
+
+        foreach (MinigameSound sound in minigameSounds)
+        {
+            if (sound == null || sound.soundEffect == null)
+            {
+                Debug.LogWarning(
+                    "MinigameSound entry is missing or has no AudioClip assigned.",
+                    this
+                );
+                continue;
+            }
+
+            // Match the sound to the minigameData name.
+            if (string.Equals(sound.minigameName, minigame.minigameName, StringComparison.OrdinalIgnoreCase))
+            {
+                audioSource.PlayOneShot(sound.soundEffect);
+
+                Debug.Log("Playing sound effect for minigame: " + minigame.minigameName, this);
+                break;
+            }
+        }
+    }
 
 
 public void UpdateStationVisibility()
