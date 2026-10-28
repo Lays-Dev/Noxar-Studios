@@ -119,33 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &196225510 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1370030624096788951, guid: 674acafbbacd9db488990392af7b830a, type: 3}
-  m_PrefabInstance: {fileID: 2035340435754875310}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &196225515
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 196225510}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ecdde7ab3babc1e43a7a40aed6f6ad52, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &976582876
 GameObject:
   m_ObjectHideFlags: 0
@@ -325,49 +298,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 81275337613230302, guid: 674acafbbacd9db488990392af7b830a, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.78997785
-      objectReference: {fileID: 0}
-    - target: {fileID: 81275337613230302, guid: 674acafbbacd9db488990392af7b830a, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.8981914
-      objectReference: {fileID: 0}
-    - target: {fileID: 81275337613230302, guid: 674acafbbacd9db488990392af7b830a, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.2109739
-      objectReference: {fileID: 0}
     - target: {fileID: 3685162568162294610, guid: 674acafbbacd9db488990392af7b830a, type: 3}
       propertyPath: m_Name
       value: DELIVERY
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576629157118553574, guid: 674acafbbacd9db488990392af7b830a, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 436a1c08161118c4bb646d42dda9fd2a, type: 3}
-    - target: {fileID: 4576629157118553574, guid: 674acafbbacd9db488990392af7b830a, type: 3}
-      propertyPath: m_UseSpriteMesh
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576629157118553574, guid: 674acafbbacd9db488990392af7b830a, type: 3}
-      propertyPath: m_RaycastPadding.w
-      value: 28.46
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576629157118553574, guid: 674acafbbacd9db488990392af7b830a, type: 3}
-      propertyPath: m_RaycastPadding.x
-      value: 75.28
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576629157118553574, guid: 674acafbbacd9db488990392af7b830a, type: 3}
-      propertyPath: m_RaycastPadding.y
-      value: 188.83
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576629157118553574, guid: 674acafbbacd9db488990392af7b830a, type: 3}
-      propertyPath: m_RaycastPadding.z
-      value: 85.82
-      objectReference: {fileID: 0}
-    - target: {fileID: 6464625007987346454, guid: 674acafbbacd9db488990392af7b830a, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -825.1
       objectReference: {fileID: 0}
     - target: {fileID: 6732470887674445200, guid: 674acafbbacd9db488990392af7b830a, type: 3}
       propertyPath: m_Pivot.x
@@ -452,10 +385,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1370030624096788951, guid: 674acafbbacd9db488990392af7b830a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 196225515}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 674acafbbacd9db488990392af7b830a, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
