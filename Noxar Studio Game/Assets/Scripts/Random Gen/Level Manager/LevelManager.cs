@@ -46,7 +46,7 @@ public class LevelManager : MonoBehaviour
     public bool dishServed = false;
 
     [Header("Level Timer")]
-    public float secondsPerMinigame = 30f;
+    public float secondsPerMinigame = 40f;
     public float timeRemaining = 0f;
     public string loseSceneName = "Lose";
 

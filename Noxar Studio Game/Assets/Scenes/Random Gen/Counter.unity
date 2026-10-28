@@ -2778,7 +2778,7 @@ MonoBehaviour:
   orderTaken: 0
   levelFinished: 0
   dishServed: 0
-  secondsPerMinigame: 30
+  secondsPerMinigame: 40
   timeRemaining: 0
   loseSceneName: Lose
 --- !u!4 &1502364663
