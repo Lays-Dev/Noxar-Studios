@@ -365,6 +365,10 @@ PrefabInstance:
       propertyPath: m_RaycastPadding.z
       value: 85.82
       objectReference: {fileID: 0}
+    - target: {fileID: 6464625007987346454, guid: 674acafbbacd9db488990392af7b830a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -825.1
+      objectReference: {fileID: 0}
     - target: {fileID: 6732470887674445200, guid: 674acafbbacd9db488990392af7b830a, type: 3}
       propertyPath: m_Pivot.x
       value: 0
