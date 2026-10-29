@@ -2215,8 +2215,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1728697126}
   - {fileID: 1959883999}
+  - {fileID: 1728697126}
   - {fileID: 1972386754}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2409,7 +2409,7 @@ Transform:
   m_GameObject: {fileID: 1728697125}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.194478, y: 1.2084936, z: 0.09039543}
+  m_LocalPosition: {x: 7.194478, y: 1.2084937, z: 0.09039543}
   m_LocalScale: {x: 0.54922, y: 0.54922, z: 0.54922}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3000,7 +3000,7 @@ MonoBehaviour:
   audioSource: {fileID: 1959884004}
   minigameSounds:
   - minigameName: Gathering
-    soundEffect: {fileID: 8300000, guid: 2033270d98577164285c1c36634768cc, type: 3}
+    soundEffect: {fileID: 8300000, guid: d4a0845e732315841b0d491552b6aa29, type: 3}
 --- !u!82 &1959884004
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3012,15 +3012,15 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 2033270d98577164285c1c36634768cc, type: 3}
-  m_PlayOnAwake: 1
+  m_Resource: {fileID: 8300000, guid: d4a0845e732315841b0d491552b6aa29, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 0
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -3150,7 +3150,9 @@ MonoBehaviour:
   stationObject: {fileID: 807608024}
   kitchenManager: {fileID: 1651778413}
   audioSource: {fileID: 1972386758}
-  minigameSounds: []
+  minigameSounds:
+  - minigameName: Delivery
+    soundEffect: {fileID: 0}
 --- !u!61 &1972386756
 BoxCollider2D:
   m_ObjectHideFlags: 0

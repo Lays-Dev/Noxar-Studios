@@ -79,6 +79,7 @@ private void Start()
     // Play the sound effect associated with this station's minigame.   
     private void PlayStationSFX()
     {
+        Debug.Log("PlayStationSFX was called!", this);
         if (minigame == null)
         {
             Debug.LogWarning(
@@ -109,6 +110,12 @@ private void Start()
                 );
                 continue;
             }
+
+            Debug.Log(
+                "Looking for sound: " + sound.minigameName +
+                " | Station minigame: " + minigame.minigameName,
+                this
+            );
 
             // Match the sound to the minigameData name.
             if (string.Equals(sound.minigameName, minigame.minigameName, StringComparison.OrdinalIgnoreCase))
@@ -161,35 +168,33 @@ public void UpdateStationVisibility()
 
 
 
-private void OnTriggerEnter2D(Collider2D other)
-{
-    Debug.Log(
-        name + " detected object: " + other.name,
-        this
-    );
 
-    Debug.Log(
-        "Object tag: " + other.tag,
-        this
-    );
-
-    if (!other.CompareTag("Player"))
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Detected object is not tagged Player.");
-        return;
+        Debug.Log("Trigger detected: " + other.name, this);
+
+        if (!other.CompareTag("Player"))
+        {
+            Debug.Log("Object is not tagged Player: " + other.name);
+            return;
+        }
+
+        Debug.Log("PLAYER ENTERED STATION: " + name, this);
+
+        // IMPORTANT: Play the matching minigame sound.
+        PlayStationSFX();
+
+        // Open the minigame as usual.
+        if (kitchenManager != null)
+        {
+            kitchenManager.PlayerEnteredStation(this);
+        }
+        else
+        {
+            Debug.LogError("KitchenManager reference is missing!", this);
+        }
     }
 
-    Debug.Log("PLAYER ENTERED STATION: " + name);
-
-    if (kitchenManager != null)
-    {
-        kitchenManager.PlayerEnteredStation(this);
-    }
-    else
-    {
-        Debug.LogError("KitchenManager reference is missing!", this);
-    }
-}
 
     private void OnTriggerExit2D(Collider2D other)
     {
