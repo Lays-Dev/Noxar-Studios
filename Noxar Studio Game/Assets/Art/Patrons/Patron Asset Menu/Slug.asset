@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   patronName: Slug
   patronSprite: {fileID: 21300000, guid: c0330459885077e43941e51c572b56d6, type: 3}
+  patronClickSFX: {fileID: 8300000, guid: 323671efba500f2498efad92041afd73, type: 3}

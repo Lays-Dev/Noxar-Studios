@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   patronName: Galico
   patronSprite: {fileID: 7016885044245809129, guid: 564570bec5f353d4795750fee4330066, type: 3}
+  patronClickSFX: {fileID: 8300000, guid: 5d63aa43ff078e84b806eb5b86f7060c, type: 3}

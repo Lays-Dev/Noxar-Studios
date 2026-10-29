@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   patronName: Phone
   patronSprite: {fileID: 21300000, guid: a78008f5bdfe8e74ea5aa1405b8a11c6, type: 3}
+  patronClickSFX: {fileID: 8300000, guid: 01bcf7c436418244dbfa701e37c5bc79, type: 3}

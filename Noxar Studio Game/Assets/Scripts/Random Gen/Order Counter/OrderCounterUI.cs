@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class OrderCounterUI : MonoBehaviour
 {
@@ -27,8 +28,17 @@ public class OrderCounterUI : MonoBehaviour
     [Header("Navigation")]
     public Button goToKitchenButton;
 
+    // NEW: Kitchen button SFX
+    [Header("Kitchen Button SFX")]
+    public AudioSource audioSource;
+    public AudioClip kitchenButtonSFX;
+
+
     private LevelManager levelManager;
     private bool orderDisplayed = false;
+
+    // NEW: Prevent repeated clicks while the sound plays.
+    private bool isLoadingKitchen = false;
 
     private void Start()
     {
@@ -83,13 +93,8 @@ public class OrderCounterUI : MonoBehaviour
 
         if (patronImage != null)
         {
-            // Assign the randomly selected patron sprite.
             patronImage.sprite = levelManager.currentPatron.patronSprite;
-
-            // Set the UI Image to the sprite's native dimensions.
             patronImage.SetNativeSize();
-
-            // Keep the sprite's original proportions.
             patronImage.preserveAspect = true;
         }
 
@@ -109,9 +114,18 @@ public class OrderCounterUI : MonoBehaviour
         if (!levelManager.orderTaken)
             return;
 
+        // Play the sound assigned to the randomly selected patron.
+        if (audioSource != null &&
+            levelManager.currentPatron != null &&
+            levelManager.currentPatron.patronClickSFX != null)
+        {
+            audioSource.PlayOneShot(
+                levelManager.currentPatron.patronClickSFX
+            );
+        }
+
         orderDisplayed = true;
 
-        // Show the dialogue panel with the randomly selected dish.
         if (dialogueDishImage != null)
         {
             dialogueDishImage.sprite = levelManager.currentDish.dishSprite;
@@ -121,7 +135,6 @@ public class OrderCounterUI : MonoBehaviour
         if (dialoguePanel != null)
             dialoguePanel.SetActive(true);
 
-        // Show the order ticket and its minigame icons.
         DisplayOrder();
 
         if (patronButton != null)
@@ -175,13 +188,11 @@ public class OrderCounterUI : MonoBehaviour
             return;
         }
 
-        // Clear any old icons first.
         for (int i = minigameIconsContainer.childCount - 1; i >= 0; i--)
         {
             Destroy(minigameIconsContainer.GetChild(i).gameObject);
         }
 
-        // Add an icon for each randomly selected minigame.
         foreach (MinigameData minigame in levelManager.requiredMinigames)
         {
             if (minigame == null)
@@ -211,12 +222,43 @@ public class OrderCounterUI : MonoBehaviour
 
     public void GoToKitchen()
     {
+        if (isLoadingKitchen)
+            return;
+
         if (!levelManager.orderTaken)
         {
             Debug.Log("Take the patron's order first!");
             return;
         }
 
+        // NEW: Play the sound before loading the Kitchen scene.
+        if (audioSource != null && kitchenButtonSFX != null)
+        {
+            StartCoroutine(PlaySoundThenLoadKitchen());
+        }
+        else
+        {
+            Debug.LogWarning(
+                "Kitchen button SFX or AudioSource is missing. Loading Kitchen without sound."
+            );
+
+            SceneManager.LoadScene("Kitchen");
+        }
+    }
+
+    // NEW: Wait for the sound to finish before changing scenes.
+    private IEnumerator PlaySoundThenLoadKitchen()
+    {
+        isLoadingKitchen = true;
+
+        if (goToKitchenButton != null)
+            goToKitchenButton.interactable = false;
+
+        audioSource.PlayOneShot(kitchenButtonSFX);
+
+        yield return new WaitForSecondsRealtime(kitchenButtonSFX.length);
+
         SceneManager.LoadScene("Kitchen");
     }
 }
+

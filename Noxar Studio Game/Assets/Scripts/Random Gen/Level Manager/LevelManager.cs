@@ -53,6 +53,10 @@ public class LevelManager : MonoBehaviour
     private bool timerRunning = false;
     private bool loseSceneLoading = false;
 
+    [Header("Special Patron Orders")]
+    public PatronData johnnyPatron;
+    public DishData nebulaBurgerDish;
+
   
 
     private void Awake()
@@ -138,14 +142,30 @@ public void GenerateLevel()
         return;
     }
 
-    // Choose a random patron and dish.
+    // Choose a random patron.
     currentPatron = availablePatrons[
         Random.Range(0, availablePatrons.Length)
     ];
 
+    // Choose a random dish by default.
     currentDish = availableDishes[
         Random.Range(0, availableDishes.Length)
     ];
+
+    // SPECIAL ORDER: Johnny always orders Nebula Burger.
+    if (currentPatron == johnnyPatron)
+    {
+        if (nebulaBurgerDish != null)
+        {
+            currentDish = nebulaBurgerDish;
+        }
+        else
+        {
+            Debug.LogError(
+                "LevelManager: Nebula Burger Dish has not been assigned!"
+            );
+        }
+    }
 
     // Reset progress for the new level.
     requiredMinigames.Clear();

@@ -14,5 +14,8 @@ public class PatronData : ScriptableObject
     [Header("Patron Information")]
     public string patronName;
     public Sprite patronSprite;
+
+    [Header("Patron Sound")]
+    public AudioClip patronClickSFX;
 }
 

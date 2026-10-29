@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   patronName: Johnny
   patronSprite: {fileID: 21300000, guid: c0203472783d31f439d44e708465689d, type: 3}
+  patronClickSFX: {fileID: 8300000, guid: 75f8c059b60893542b993e09527cbbba, type: 3}
