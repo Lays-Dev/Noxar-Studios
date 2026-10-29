@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
     public void PlayGame()
     {
         // Loads the game to the correct scene named
-        SceneManager.LoadScene("Instructions");
+        SceneManager.LoadScene("Counter");
     }
 
     // Works by clicking the quit button
