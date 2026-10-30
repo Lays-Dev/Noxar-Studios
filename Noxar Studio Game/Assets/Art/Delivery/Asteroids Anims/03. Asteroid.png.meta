@@ -1,70 +1,58 @@
 fileFormatVersion: 2
-guid: 5faba9fad140ee1429c5328c1c6377e2
+guid: 4775df707e679f140bd2b2d88d15bda4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5157924808503055727
-    second: 02. Asteroid_0
+      213: 7171287778527299391
+    second: 03. Asteroid_0
   - first:
-      213: 6454043119040281718
-    second: 02. Asteroid_1
+      213: -3235563971491398169
+    second: 03. Asteroid_1
   - first:
-      213: -2448175548332768994
-    second: 02. Asteroid_2
+      213: -3944676576610476760
+    second: 03. Asteroid_2
   - first:
-      213: 6368459737309463201
-    second: 02. Asteroid_3
+      213: 1979621299894270884
+    second: 03. Asteroid_3
   - first:
-      213: -8860798411592142163
-    second: 02. Asteroid_4
+      213: 5933497260823730932
+    second: 03. Asteroid_4
   - first:
-      213: -4259140129388654000
-    second: 02. Asteroid_5
+      213: -4734865698443570808
+    second: 03. Asteroid_5
   - first:
-      213: 4567852414657518840
-    second: 02. Asteroid_6
+      213: -8387050988758852619
+    second: 03. Asteroid_6
   - first:
-      213: -6732258664652372320
-    second: 02. Asteroid_7
+      213: -5883955153587829521
+    second: 03. Asteroid_7
   - first:
-      213: 347253757282612233
-    second: 02. Asteroid_8
+      213: -3836820462737390103
+    second: 03. Asteroid_8
   - first:
-      213: -4487248607798267408
-    second: 02. Asteroid_9
+      213: 8053347732658221712
+    second: 03. Asteroid_9
   - first:
-      213: 4054754780950103482
-    second: 02. Asteroid_10
+      213: 827662383454159374
+    second: 03. Asteroid_10
   - first:
-      213: -4068550905599216170
-    second: 02. Asteroid_11
+      213: -8287298200956627133
+    second: 03. Asteroid_11
   - first:
-      213: 7110899756668318510
-    second: 02. Asteroid_12
+      213: 2520900425787899840
+    second: 03. Asteroid_12
   - first:
-      213: -8279577166677632943
-    second: 02. Asteroid_13
+      213: 1348017497417160559
+    second: 03. Asteroid_13
   - first:
-      213: 7638299540238169530
-    second: 02. Asteroid_14
+      213: -1307772151233388751
+    second: 03. Asteroid_14
   - first:
-      213: -5422761231252294560
-    second: 02. Asteroid_15
+      213: -7042928903868400472
+    second: 03. Asteroid_15
   - first:
-      213: -4278275842683445028
-    second: 02. Asteroid_16
-  - first:
-      213: -3437161404393531177
-    second: 02. Asteroid_17
-  - first:
-      213: -7088297590139644347
-    second: 02. Asteroid_18
-  - first:
-      213: -1813812755252889168
-    second: 02. Asteroid_19
-  - first:
-      213: 7912168753852444278
-    second: 02. Asteroid_20
+      213: -6664798887216574897
+    second: 03. Asteroid_16
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -169,11 +157,37 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 02. Asteroid_0
+      name: 03. Asteroid_0
       rect:
         serializedVersion: 2
         x: 0
@@ -188,14 +202,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f65dff41941a49740800000000000000
-      internalID: 5157924808503055727
+      spriteID: f37483d4d38858360800000000000000
+      internalID: 7171287778527299391
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 02. Asteroid_1
+      name: 03. Asteroid_1
       rect:
         serializedVersion: 2
         x: 512
@@ -210,14 +224,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 67c3373950e519950800000000000000
-      internalID: 6454043119040281718
+      spriteID: 7edf33fe5b7f813d0800000000000000
+      internalID: -3235563971491398169
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 02. Asteroid_2
+      name: 03. Asteroid_2
       rect:
         serializedVersion: 2
         x: 1024
@@ -232,14 +246,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e1104dd4f45560ed0800000000000000
-      internalID: -2448175548332768994
+      spriteID: 82d1459ad81b149c0800000000000000
+      internalID: -3944676576610476760
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 02. Asteroid_3
+      name: 03. Asteroid_3
       rect:
         serializedVersion: 2
         x: 0
@@ -254,14 +268,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1a245b8b360516850800000000000000
-      internalID: 6368459737309463201
+      spriteID: 4abbef17517097b10800000000000000
+      internalID: 1979621299894270884
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 02. Asteroid_4
+      name: 03. Asteroid_4
       rect:
         serializedVersion: 2
         x: 512
@@ -276,14 +290,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: da274ba8ace180580800000000000000
-      internalID: -8860798411592142163
+      spriteID: 4fad62b5254085250800000000000000
+      internalID: 5933497260823730932
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 02. Asteroid_5
+      name: 03. Asteroid_5
       rect:
         serializedVersion: 2
         x: 1024
@@ -298,8 +312,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0529d234e9e74e4c0800000000000000
-      internalID: -4259140129388654000
+      spriteID: 881d611dbb06a4eb0800000000000000
+      internalID: -4734865698443570808
       vertices: []
       indices: 
       edges: []
@@ -308,7 +322,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9ee8b6f9ab0c5d44db48e4975cb4cb5c
+    spriteID: e268463de0a3bad459390bcc37fc3421
     internalID: 0
     vertices: []
     indices: 
@@ -318,12 +332,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      02. Asteroid_0: 5157924808503055727
-      02. Asteroid_1: 6454043119040281718
-      02. Asteroid_2: -2448175548332768994
-      02. Asteroid_3: 6368459737309463201
-      02. Asteroid_4: -8860798411592142163
-      02. Asteroid_5: -4259140129388654000
+      03. Asteroid_0: 7171287778527299391
+      03. Asteroid_1: -3235563971491398169
+      03. Asteroid_2: -3944676576610476760
+      03. Asteroid_3: 1979621299894270884
+      03. Asteroid_4: 5933497260823730932
+      03. Asteroid_5: -4734865698443570808
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

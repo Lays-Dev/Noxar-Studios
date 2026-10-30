@@ -11,6 +11,10 @@ public class AsteroidSpawner : MonoBehaviour
     public RectTransform playerRect;
     public DeliveryGameManager gameManager;
 
+    [Header("Audio")]
+    public AudioSource audioSource;
+    public AudioClip asteroidSpawnSFX;
+
     [Header("Spawn Settings")]
     public float spawnInterval = 2f;
     public float spawnOffset = 100f;
@@ -54,24 +58,20 @@ public class AsteroidSpawner : MonoBehaviour
             return;
         }
 
-        // Pick a random lane from 0 to 4.
+        // Pick a random lane.
         int randomLane = Random.Range(0, 5);
 
-        // Spawn just beyond the right edge of the Canvas.
+        // Spawn beyond the right edge of the Canvas.
         float spawnX =
             canvasRect.rect.width / 2f + spawnOffset;
 
         float spawnY = lanePositions[randomLane];
 
-        // Create the asteroid as a child of the Canvas.
+        // Create the asteroid.
         GameObject asteroid = Instantiate(
             asteroidPrefab,
             canvasRect
         );
-
-        RectTransform asteroidRect =
-            asteroid.GetComponent<RectTransform>();
-
 
         UIAsteroidCollision collision =
             asteroid.GetComponent<UIAsteroidCollision>();
@@ -79,9 +79,18 @@ public class AsteroidSpawner : MonoBehaviour
         collision.playerRect = playerRect;
         collision.gameManager = gameManager;
 
+        // Position the asteroid.
+        RectTransform asteroidRect =
+            asteroid.GetComponent<RectTransform>();
 
-        // Position the asteroid in its selected lane.
         asteroidRect.anchoredPosition =
             new Vector2(spawnX, spawnY);
+
+        // Play spawn sound.
+        if (audioSource != null && asteroidSpawnSFX != null)
+        {
+            audioSource.PlayOneShot(asteroidSpawnSFX);
+        }
     }
 }
+
