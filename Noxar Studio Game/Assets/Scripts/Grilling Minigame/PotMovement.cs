@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -29,6 +30,13 @@ public class PotMovement : MonoBehaviour,
     public GameObject loseScreen;
     public GameObject winScreen;
 
+    //Adding Pot Images Mahdeyah Added this
+    [Header("Pot Images")]
+    public Image PotImage;
+    public Sprite PotArtHot;
+    public Sprite PotArt;
+
+  
     // The burner the pot is currently on, if any
     private Burner currentBurner;
     [SerializeField] private bool gameLost = false;
@@ -66,6 +74,19 @@ public class PotMovement : MonoBehaviour,
         // Keep the pot value between 0 and 100
         potValue = Mathf.Clamp(potValue, 0f, 100f);
 
+        //Adding Hot and cold Temp Mahdeyah Added this
+
+        if (potValue >= 50f)
+        {
+           PotImage.sprite = PotArtHot;
+        }
+        else
+        {
+            PotImage.sprite = PotArt;
+        }
+    
+        //Insert Hot and cold Pot image components
+       
         // Update the UI bar
         if (potBarFill != null)
         {
@@ -82,6 +103,7 @@ public class PotMovement : MonoBehaviour,
         {
             WinGame();
         }
+
     }
 
     private void LoseGame()
@@ -154,7 +176,6 @@ public class PotMovement : MonoBehaviour,
         if (moveAudio != null)
         moveAudio.Stop();
 
-       
 
         if (target != null)
         {

@@ -1,2 +1,14 @@
 fileFormatVersion: 2
 guid: 2b47a3ca07413474c8f65eb6d8861c4e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - burnerImage: {instanceID: 0}
+  - coldSprite: {fileID: 21300000, guid: e532ea97af0278e4eae5567af3435443, type: 3}
+  - hotSprite: {fileID: 21300000, guid: 7b857ca264382b542b92ac7d053a21df, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

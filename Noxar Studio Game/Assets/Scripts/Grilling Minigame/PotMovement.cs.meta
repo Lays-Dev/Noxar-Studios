@@ -1,2 +1,19 @@
 fileFormatVersion: 2
 guid: 33d49ef7034da0843885b0df471da865
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - moveAudio: {instanceID: 0}
+  - potBarFill: {instanceID: 0}
+  - grillingPanel: {instanceID: 0}
+  - loseScreen: {instanceID: 0}
+  - winScreen: {instanceID: 0}
+  - PotImage: {instanceID: 0}
+  - PotArtHot: {fileID: 21300000, guid: 7b857ca264382b542b92ac7d053a21df, type: 3}
+  - PotArt: {fileID: 21300000, guid: e532ea97af0278e4eae5567af3435443, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
