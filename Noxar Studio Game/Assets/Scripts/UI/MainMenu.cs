@@ -1,3 +1,4 @@
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -6,17 +7,27 @@ public class MainMenu : MonoBehaviour
     // Works by clicking the play button
     public void PlayGame()
     {
-        // Loads the game to the correct scene named
+        if (LevelManager.Instance != null)
+        {
+            LevelManager.Instance.ResetGame();
+        }
+        // Reset saved game progress
+        PlayerPrefs.DeleteAll();
+        PlayerPrefs.Save();
+
+        // Reset the game's time scale in case it was paused
+        Time.timeScale = 1f;
+
+        // Reload the game starting at the Counter scene
         SceneManager.LoadScene("Counter");
     }
 
     // Works by clicking the quit button
     public void QuitGame()
     {
-       // Shows this message in console to know that it worked
         Debug.Log("Quit Pressed!");
 
-        // Exits out the game
         Application.Quit();
     }
 }
+

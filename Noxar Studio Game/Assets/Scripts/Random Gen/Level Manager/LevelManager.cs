@@ -373,4 +373,21 @@ public void GenerateLevel()
 
         SceneManager.LoadScene("Counter");
     }
+
+    public void ResetGame()
+    {
+        currentLevel = 1;
+
+        currentPatron = null;
+        currentDish = null;
+
+        requiredMinigames.Clear();
+        completedMinigames.Clear();
+
+        orderTaken = false;
+        levelFinished = false;
+        dishServed = false;
+
+        deliveryMinigameUnlocked = false;
+    }
 }
