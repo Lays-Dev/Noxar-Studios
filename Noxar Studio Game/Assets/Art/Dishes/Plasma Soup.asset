@@ -14,16 +14,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dishName: Plasma Soup
   dishSprite: {fileID: 21300000, guid: 9a5a1c8877b7d734c98a7a24492173aa, type: 3}
+  dishVFXFrames:
+  - {fileID: 5296535858196939729, guid: 629fc7068652c014492ee8393ea80220, type: 3}
+  - {fileID: 2713229678368225538, guid: 629fc7068652c014492ee8393ea80220, type: 3}
+  - {fileID: 8035183522189045153, guid: 629fc7068652c014492ee8393ea80220, type: 3}
+  - {fileID: 7458834775698802930, guid: 629fc7068652c014492ee8393ea80220, type: 3}
+  - {fileID: 726993251691457361, guid: 629fc7068652c014492ee8393ea80220, type: 3}
+  - {fileID: 8254427967947392483, guid: 629fc7068652c014492ee8393ea80220, type: 3}
+  - {fileID: 6555576316755184111, guid: 629fc7068652c014492ee8393ea80220, type: 3}
+  - {fileID: -236415440017221034, guid: 629fc7068652c014492ee8393ea80220, type: 3}
+  - {fileID: -7432232189368562691, guid: 629fc7068652c014492ee8393ea80220, type: 3}
+  - {fileID: 1144341465372121752, guid: 629fc7068652c014492ee8393ea80220, type: 3}
+  - {fileID: 458341899998212792, guid: 629fc7068652c014492ee8393ea80220, type: 3}
+  - {fileID: -7668468262473553391, guid: 629fc7068652c014492ee8393ea80220, type: 3}
+  - {fileID: -159116084341225801, guid: 629fc7068652c014492ee8393ea80220, type: 3}
+  - {fileID: -1633779935988183394, guid: 629fc7068652c014492ee8393ea80220, type: 3}
+  - {fileID: -86185269091141654, guid: 629fc7068652c014492ee8393ea80220, type: 3}
+  - {fileID: 7285552329115821979, guid: 629fc7068652c014492ee8393ea80220, type: 3}
+  - {fileID: -4521245508618314338, guid: 629fc7068652c014492ee8393ea80220, type: 3}
+  - {fileID: 2808000103195041094, guid: 629fc7068652c014492ee8393ea80220, type: 3}
+  - {fileID: -844489535107636029, guid: 629fc7068652c014492ee8393ea80220, type: 3}
+  - {fileID: 1731982688376624406, guid: 629fc7068652c014492ee8393ea80220, type: 3}
+  - {fileID: -5486069895058697312, guid: 629fc7068652c014492ee8393ea80220, type: 3}
+  - {fileID: -4469507130003962699, guid: 629fc7068652c014492ee8393ea80220, type: 3}
+  - {fileID: 7718625405228590257, guid: 629fc7068652c014492ee8393ea80220, type: 3}
+  - {fileID: 802889278575599272, guid: 629fc7068652c014492ee8393ea80220, type: 3}
+  vfxFramesPerSecond: 12
+  loopVFX: 1
   ingredients:
-  - ingredientName: 
-    wholeSprite: {fileID: 0}
-    partiallyChoppedSprite: {fileID: 0}
-    choppedSprite: {fileID: 0}
-  - ingredientName: 
-    wholeSprite: {fileID: 0}
-    partiallyChoppedSprite: {fileID: 0}
-    choppedSprite: {fileID: 0}
-  - ingredientName: 
-    wholeSprite: {fileID: 0}
-    partiallyChoppedSprite: {fileID: 0}
-    choppedSprite: {fileID: 0}
+  - ingredientName: Power Cell
+    uncutSprite: {fileID: 21300000, guid: b478445c0b87b384ca8ba95361728841, type: 3}
+    cutSprite: {fileID: 21300000, guid: e4174bf3803d8e540906d296c8c7be6e, type: 3}
+    badlyCutSprite: {fileID: 21300000, guid: d414e0b62bdbddc4aba7527bf6af26dc, type: 3}
