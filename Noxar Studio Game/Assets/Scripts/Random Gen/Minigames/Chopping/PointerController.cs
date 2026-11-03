@@ -143,7 +143,7 @@ void Update()
                 IngredientData ingredient =
                     choppingQueue[currentIngredientIndex];
 
-                ingredientImage.sprite = ingredient.cutSprite;
+                SetIngredientSprite(ingredient.cutSprite);
 
                 firstAttemptMade = true;
 
@@ -167,7 +167,7 @@ void Update()
                     choppingQueue[currentIngredientIndex];
 
                 // Display badly cut sprite
-                ingredientImage.sprite = ingredient.badlyCutSprite;
+                SetIngredientSprite(ingredient.badlyCutSprite);
 
                 firstAttemptMade = true;
 
@@ -229,7 +229,7 @@ void Update()
             choppingQueue[currentIngredientIndex];
 
         // Display uncut sprite
-        ingredientImage.sprite = ingredient.uncutSprite;
+        SetIngredientSprite(ingredient.uncutSprite);
 
         Debug.Log("Now chopping: " + ingredient.ingredientName);
 
@@ -264,4 +264,23 @@ void WinGame()
 
         Debug.Log("New pointer speed: " + moveSpeed);
     }
+    void SetIngredientSprite(Sprite newSprite)
+{
+    if (newSprite == null)
+        return;
+
+    // Remember the current UI Image dimensions.
+    RectTransform imageRect = ingredientImage.rectTransform;
+
+    Vector2 originalSize = imageRect.sizeDelta;
+
+    // Change the sprite.
+    ingredientImage.sprite = newSprite;
+
+    // Restore the original UI Image dimensions.
+    imageRect.sizeDelta = originalSize;
+
+    // Maintain the sprite's aspect ratio within the existing dimensions.
+    ingredientImage.preserveAspect = true;
+}
 }
