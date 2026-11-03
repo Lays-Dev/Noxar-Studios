@@ -14,3 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dishName: Plasma Soup
   dishSprite: {fileID: 21300000, guid: 9a5a1c8877b7d734c98a7a24492173aa, type: 3}
+  ingredients:
+  - ingredientName: 
+    wholeSprite: {fileID: 0}
+    partiallyChoppedSprite: {fileID: 0}
+    choppedSprite: {fileID: 0}
+  - ingredientName: 
+    wholeSprite: {fileID: 0}
+    partiallyChoppedSprite: {fileID: 0}
+    choppedSprite: {fileID: 0}
+  - ingredientName: 
+    wholeSprite: {fileID: 0}
+    partiallyChoppedSprite: {fileID: 0}
+    choppedSprite: {fileID: 0}

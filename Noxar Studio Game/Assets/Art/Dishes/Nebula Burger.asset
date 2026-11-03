@@ -14,3 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dishName: Nebula Burger
   dishSprite: {fileID: 21300000, guid: 44124a49961166544aa973467ae7f3d6, type: 3}
+  ingredients:
+  - ingredientName: Cheese
+    uncutSprite: {fileID: 5149737078050839581, guid: fb613126c661a084eb9d53dd82e9e7a7, type: 3}
+    cutSprite: {fileID: 21300000, guid: d414e0b62bdbddc4aba7527bf6af26dc, type: 3}
+    badlyCutSprite: {fileID: 21300000, guid: b478445c0b87b384ca8ba95361728841, type: 3}
+  - ingredientName: Rings
+    uncutSprite: {fileID: 21300000, guid: efa1301d52a3a5d4997c6534159ba697, type: 3}
+    cutSprite: {fileID: 21300000, guid: d414e0b62bdbddc4aba7527bf6af26dc, type: 3}
+    badlyCutSprite: {fileID: 21300000, guid: b478445c0b87b384ca8ba95361728841, type: 3}
+  - ingredientName: Beef
+    uncutSprite: {fileID: 21300000, guid: 58b36ebdf2b159947ac520470ee25a53, type: 3}
+    cutSprite: {fileID: 21300000, guid: d414e0b62bdbddc4aba7527bf6af26dc, type: 3}
+    badlyCutSprite: {fileID: 21300000, guid: b478445c0b87b384ca8ba95361728841, type: 3}

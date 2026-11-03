@@ -14,3 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dishName: Roasted Star
   dishSprite: {fileID: 21300000, guid: 60611e5f7d2da1447ba949e9d69b1974, type: 3}
+  ingredients:
+  - ingredientName: 
+    wholeSprite: {fileID: 0}
+    partiallyChoppedSprite: {fileID: 0}
+    choppedSprite: {fileID: 0}
+  - ingredientName: 
+    wholeSprite: {fileID: 0}
+    partiallyChoppedSprite: {fileID: 0}
+    choppedSprite: {fileID: 0}
+  - ingredientName: 
+    wholeSprite: {fileID: 0}
+    partiallyChoppedSprite: {fileID: 0}
+    choppedSprite: {fileID: 0}
