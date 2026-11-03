@@ -33,6 +33,14 @@ public class OrderCounterUI : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip kitchenButtonSFX;
 
+    
+    [Header("Animated Dish VFX")]
+    public Image dialogueVFXImage;
+    public Image dishVFXImage;
+
+    private Coroutine vfxAnimationCoroutine;
+
+
 
     private LevelManager levelManager;
     private bool orderDisplayed = false;
@@ -131,6 +139,7 @@ public class OrderCounterUI : MonoBehaviour
             dialogueDishImage.sprite = levelManager.currentDish.dishSprite;
             dialogueDishImage.preserveAspect = true;
         }
+        DisplayDishVFX();
 
         if (dialoguePanel != null)
             dialoguePanel.SetActive(true);
@@ -165,6 +174,7 @@ public class OrderCounterUI : MonoBehaviour
             dishNameText.text = levelManager.currentDish.dishName;
         }
 
+        DisplayDishVFX();
         DisplayMinigameIcons();
 
         if (patronButton != null)
@@ -260,5 +270,125 @@ public class OrderCounterUI : MonoBehaviour
 
         SceneManager.LoadScene("Kitchen");
     }
+
+    
+
+private void DisplayDishVFX()
+{
+    // Stop the previous dish's animation.
+    if (vfxAnimationCoroutine != null)
+    {
+        StopCoroutine(vfxAnimationCoroutine);
+        vfxAnimationCoroutine = null;
+    }
+
+    // Get the currently selected dish.
+    DishData dish = levelManager.currentDish;
+
+    if (dish == null)
+        return;
+
+    // Get the animation frames.
+    Sprite[] frames = dish.dishVFXFrames;
+
+    // Check whether animation frames exist.
+    if (frames == null || frames.Length == 0)
+    {
+        if (dialogueVFXImage != null)
+            dialogueVFXImage.gameObject.SetActive(false);
+
+        if (dishVFXImage != null)
+            dishVFXImage.gameObject.SetActive(false);
+
+        return;
+    }
+
+    // Show both VFX Images.
+    if (dialogueVFXImage != null)
+        dialogueVFXImage.gameObject.SetActive(true);
+
+    if (dishVFXImage != null)
+        dishVFXImage.gameObject.SetActive(true);
+
+    // Display the first animation frame immediately.
+    SetVFXSprite(frames[0]);
+
+    // Start the animation.
+    vfxAnimationCoroutine = StartCoroutine(
+        PlayDishVFX(dish)
+    );
+}
+
+// Updates both UI Images with the same sprite.
+private void SetVFXSprite(Sprite sprite)
+{
+    if (dialogueVFXImage != null)
+    {
+        dialogueVFXImage.sprite = sprite;
+        dialogueVFXImage.preserveAspect = true;
+    }
+
+    if (dishVFXImage != null)
+    {
+        dishVFXImage.sprite = sprite;
+        dishVFXImage.preserveAspect = true;
+    }
+}
+
+// Plays the animated VFX.
+private IEnumerator PlayDishVFX(DishData dish)
+{
+    Sprite[] frames = dish.dishVFXFrames;
+
+    float frameRate = Mathf.Max(1f, dish.vfxFramesPerSecond);
+    float frameDuration = 1f / frameRate;
+
+    int currentFrame = 0;
+    float timer = 0f;
+
+    while (true)
+    {
+        timer += Time.unscaledDeltaTime;
+
+        if (timer >= frameDuration)
+        {
+            timer -= frameDuration;
+
+            currentFrame++;
+
+            // Check whether the animation has reached its end.
+            if (currentFrame >= frames.Length)
+            {
+                if (dish.loopVFX)
+                {
+                    currentFrame = 0;
+                }
+                else
+                {
+                    // Keep the final frame visible.
+                    currentFrame = frames.Length - 1;
+                    SetVFXSprite(frames[currentFrame]);
+                    yield break;
+                }
+            }
+
+            SetVFXSprite(frames[currentFrame]);
+        }
+
+        vfxAnimationCoroutine = null;
+        yield return null;
+    }
+}
+
+private void OnDisable()
+{
+    if (vfxAnimationCoroutine != null)
+    {
+        StopCoroutine(vfxAnimationCoroutine);
+        vfxAnimationCoroutine = null;
+    }
+}
+
+
 }
 

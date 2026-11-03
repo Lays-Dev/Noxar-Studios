@@ -14,16 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dishName: Nebula Burger
   dishSprite: {fileID: 21300000, guid: 44124a49961166544aa973467ae7f3d6, type: 3}
+  dishVFXFrames:
+  - {fileID: 5296535858196939729, guid: 629fc7068652c014492ee8393ea80220, type: 3}
+  - {fileID: 2713229678368225538, guid: 629fc7068652c014492ee8393ea80220, type: 3}
+  - {fileID: 8035183522189045153, guid: 629fc7068652c014492ee8393ea80220, type: 3}
+  vfxFramesPerSecond: 12
+  loopVFX: 1
   ingredients:
   - ingredientName: Cheese
     uncutSprite: {fileID: 5149737078050839581, guid: fb613126c661a084eb9d53dd82e9e7a7, type: 3}
-    cutSprite: {fileID: 21300000, guid: d414e0b62bdbddc4aba7527bf6af26dc, type: 3}
+    cutSprite: {fileID: 2827199046305091094, guid: e2eecbf1b3df185429b1a660fd594e8f, type: 3}
     badlyCutSprite: {fileID: 21300000, guid: b478445c0b87b384ca8ba95361728841, type: 3}
   - ingredientName: Rings
     uncutSprite: {fileID: 21300000, guid: efa1301d52a3a5d4997c6534159ba697, type: 3}
-    cutSprite: {fileID: 21300000, guid: d414e0b62bdbddc4aba7527bf6af26dc, type: 3}
+    cutSprite: {fileID: -7627614746914991047, guid: f286cc03eac0211418362ce14ba4e4f1, type: 3}
     badlyCutSprite: {fileID: 21300000, guid: b478445c0b87b384ca8ba95361728841, type: 3}
   - ingredientName: Beef
     uncutSprite: {fileID: 21300000, guid: 58b36ebdf2b159947ac520470ee25a53, type: 3}
-    cutSprite: {fileID: 21300000, guid: d414e0b62bdbddc4aba7527bf6af26dc, type: 3}
+    cutSprite: {fileID: 4601014535212862938, guid: 86699d30fc3fb644ca62f9f0474d0d06, type: 3}
     badlyCutSprite: {fileID: 21300000, guid: b478445c0b87b384ca8ba95361728841, type: 3}

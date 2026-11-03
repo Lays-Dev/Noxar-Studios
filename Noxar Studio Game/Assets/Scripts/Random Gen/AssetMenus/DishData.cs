@@ -28,6 +28,16 @@ public class DishData : ScriptableObject
     public string dishName;
     public Sprite dishSprite;
 
+    [Header("Animated Dish VFX")]
+    [Tooltip("Add the animation frames in playback order.")]
+    public Sprite[] dishVFXFrames;
+
+    [Tooltip("How many animation frames play per second.")]
+    public float vfxFramesPerSecond = 12f;
+
+    [Tooltip("Should the VFX animation repeat?")]
+    public bool loopVFX = true;
+
     [Header("Dish Ingredients")]
     public List<IngredientData> ingredients = new List<IngredientData>(3);
 }
