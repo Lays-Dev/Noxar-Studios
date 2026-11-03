@@ -17,5 +17,9 @@ public class PatronData : ScriptableObject
 
     [Header("Patron Sound")]
     public AudioClip patronClickSFX;
+
+    [Header("Patron Animations")]
+    public AnimationClip idleAnimation;
+    public AnimationClip talkingAnimation;
 }
 

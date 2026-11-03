@@ -40,6 +40,12 @@ public class OrderCounterUI : MonoBehaviour
 
     private Coroutine vfxAnimationCoroutine;
 
+    [Header("Patron Animation")]
+    public Animator patronAnimator;
+
+    private RuntimeAnimatorController originalController;
+    public AnimatorOverrideController patronOverrideController;
+
 
 
     private LevelManager levelManager;
@@ -78,6 +84,7 @@ public class OrderCounterUI : MonoBehaviour
         }
 
         DisplayPatron();
+        SetupPatronAnimation();
 
         if (dialoguePanel != null)
             dialoguePanel.SetActive(false);
@@ -121,6 +128,11 @@ public class OrderCounterUI : MonoBehaviour
 
         if (!levelManager.orderTaken)
             return;
+        
+        if (patronAnimator != null)
+        {
+            patronAnimator.SetTrigger("Talk");
+        }
 
         // Play the sound assigned to the randomly selected patron.
         if (audioSource != null &&
@@ -380,15 +392,42 @@ private IEnumerator PlayDishVFX(DishData dish)
     }
 }
 
-private void OnDisable()
-{
-    if (vfxAnimationCoroutine != null)
+    private void OnDisable()
     {
-        StopCoroutine(vfxAnimationCoroutine);
-        vfxAnimationCoroutine = null;
+        if (vfxAnimationCoroutine != null)
+        {
+            StopCoroutine(vfxAnimationCoroutine);
+            vfxAnimationCoroutine = null;
+        }
     }
-}
 
+    private void SetupPatronAnimation()
+    {
+        if (patronAnimator == null)
+            return;
+
+        PatronData patron = levelManager.currentPatron;
+
+        if (patron == null)
+            return;
+
+        if (patronOverrideController == null)
+            return;
+
+        // Create a separate override for this patron.
+        AnimatorOverrideController newOverride =
+            new AnimatorOverrideController(patronOverrideController);
+
+        // Replace the animation clips.
+        newOverride["Idle"] = patron.idleAnimation;
+        newOverride["Talking"] = patron.talkingAnimation;
+
+        // Apply the animations.
+        patronAnimator.runtimeAnimatorController = newOverride;
+
+        // Start idle animation.
+        patronAnimator.Play("Idle", 0, 0f);
+    }
 
 }
 

@@ -3252,7 +3252,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   availablePatrons:
   - {fileID: 11400000, guid: f8f9283dca46a0549aca1fde3fb534ea, type: 2}
-  - {fileID: 11400000, guid: 4ce282ade8c629645b555952a395268b, type: 2}
   availableDishes:
   - {fileID: 11400000, guid: 72a563e160e071440837e33f1a6ca25e, type: 2}
   availableMinigames:
@@ -3337,6 +3336,8 @@ MonoBehaviour:
   kitchenButtonSFX: {fileID: 8300000, guid: 174183a99b554e3498e15edfd754806b, type: 3}
   dialogueVFXImage: {fileID: 786154368}
   dishVFXImage: {fileID: 1393651612}
+  patronAnimator: {fileID: 1893360171}
+  patronOverrideController: {fileID: 22100000, guid: 7565c204ea620f24dbbfb422bd527f02, type: 2}
 --- !u!4 &1508859787
 Transform:
   m_ObjectHideFlags: 0
@@ -3746,6 +3747,7 @@ GameObject:
   - component: {fileID: 1893360168}
   - component: {fileID: 1893360169}
   - component: {fileID: 1893360170}
+  - component: {fileID: 1893360171}
   m_Layer: 0
   m_Name: Patron Image
   m_TagString: Untagged
@@ -3810,6 +3812,28 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!95 &1893360171
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893360167}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3089392af1bd62a4bb0117ba5aa04649, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1930249703
 GameObject:
   m_ObjectHideFlags: 0
