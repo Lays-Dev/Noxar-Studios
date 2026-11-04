@@ -1,26 +1,69 @@
-
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class TapImage : MonoBehaviour
 {
+    [Header("Ingredient Identification")]
+    public string ingredientName;
+
+    [Header("Ingredient References")]
     public GameObject nextIngredient;
-    public GameObject armParent; // Reference to the parent GameObject of the arm
+    public GameObject armParent;
+    public GameObject fridgeOpen;
+
+    [Header("Ingredient Sound")]
+    public AudioSource tapSFX;
+
+    [Header("Ingredient UI")]
+public Image ingredientImage;
 
     private RectTransform image;
     private int tapCount = 0;
-    public bool lastIngredient = false;
-    public GameObject fridgeOpen;
-    public AudioSource tapSFX; // Reference to the AudioSource component for tap sound effect
 
+    private bool ingredientFinished = false;
+
+    private GatheringMinigameManager gatheringManager;
 
     private void Start()
     {
         image = GetComponent<RectTransform>();
     }
 
+    // Called by GatheringMinigameManager.
+    // Assigns this ingredient's information from the selected dish.
+    public void SetupIngredient(
+        IngredientData ingredient,
+        GameObject next,
+        bool isLast,
+        GatheringMinigameManager manager)
+    {
+        ingredientName = ingredient.ingredientName;
+
+        nextIngredient = next;
+        gatheringManager = manager;
+
+        tapCount = 0;
+        ingredientFinished = false;
+
+        // Display the uncut ingredient sprite.
+        Image ingredientImage = GetComponent<UnityEngine.UI.Image>();
+
+        if (ingredientImage != null)
+        {
+            ingredientImage.sprite = ingredient.uncutSprite;
+            ingredientImage.preserveAspect = true;
+        }
+
+        // Only the first ingredient should be active initially.
+        gameObject.SetActive(false);
+    }
+
     private void Update()
     {
+        if (ingredientFinished)
+            return;
+
         // Check for mobile touch.
         if (Touchscreen.current != null &&
             Touchscreen.current.primaryTouch.press.wasPressedThisFrame)
@@ -37,37 +80,80 @@ public class TapImage : MonoBehaviour
                 cam = canvas.worldCamera;
             }
 
-            // Check whether the ingredient was tapped.
+            // Check whether this ingredient was tapped.
             if (RectTransformUtility.RectangleContainsScreenPoint(
                 image, touchPosition, cam))
             {
                 tapCount++;
 
-                Debug.Log("Ingredient taps: " + tapCount);
-                if (tapSFX != null)
-                    {
-                        tapSFX.Play();
-                    }
+                Debug.Log(ingredientName + " taps: " + tapCount);
 
-                // Require two taps before spawning the next ingredient.
+                if (tapSFX != null)
+                    tapSFX.Play();
+
+                // Require two taps before moving to the next ingredient.
                 if (tapCount >= 2)
                 {
-
-                    if (lastIngredient)
-                    {
-                        Debug.Log("Last ingredient tapped twice.");
-                        fridgeOpen.SetActive(false);
-                    }
-               
-                    if (nextIngredient != null)
-                    {
-                        nextIngredient.SetActive(true);
-
-                    }
-
-                        armParent.SetActive(false);
+                    FinishIngredient();
                 }
             }
         }
     }
+
+    
+private void FinishIngredient()
+{
+    ingredientFinished = true;
+
+    Debug.Log(ingredientName + " gathered!");
+
+    // Hide the current arm.
+    if (armParent != null)
+    {
+        armParent.SetActive(false);
+    }
+
+    // Check whether another ingredient needs to appear.
+    if (nextIngredient != null)
+    {
+        // Activate the next ingredient's parent Arm first.
+        Transform nextParent = nextIngredient.transform.parent;
+
+        if (nextParent != null)
+        {
+            nextParent.gameObject.SetActive(true);
+
+            Debug.Log("Activated next ingredient parent: " +
+                nextParent.name);
+        }
+
+        // Activate the next ingredient.
+        nextIngredient.SetActive(true);
+
+        Debug.Log("Activated next ingredient: " +
+            nextIngredient.name);
+
+        Debug.Log("Next ingredient active in hierarchy: " +
+            nextIngredient.activeInHierarchy);
+    }
+    else
+    {
+        // There are no more ingredients.
+        Debug.Log("All ingredients gathered!");
+
+        if (fridgeOpen != null)
+        {
+            fridgeOpen.SetActive(false);
+        }
+
+        if (gatheringManager != null)
+        {
+            gatheringManager.FinishGathering();
+        }
+    }
+
+    // Prevent this ingredient from being tapped again.
+    enabled = false;
+}
+
 }

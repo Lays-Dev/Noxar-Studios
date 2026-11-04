@@ -16,10 +16,14 @@ MonoBehaviour:
   patronSprite: {fileID: 7016885044245809129, guid: 564570bec5f353d4795750fee4330066, type: 3}
   patronClickSFX: {fileID: 8300000, guid: 5d63aa43ff078e84b806eb5b86f7060c, type: 3}
   idleFrames:
+  - {fileID: -6207722262087465751, guid: b1bda0103f4685d428ee2525b45861ef, type: 3}
+  - {fileID: -8917873938927563459, guid: b1bda0103f4685d428ee2525b45861ef, type: 3}
+  - {fileID: 6422639388490683564, guid: b1bda0103f4685d428ee2525b45861ef, type: 3}
+  - {fileID: 51487591484441651, guid: b1bda0103f4685d428ee2525b45861ef, type: 3}
+  talkingFrames:
   - {fileID: -2662387779177237284, guid: 018f6699ddb66134db3af3049d8878dc, type: 3}
   - {fileID: -4542995391793990821, guid: 018f6699ddb66134db3af3049d8878dc, type: 3}
   - {fileID: 2112807112590511315, guid: 018f6699ddb66134db3af3049d8878dc, type: 3}
   - {fileID: -6223815214469050681, guid: 018f6699ddb66134db3af3049d8878dc, type: 3}
-  talkingFrames: []
   idleFrameRate: 8
   talkingFrameRate: 8

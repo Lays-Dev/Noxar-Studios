@@ -133,11 +133,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11f7716079c855442bdd0f4f6fdc714b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextIngredient: {fileID: 4336685701684027021}
+  ingredientName: Rings
+  nextIngredient: {fileID: 0}
   armParent: {fileID: 5797209905132667208}
-  lastIngredient: 0
   fridgeOpen: {fileID: 0}
   tapSFX: {fileID: 2151561501246243202}
+  ingredientImage: {fileID: 0}
 --- !u!1 &757763253134563396
 GameObject:
   m_ObjectHideFlags: 0
@@ -512,11 +513,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11f7716079c855442bdd0f4f6fdc714b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextIngredient: {fileID: 3354671754347551115}
+  ingredientName: Cheese
+  nextIngredient: {fileID: 0}
   armParent: {fileID: 757763253134563396}
-  lastIngredient: 0
-  fridgeOpen: {fileID: 0}
+  fridgeOpen: {fileID: 9057901597304348761}
   tapSFX: {fileID: 2151561501246243202}
+  ingredientImage: {fileID: 0}
 --- !u!1 &3354671754347551115
 GameObject:
   m_ObjectHideFlags: 0
@@ -1237,6 +1239,7 @@ GameObject:
   m_Component:
   - component: {fileID: 258439612699023566}
   - component: {fileID: 7781376606062097959}
+  - component: {fileID: 785074642593447806}
   m_Layer: 0
   m_Name: GATHERING
   m_TagString: Untagged
@@ -1285,6 +1288,26 @@ MonoBehaviour:
   completeButton: {fileID: 3228235033778348}
   audioSource: {fileID: 4328049066060501027}
   completeSFX: {fileID: 8300000, guid: 174183a99b554e3498e15edfd754806b, type: 3}
+--- !u!114 &785074642593447806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4930567904874061474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96a02c5d80f13644f88879fbbb27c64a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  availableIngredients:
+  - {fileID: 7153278379190727451}
+  - {fileID: 7234486977371488046}
+  - {fileID: 3873358926818434746}
+  - {fileID: 4119157477748936197}
+  onGatheringCompleted:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &5797209905132667208
 GameObject:
   m_ObjectHideFlags: 0
@@ -1303,7 +1326,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2874771975416785186
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1663,11 +1686,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11f7716079c855442bdd0f4f6fdc714b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ingredientName: Power Cell
   nextIngredient: {fileID: 0}
   armParent: {fileID: 3354671754347551115}
-  lastIngredient: 1
   fridgeOpen: {fileID: 9057901597304348761}
   tapSFX: {fileID: 2151561501246243202}
+  ingredientImage: {fileID: 0}
 --- !u!1 &7915551752678846722
 GameObject:
   m_ObjectHideFlags: 0
@@ -1878,11 +1902,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11f7716079c855442bdd0f4f6fdc714b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextIngredient: {fileID: 757763253134563396}
+  ingredientName: Beef
+  nextIngredient: {fileID: 0}
   armParent: {fileID: 4336685701684027021}
-  lastIngredient: 0
-  fridgeOpen: {fileID: 0}
+  fridgeOpen: {fileID: 9057901597304348761}
   tapSFX: {fileID: 2151561501246243202}
+  ingredientImage: {fileID: 0}
 --- !u!1 &8405567074831399613
 GameObject:
   m_ObjectHideFlags: 0

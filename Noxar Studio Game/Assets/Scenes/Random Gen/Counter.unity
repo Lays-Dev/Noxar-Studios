@@ -3253,9 +3253,9 @@ MonoBehaviour:
   availablePatrons:
   - {fileID: 11400000, guid: f8f9283dca46a0549aca1fde3fb534ea, type: 2}
   availableDishes:
-  - {fileID: 11400000, guid: 72a563e160e071440837e33f1a6ca25e, type: 2}
+  - {fileID: 11400000, guid: 996afd1a1cc959147afc29a84b2cd774, type: 2}
   availableMinigames:
-  - {fileID: 11400000, guid: 4265571b6ffbecb4f874d6c5e80ace51, type: 2}
+  - {fileID: 11400000, guid: 3d53e9a40c17a3c4e9225b0b22ee6e3d, type: 2}
   minMinigames: 1
   maxMinigames: 2
   phoneMinigame: {fileID: 11400000, guid: 2ca25f086adf8464bb77a0e8a58ec522, type: 2}
