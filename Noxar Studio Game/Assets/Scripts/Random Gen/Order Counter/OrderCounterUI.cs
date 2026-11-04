@@ -12,6 +12,9 @@ public class OrderCounterUI : MonoBehaviour
     public Image patronImage;
     public TMP_Text patronNameText;
 
+    [Header("Patron Animation")]
+    public PatronUIAnimator patronUIAnimator;
+
     [Header("Dialogue Panel")]
     public GameObject dialoguePanel;
     public Image dialogueDishImage;
@@ -28,34 +31,25 @@ public class OrderCounterUI : MonoBehaviour
     [Header("Navigation")]
     public Button goToKitchenButton;
 
-    // NEW: Kitchen button SFX
     [Header("Kitchen Button SFX")]
     public AudioSource audioSource;
     public AudioClip kitchenButtonSFX;
 
-    
     [Header("Animated Dish VFX")]
     public Image dialogueVFXImage;
     public Image dishVFXImage;
 
     private Coroutine vfxAnimationCoroutine;
 
-    [Header("Patron Animation")]
-    public Animator patronAnimator;
-
-    private RuntimeAnimatorController originalController;
-    public AnimatorOverrideController patronOverrideController;
-
-
-
     private LevelManager levelManager;
-    private bool orderDisplayed = false;
 
-    // NEW: Prevent repeated clicks while the sound plays.
+    private bool orderDisplayed = false;
     private bool isLoadingKitchen = false;
+
 
     private void Start()
     {
+        // Find the LevelManager.
         levelManager = LevelManager.Instance;
 
         if (levelManager == null)
@@ -64,6 +58,7 @@ public class OrderCounterUI : MonoBehaviour
             return;
         }
 
+        // Generate a level if one has not already been generated.
         if (levelManager.currentPatron == null ||
             levelManager.currentDish == null ||
             levelManager.requiredMinigames.Count == 0)
@@ -71,36 +66,44 @@ public class OrderCounterUI : MonoBehaviour
             levelManager.GenerateLevel();
         }
 
+        // Connect the patron button.
         if (patronButton != null)
         {
             patronButton.onClick.RemoveListener(OnPatronTapped);
             patronButton.onClick.AddListener(OnPatronTapped);
         }
 
+        // Connect the kitchen button.
         if (goToKitchenButton != null)
         {
             goToKitchenButton.onClick.RemoveListener(GoToKitchen);
             goToKitchenButton.onClick.AddListener(GoToKitchen);
         }
 
+        // Display the randomly selected patron.
         DisplayPatron();
-        SetupPatronAnimation();
 
+        // Hide the dialogue panel at the beginning.
         if (dialoguePanel != null)
             dialoguePanel.SetActive(false);
 
+        // Hide the order ticket at the beginning.
         if (orderPanel != null)
             orderPanel.SetActive(false);
 
+        // The player cannot enter the kitchen until the order is taken.
         if (goToKitchenButton != null)
             goToKitchenButton.interactable = false;
 
+        // If the order was already taken, display it.
         if (levelManager.orderTaken)
         {
             DisplayOrder();
         }
     }
 
+
+    // Displays the selected patron and starts their idle animation.
     private void DisplayPatron()
     {
         if (levelManager.currentPatron == null)
@@ -117,21 +120,37 @@ public class OrderCounterUI : MonoBehaviour
         {
             patronNameText.text = levelManager.currentPatron.patronName;
         }
+
+        // Give the selected patron to the animation script.
+        // This starts that patron's unique idle animation.
+        if (patronUIAnimator != null)
+        {
+            patronUIAnimator.SetPatron(levelManager.currentPatron);
+        }
+        else
+        {
+            Debug.LogWarning("OrderCounterUI: Patron UI Animator is not assigned!");
+        }
     }
 
+
+    // Called when the player taps the patron.
     public void OnPatronTapped()
     {
+        // Prevent the player from taking the same order twice.
         if (orderDisplayed || levelManager.orderTaken)
             return;
 
+        // Tell the LevelManager that the order has been taken.
         levelManager.TakeOrder();
 
         if (!levelManager.orderTaken)
             return;
-        
-        if (patronAnimator != null)
+
+        // Play the patron's unique talking animation once.
+        if (patronUIAnimator != null)
         {
-            patronAnimator.SetTrigger("Talk");
+            patronUIAnimator.SetTalking();
         }
 
         // Play the sound assigned to the randomly selected patron.
@@ -146,25 +165,34 @@ public class OrderCounterUI : MonoBehaviour
 
         orderDisplayed = true;
 
+        // Display the dish image in the dialogue panel.
         if (dialogueDishImage != null)
         {
             dialogueDishImage.sprite = levelManager.currentDish.dishSprite;
             dialogueDishImage.preserveAspect = true;
         }
+
+        // Play the dish VFX.
         DisplayDishVFX();
 
+        // Show the dialogue panel.
         if (dialoguePanel != null)
             dialoguePanel.SetActive(true);
 
+        // Display the order ticket.
         DisplayOrder();
 
+        // Prevent the patron from being tapped again.
         if (patronButton != null)
             patronButton.interactable = false;
 
+        // Allow the player to enter the kitchen.
         if (goToKitchenButton != null)
             goToKitchenButton.interactable = true;
     }
 
+
+    // Displays the order ticket.
     private void DisplayOrder()
     {
         if (levelManager.currentDish == null)
@@ -196,6 +224,8 @@ public class OrderCounterUI : MonoBehaviour
             goToKitchenButton.interactable = true;
     }
 
+
+    // Creates the required minigame icons on the order ticket.
     private void DisplayMinigameIcons()
     {
         if (minigameIconsContainer == null)
@@ -210,11 +240,13 @@ public class OrderCounterUI : MonoBehaviour
             return;
         }
 
+        // Remove any previously created icons.
         for (int i = minigameIconsContainer.childCount - 1; i >= 0; i--)
         {
             Destroy(minigameIconsContainer.GetChild(i).gameObject);
         }
 
+        // Create an icon for each required minigame.
         foreach (MinigameData minigame in levelManager.requiredMinigames)
         {
             if (minigame == null)
@@ -242,6 +274,8 @@ public class OrderCounterUI : MonoBehaviour
         }
     }
 
+
+    // Called by the kitchen button.
     public void GoToKitchen()
     {
         if (isLoadingKitchen)
@@ -253,7 +287,7 @@ public class OrderCounterUI : MonoBehaviour
             return;
         }
 
-        // NEW: Play the sound before loading the Kitchen scene.
+        // Play the sound before loading the Kitchen scene.
         if (audioSource != null && kitchenButtonSFX != null)
         {
             StartCoroutine(PlaySoundThenLoadKitchen());
@@ -268,7 +302,8 @@ public class OrderCounterUI : MonoBehaviour
         }
     }
 
-    // NEW: Wait for the sound to finish before changing scenes.
+
+    // Waits for the kitchen button sound to finish before changing scenes.
     private IEnumerator PlaySoundThenLoadKitchen()
     {
         isLoadingKitchen = true;
@@ -283,151 +318,127 @@ public class OrderCounterUI : MonoBehaviour
         SceneManager.LoadScene("Kitchen");
     }
 
-    
 
-private void DisplayDishVFX()
-{
-    // Stop the previous dish's animation.
-    if (vfxAnimationCoroutine != null)
+    // Starts the animated dish VFX.
+    private void DisplayDishVFX()
     {
-        StopCoroutine(vfxAnimationCoroutine);
-        vfxAnimationCoroutine = null;
-    }
-
-    // Get the currently selected dish.
-    DishData dish = levelManager.currentDish;
-
-    if (dish == null)
-        return;
-
-    // Get the animation frames.
-    Sprite[] frames = dish.dishVFXFrames;
-
-    // Check whether animation frames exist.
-    if (frames == null || frames.Length == 0)
-    {
-        if (dialogueVFXImage != null)
-            dialogueVFXImage.gameObject.SetActive(false);
-
-        if (dishVFXImage != null)
-            dishVFXImage.gameObject.SetActive(false);
-
-        return;
-    }
-
-    // Show both VFX Images.
-    if (dialogueVFXImage != null)
-        dialogueVFXImage.gameObject.SetActive(true);
-
-    if (dishVFXImage != null)
-        dishVFXImage.gameObject.SetActive(true);
-
-    // Display the first animation frame immediately.
-    SetVFXSprite(frames[0]);
-
-    // Start the animation.
-    vfxAnimationCoroutine = StartCoroutine(
-        PlayDishVFX(dish)
-    );
-}
-
-// Updates both UI Images with the same sprite.
-private void SetVFXSprite(Sprite sprite)
-{
-    if (dialogueVFXImage != null)
-    {
-        dialogueVFXImage.sprite = sprite;
-        dialogueVFXImage.preserveAspect = true;
-    }
-
-    if (dishVFXImage != null)
-    {
-        dishVFXImage.sprite = sprite;
-        dishVFXImage.preserveAspect = true;
-    }
-}
-
-// Plays the animated VFX.
-private IEnumerator PlayDishVFX(DishData dish)
-{
-    Sprite[] frames = dish.dishVFXFrames;
-
-    float frameRate = Mathf.Max(1f, dish.vfxFramesPerSecond);
-    float frameDuration = 1f / frameRate;
-
-    int currentFrame = 0;
-    float timer = 0f;
-
-    while (true)
-    {
-        timer += Time.unscaledDeltaTime;
-
-        if (timer >= frameDuration)
+        // Stop the previous dish VFX animation.
+        if (vfxAnimationCoroutine != null)
         {
-            timer -= frameDuration;
-
-            currentFrame++;
-
-            // Check whether the animation has reached its end.
-            if (currentFrame >= frames.Length)
-            {
-                if (dish.loopVFX)
-                {
-                    currentFrame = 0;
-                }
-                else
-                {
-                    // Keep the final frame visible.
-                    currentFrame = frames.Length - 1;
-                    SetVFXSprite(frames[currentFrame]);
-                    yield break;
-                }
-            }
-
-            SetVFXSprite(frames[currentFrame]);
+            StopCoroutine(vfxAnimationCoroutine);
+            vfxAnimationCoroutine = null;
         }
 
-        vfxAnimationCoroutine = null;
-        yield return null;
+        // Get the currently selected dish.
+        DishData dish = levelManager.currentDish;
+
+        if (dish == null)
+            return;
+
+        // Get the animation frames.
+        Sprite[] frames = dish.dishVFXFrames;
+
+        // Check whether animation frames exist.
+        if (frames == null || frames.Length == 0)
+        {
+            if (dialogueVFXImage != null)
+                dialogueVFXImage.gameObject.SetActive(false);
+
+            if (dishVFXImage != null)
+                dishVFXImage.gameObject.SetActive(false);
+
+            return;
+        }
+
+        // Show both VFX Images.
+        if (dialogueVFXImage != null)
+            dialogueVFXImage.gameObject.SetActive(true);
+
+        if (dishVFXImage != null)
+            dishVFXImage.gameObject.SetActive(true);
+
+        // Display the first animation frame immediately.
+        SetVFXSprite(frames[0]);
+
+        // Start the animation.
+        vfxAnimationCoroutine = StartCoroutine(
+            PlayDishVFX(dish)
+        );
     }
-}
+
+
+    // Updates both UI Images with the same sprite.
+    private void SetVFXSprite(Sprite sprite)
+    {
+        if (dialogueVFXImage != null)
+        {
+            dialogueVFXImage.sprite = sprite;
+            dialogueVFXImage.preserveAspect = true;
+        }
+
+        if (dishVFXImage != null)
+        {
+            dishVFXImage.sprite = sprite;
+            dishVFXImage.preserveAspect = true;
+        }
+    }
+
+
+    // Plays the animated dish VFX.
+    private IEnumerator PlayDishVFX(DishData dish)
+    {
+        Sprite[] frames = dish.dishVFXFrames;
+
+        float frameRate = Mathf.Max(1f, dish.vfxFramesPerSecond);
+        float frameDuration = 1f / frameRate;
+
+        int currentFrame = 0;
+        float timer = 0f;
+
+        while (true)
+        {
+            timer += Time.unscaledDeltaTime;
+
+            if (timer >= frameDuration)
+            {
+                timer -= frameDuration;
+
+                currentFrame++;
+
+                // Check whether the animation has reached its end.
+                if (currentFrame >= frames.Length)
+                {
+                    if (dish.loopVFX)
+                    {
+                        currentFrame = 0;
+                    }
+                    else
+                    {
+                        // Keep the final frame visible.
+                        currentFrame = frames.Length - 1;
+                        SetVFXSprite(frames[currentFrame]);
+
+                        vfxAnimationCoroutine = null;
+                        yield break;
+                    }
+                }
+
+                SetVFXSprite(frames[currentFrame]);
+            }
+
+            yield return null;
+        }
+    }
+
 
     private void OnDisable()
     {
+        // Stop the dish VFX animation if this object is disabled.
         if (vfxAnimationCoroutine != null)
         {
             StopCoroutine(vfxAnimationCoroutine);
             vfxAnimationCoroutine = null;
         }
     }
-
-    private void SetupPatronAnimation()
-    {
-        if (patronAnimator == null)
-            return;
-
-        PatronData patron = levelManager.currentPatron;
-
-        if (patron == null)
-            return;
-
-        if (patronOverrideController == null)
-            return;
-
-        // Create a separate override for this patron.
-        AnimatorOverrideController newOverride =
-            new AnimatorOverrideController(patronOverrideController);
-
-        // Replace the animation clips.
-        newOverride["Idle"] = patron.idleAnimation;
-        newOverride["Talking"] = patron.talkingAnimation;
-
-        // Apply the animations.
-        patronAnimator.runtimeAnimatorController = newOverride;
-
-        // Start idle animation.
-        patronAnimator.Play("Idle", 0, 0f);
-    }
-
 }
 

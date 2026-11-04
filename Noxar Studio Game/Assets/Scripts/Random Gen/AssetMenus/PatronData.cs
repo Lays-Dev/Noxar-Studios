@@ -19,7 +19,10 @@ public class PatronData : ScriptableObject
     public AudioClip patronClickSFX;
 
     [Header("Patron Animations")]
-    public AnimationClip idleAnimation;
-    public AnimationClip talkingAnimation;
-}
+    public Sprite[] idleFrames;
+    public Sprite[] talkingFrames;
 
+    [Header("Animation Speed")]
+    public float idleFrameRate = 8f;
+    public float talkingFrameRate = 8f;
+}

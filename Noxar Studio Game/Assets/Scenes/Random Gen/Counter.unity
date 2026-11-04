@@ -3324,6 +3324,7 @@ MonoBehaviour:
   patronButton: {fileID: 1126692794}
   patronImage: {fileID: 1893360170}
   patronNameText: {fileID: 0}
+  patronUIAnimator: {fileID: 1893360172}
   dialoguePanel: {fileID: 526506766}
   dialogueDishImage: {fileID: 71320391}
   orderPanel: {fileID: 688141509}
@@ -3336,8 +3337,6 @@ MonoBehaviour:
   kitchenButtonSFX: {fileID: 8300000, guid: 174183a99b554e3498e15edfd754806b, type: 3}
   dialogueVFXImage: {fileID: 786154368}
   dishVFXImage: {fileID: 1393651612}
-  patronAnimator: {fileID: 1893360171}
-  patronOverrideController: {fileID: 22100000, guid: 7565c204ea620f24dbbfb422bd527f02, type: 2}
 --- !u!4 &1508859787
 Transform:
   m_ObjectHideFlags: 0
@@ -3748,6 +3747,7 @@ GameObject:
   - component: {fileID: 1893360169}
   - component: {fileID: 1893360170}
   - component: {fileID: 1893360171}
+  - component: {fileID: 1893360172}
   m_Layer: 0
   m_Name: Patron Image
   m_TagString: Untagged
@@ -3834,6 +3834,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1893360172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893360167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef0137c032a3e6e419296832560dcdcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  patronImage: {fileID: 1893360170}
 --- !u!1 &1930249703
 GameObject:
   m_ObjectHideFlags: 0

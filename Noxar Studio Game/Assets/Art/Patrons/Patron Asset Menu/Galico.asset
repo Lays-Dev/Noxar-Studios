@@ -15,5 +15,11 @@ MonoBehaviour:
   patronName: Galico
   patronSprite: {fileID: 7016885044245809129, guid: 564570bec5f353d4795750fee4330066, type: 3}
   patronClickSFX: {fileID: 8300000, guid: 5d63aa43ff078e84b806eb5b86f7060c, type: 3}
-  idleAnimation: {fileID: 7400000, guid: 03e3f51a97591dd41bf5a24efcbe74d6, type: 2}
-  talkingAnimation: {fileID: 7400000, guid: c2c559ffaff192749a35f135c1926bfa, type: 2}
+  idleFrames:
+  - {fileID: -2662387779177237284, guid: 018f6699ddb66134db3af3049d8878dc, type: 3}
+  - {fileID: -4542995391793990821, guid: 018f6699ddb66134db3af3049d8878dc, type: 3}
+  - {fileID: 2112807112590511315, guid: 018f6699ddb66134db3af3049d8878dc, type: 3}
+  - {fileID: -6223815214469050681, guid: 018f6699ddb66134db3af3049d8878dc, type: 3}
+  talkingFrames: []
+  idleFrameRate: 8
+  talkingFrameRate: 8
