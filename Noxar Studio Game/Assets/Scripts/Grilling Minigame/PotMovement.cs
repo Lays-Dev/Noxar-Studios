@@ -14,6 +14,13 @@ public class PotMovement : MonoBehaviour,
     public float potValue = 50f;
     public float valueChangeRate = 5f;
 
+    //Mahdeyah Added this
+    //Sprite Image 
+    [Header("Pot Images")]
+    public Image potImages;
+    public Sprite hotPot;
+    public Sprite coldPot;
+
     [Header("Audio")]
     [SerializeField] private AudioSource moveAudio;
     [SerializeField] private AudioSource temperatureAudio;
@@ -54,6 +61,7 @@ public class PotMovement : MonoBehaviour,
             currentBurner != null &&
             currentBurner.state == BurnerState.Hot;
 
+        
         // Play sound only when heating/cooling state changes.
         if (!temperatureStateInitialized)
         {
@@ -86,6 +94,16 @@ public class PotMovement : MonoBehaviour,
         }
 
         potValue = Mathf.Clamp(potValue, 0f, 100f);
+
+        //Change Sprite From Hot to Cold
+        if (potValue >= 50f)
+        {
+        //CHange Sprite to Cold    
+        }
+        else if (potValue < 50f)
+        { 
+        //CHange Sprite to Cold
+        }
 
         // Update temperature bar.
         if (potBarFill != null)
