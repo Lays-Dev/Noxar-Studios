@@ -15,3 +15,15 @@ MonoBehaviour:
   patronName: Johnny
   patronSprite: {fileID: 21300000, guid: c0203472783d31f439d44e708465689d, type: 3}
   patronClickSFX: {fileID: 8300000, guid: 75f8c059b60893542b993e09527cbbba, type: 3}
+  idleFrames:
+  - {fileID: 4198192457290356128, guid: 5d942cf4ae44c25499d8843c3ee07b68, type: 3}
+  - {fileID: 4299590851668875848, guid: 5d942cf4ae44c25499d8843c3ee07b68, type: 3}
+  - {fileID: -4829116685181458887, guid: 5d942cf4ae44c25499d8843c3ee07b68, type: 3}
+  - {fileID: -7643555567971622243, guid: 5d942cf4ae44c25499d8843c3ee07b68, type: 3}
+  talkingFrames:
+  - {fileID: -4874890862007082284, guid: f087a59770ad150469398c01bb0fef53, type: 3}
+  - {fileID: 2655289499487010040, guid: f087a59770ad150469398c01bb0fef53, type: 3}
+  - {fileID: 3977762118215344820, guid: f087a59770ad150469398c01bb0fef53, type: 3}
+  - {fileID: -2956703501272061993, guid: f087a59770ad150469398c01bb0fef53, type: 3}
+  idleFrameRate: 8
+  talkingFrameRate: 8

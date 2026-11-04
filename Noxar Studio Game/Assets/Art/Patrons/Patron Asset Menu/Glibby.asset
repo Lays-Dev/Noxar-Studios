@@ -10,8 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f20303adc0434124f92cdbe9c81cc02a, type: 3}
-  m_Name: Slug
+  m_Name: Glibby
   m_EditorClassIdentifier: 
   patronName: Slug
   patronSprite: {fileID: 21300000, guid: c0330459885077e43941e51c572b56d6, type: 3}
   patronClickSFX: {fileID: 8300000, guid: 323671efba500f2498efad92041afd73, type: 3}
+  idleFrames:
+  - {fileID: 7018857349955272347, guid: 316ca69ecd6f17d4895cb25328122c7b, type: 3}
+  - {fileID: 5951978058250613848, guid: 316ca69ecd6f17d4895cb25328122c7b, type: 3}
+  - {fileID: -8123961753216049497, guid: 316ca69ecd6f17d4895cb25328122c7b, type: 3}
+  - {fileID: 2076239089274590485, guid: 316ca69ecd6f17d4895cb25328122c7b, type: 3}
+  talkingFrames:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  idleFrameRate: 8
+  talkingFrameRate: 8
