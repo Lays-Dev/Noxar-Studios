@@ -98,11 +98,11 @@ public class PotMovement : MonoBehaviour,
         //Change Sprite From Hot to Cold
         if (potValue >= 50f)
         {
-        //CHange Sprite to Cold    
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = hotPot;
         }
         else if (potValue < 50f)
-        { 
-        //CHange Sprite to Cold
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = coldPot;
         }
 
         // Update temperature bar.
