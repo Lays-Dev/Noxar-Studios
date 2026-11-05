@@ -1,0 +1,4316 @@
+fileFormatVersion: 2
+guid: 7cea9a53b407ee8418c9a555f89ec334
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6178534495617409270
+    second: 04. Fire VFX_0
+  - first:
+      213: -4675182386529986914
+    second: 04. Fire VFX_1
+  - first:
+      213: -5872006892962618692
+    second: 04. Fire VFX_2
+  - first:
+      213: -3019354955168662707
+    second: 04. Fire VFX_3
+  - first:
+      213: 5466045704848808972
+    second: 04. Fire VFX_4
+  - first:
+      213: 1466463897783372708
+    second: 04. Fire VFX_5
+  - first:
+      213: 8565040787682424893
+    second: 04. Fire VFX_6
+  - first:
+      213: 6175352952129677885
+    second: 04. Fire VFX_7
+  - first:
+      213: 2052292678284680167
+    second: 04. Fire VFX_8
+  - first:
+      213: -9137260393336241480
+    second: 04. Fire VFX_9
+  - first:
+      213: 2220155615594034301
+    second: 04. Fire VFX_10
+  - first:
+      213: 836561175924607062
+    second: 04. Fire VFX_11
+  - first:
+      213: 3163762595776486914
+    second: 04. Fire VFX_12
+  - first:
+      213: -132500695047309984
+    second: 04. Fire VFX_13
+  - first:
+      213: -880324854894337029
+    second: 04. Fire VFX_14
+  - first:
+      213: 7706844872764318043
+    second: 04. Fire VFX_15
+  - first:
+      213: 7391846379270605101
+    second: 04. Fire VFX_16
+  - first:
+      213: -7386072749743265191
+    second: 04. Fire VFX_17
+  - first:
+      213: 3559828506878217694
+    second: 04. Fire VFX_18
+  - first:
+      213: 164191376640715315
+    second: 04. Fire VFX_19
+  - first:
+      213: 6613048669864893021
+    second: 04. Fire VFX_20
+  - first:
+      213: 7409627812192046846
+    second: 04. Fire VFX_21
+  - first:
+      213: -7830285771738145852
+    second: 04. Fire VFX_22
+  - first:
+      213: -4183372040475728645
+    second: 04. Fire VFX_23
+  - first:
+      213: -3599400880859584497
+    second: 04. Fire VFX_24
+  - first:
+      213: 7175621437401070756
+    second: 04. Fire VFX_25
+  - first:
+      213: 917689386624711453
+    second: 04. Fire VFX_26
+  - first:
+      213: 1193557903839813206
+    second: 04. Fire VFX_27
+  - first:
+      213: 6329928143477618439
+    second: 04. Fire VFX_28
+  - first:
+      213: 4207708299716925665
+    second: 04. Fire VFX_29
+  - first:
+      213: 1990381621865006628
+    second: 04. Fire VFX_30
+  - first:
+      213: 6911367513425015065
+    second: 04. Fire VFX_31
+  - first:
+      213: 7740124027280730394
+    second: 04. Fire VFX_32
+  - first:
+      213: -1947085047346629691
+    second: 04. Fire VFX_33
+  - first:
+      213: -834273190461191069
+    second: 04. Fire VFX_34
+  - first:
+      213: -1677928892855940462
+    second: 04. Fire VFX_35
+  - first:
+      213: -6095134417522404111
+    second: 04. Fire VFX_36
+  - first:
+      213: -3897829704838524837
+    second: 04. Fire VFX_37
+  - first:
+      213: -1649424139072318567
+    second: 04. Fire VFX_38
+  - first:
+      213: -8824315089265058649
+    second: 04. Fire VFX_39
+  - first:
+      213: -513870511136897764
+    second: 04. Fire VFX_40
+  - first:
+      213: -8935134115011245153
+    second: 04. Fire VFX_41
+  - first:
+      213: -1408954746065049683
+    second: 04. Fire VFX_42
+  - first:
+      213: 8851970350413111362
+    second: 04. Fire VFX_43
+  - first:
+      213: 3352665625224627525
+    second: 04. Fire VFX_44
+  - first:
+      213: 4129699032201990272
+    second: 04. Fire VFX_45
+  - first:
+      213: 6814439990324016411
+    second: 04. Fire VFX_46
+  - first:
+      213: -7212125754963021518
+    second: 04. Fire VFX_47
+  - first:
+      213: -4453104043821400417
+    second: 04. Fire VFX_48
+  - first:
+      213: -6456785180369158277
+    second: 04. Fire VFX_49
+  - first:
+      213: -5888580748996689869
+    second: 04. Fire VFX_50
+  - first:
+      213: -1933796398353525587
+    second: 04. Fire VFX_51
+  - first:
+      213: 2224622536192661632
+    second: 04. Fire VFX_52
+  - first:
+      213: -1649519262462075634
+    second: 04. Fire VFX_53
+  - first:
+      213: 3385022727622908132
+    second: 04. Fire VFX_54
+  - first:
+      213: -1682294754422149551
+    second: 04. Fire VFX_55
+  - first:
+      213: -5247008311345125933
+    second: 04. Fire VFX_56
+  - first:
+      213: -6943481139647664382
+    second: 04. Fire VFX_57
+  - first:
+      213: -7613648892022311480
+    second: 04. Fire VFX_58
+  - first:
+      213: 9129377670801208243
+    second: 04. Fire VFX_59
+  - first:
+      213: 916006510743361311
+    second: 04. Fire VFX_60
+  - first:
+      213: 3537489077649804334
+    second: 04. Fire VFX_61
+  - first:
+      213: 3783872341088831934
+    second: 04. Fire VFX_62
+  - first:
+      213: 2883300586113801628
+    second: 04. Fire VFX_63
+  - first:
+      213: 3903348830768905102
+    second: 04. Fire VFX_64
+  - first:
+      213: 614154427656083873
+    second: 04. Fire VFX_65
+  - first:
+      213: 9058656335199097331
+    second: 04. Fire VFX_66
+  - first:
+      213: -4349616026028703991
+    second: 04. Fire VFX_67
+  - first:
+      213: -8906118895482498992
+    second: 04. Fire VFX_68
+  - first:
+      213: -17752881406979064
+    second: 04. Fire VFX_69
+  - first:
+      213: 1699217270579494220
+    second: 04. Fire VFX_70
+  - first:
+      213: -5804811450732868933
+    second: 04. Fire VFX_71
+  - first:
+      213: -5505581262751606493
+    second: 04. Fire VFX_72
+  - first:
+      213: 3473401372478170610
+    second: 04. Fire VFX_73
+  - first:
+      213: 1464923743733072690
+    second: 04. Fire VFX_74
+  - first:
+      213: 7694551567225093028
+    second: 04. Fire VFX_75
+  - first:
+      213: -8064404893402871169
+    second: 04. Fire VFX_76
+  - first:
+      213: 1720129198011603468
+    second: 04. Fire VFX_77
+  - first:
+      213: -4793556967399804725
+    second: 04. Fire VFX_78
+  - first:
+      213: -8546628606317089299
+    second: 04. Fire VFX_79
+  - first:
+      213: 5635913546993850803
+    second: 04. Fire VFX_80
+  - first:
+      213: -191209507964454816
+    second: 04. Fire VFX_81
+  - first:
+      213: 7653996617718196439
+    second: 04. Fire VFX_82
+  - first:
+      213: -2746892852982012555
+    second: 04. Fire VFX_83
+  - first:
+      213: 1947149914561650190
+    second: 04. Fire VFX_84
+  - first:
+      213: 3485593012938736370
+    second: 04. Fire VFX_85
+  - first:
+      213: 3970842115465827248
+    second: 04. Fire VFX_86
+  - first:
+      213: 7174605641218471951
+    second: 04. Fire VFX_87
+  - first:
+      213: -7359661792480517767
+    second: 04. Fire VFX_88
+  - first:
+      213: -7908391736433429434
+    second: 04. Fire VFX_89
+  - first:
+      213: 8048125477969855113
+    second: 04. Fire VFX_90
+  - first:
+      213: 3069569614585204771
+    second: 04. Fire VFX_91
+  - first:
+      213: 5001253971868425103
+    second: 04. Fire VFX_92
+  - first:
+      213: -7951642297791741145
+    second: 04. Fire VFX_93
+  - first:
+      213: 3223178100878661314
+    second: 04. Fire VFX_94
+  - first:
+      213: 3360863603148395425
+    second: 04. Fire VFX_95
+  - first:
+      213: 8099036648594833581
+    second: 04. Fire VFX_96
+  - first:
+      213: 6489108332390361777
+    second: 04. Fire VFX_97
+  - first:
+      213: 4766012506398278916
+    second: 04. Fire VFX_98
+  - first:
+      213: 4255655475672963804
+    second: 04. Fire VFX_99
+  - first:
+      213: -3077032436928775635
+    second: 04. Fire VFX_100
+  - first:
+      213: -4647548563511252193
+    second: 04. Fire VFX_101
+  - first:
+      213: -5364110668895858699
+    second: 04. Fire VFX_102
+  - first:
+      213: 2768911310989614339
+    second: 04. Fire VFX_103
+  - first:
+      213: -2193797517489132654
+    second: 04. Fire VFX_104
+  - first:
+      213: -3195726520865908829
+    second: 04. Fire VFX_105
+  - first:
+      213: 9091347559440845003
+    second: 04. Fire VFX_106
+  - first:
+      213: -1224879119226894249
+    second: 04. Fire VFX_107
+  - first:
+      213: 8476251760972597239
+    second: 04. Fire VFX_108
+  - first:
+      213: 1864887983152659740
+    second: 04. Fire VFX_109
+  - first:
+      213: -5743359658519729842
+    second: 04. Fire VFX_110
+  - first:
+      213: 9146800874581435291
+    second: 04. Fire VFX_111
+  - first:
+      213: -4051574654042006383
+    second: 04. Fire VFX_112
+  - first:
+      213: -7863828772178389246
+    second: 04. Fire VFX_113
+  - first:
+      213: 6271184329332733146
+    second: 04. Fire VFX_114
+  - first:
+      213: 6329284684368917784
+    second: 04. Fire VFX_115
+  - first:
+      213: 6579561617787558012
+    second: 04. Fire VFX_116
+  - first:
+      213: -8171700325468411973
+    second: 04. Fire VFX_117
+  - first:
+      213: 7124605896779601629
+    second: 04. Fire VFX_118
+  - first:
+      213: 3047017496199842589
+    second: 04. Fire VFX_119
+  - first:
+      213: 7414102302460278161
+    second: 04. Fire VFX_120
+  - first:
+      213: 4833935504052081433
+    second: 04. Fire VFX_121
+  - first:
+      213: 6454974081471929276
+    second: 04. Fire VFX_122
+  - first:
+      213: 137494472636199301
+    second: 04. Fire VFX_123
+  - first:
+      213: -6029305969554442043
+    second: 04. Fire VFX_124
+  - first:
+      213: 7808974551698780708
+    second: 04. Fire VFX_125
+  - first:
+      213: 6441696952405347539
+    second: 04. Fire VFX_126
+  - first:
+      213: 6803963110380955752
+    second: 04. Fire VFX_127
+  - first:
+      213: 2030910561448941090
+    second: 04. Fire VFX_128
+  - first:
+      213: 1292111523950474200
+    second: 04. Fire VFX_129
+  - first:
+      213: -6724853807827394368
+    second: 04. Fire VFX_130
+  - first:
+      213: 8621260207785474674
+    second: 04. Fire VFX_131
+  - first:
+      213: -8440919668638016064
+    second: 04. Fire VFX_132
+  - first:
+      213: -3665603085041358520
+    second: 04. Fire VFX_133
+  - first:
+      213: 8211974668202392763
+    second: 04. Fire VFX_134
+  - first:
+      213: 2082402578332506521
+    second: 04. Fire VFX_135
+  - first:
+      213: 972601011008515898
+    second: 04. Fire VFX_136
+  - first:
+      213: 6642463327564659019
+    second: 04. Fire VFX_137
+  - first:
+      213: 5718447455271416839
+    second: 04. Fire VFX_138
+  - first:
+      213: -4123677404103336000
+    second: 04. Fire VFX_139
+  - first:
+      213: 5877662128438351475
+    second: 04. Fire VFX_140
+  - first:
+      213: 8967325650111445716
+    second: 04. Fire VFX_141
+  - first:
+      213: 1722510119261648038
+    second: 04. Fire VFX_142
+  - first:
+      213: 8631420319356121988
+    second: 04. Fire VFX_143
+  - first:
+      213: 3529928740768429205
+    second: 04. Fire VFX_144
+  - first:
+      213: 6403652748623988686
+    second: 04. Fire VFX_145
+  - first:
+      213: 1662392245558898635
+    second: 04. Fire VFX_146
+  - first:
+      213: 7593984893315739384
+    second: 04. Fire VFX_147
+  - first:
+      213: 2303230534184040290
+    second: 04. Fire VFX_148
+  - first:
+      213: 6668145202927872043
+    second: 04. Fire VFX_149
+  - first:
+      213: -255166008332595266
+    second: 04. Fire VFX_150
+  - first:
+      213: -3127949327597419811
+    second: 04. Fire VFX_151
+  - first:
+      213: 2059948437963479348
+    second: 04. Fire VFX_152
+  - first:
+      213: -8511760020172515595
+    second: 04. Fire VFX_153
+  - first:
+      213: -6376415518007956557
+    second: 04. Fire VFX_154
+  - first:
+      213: 7363222217340765069
+    second: 04. Fire VFX_155
+  - first:
+      213: 6763808149798780124
+    second: 04. Fire VFX_156
+  - first:
+      213: 2034810787123817349
+    second: 04. Fire VFX_157
+  - first:
+      213: -4643388697285831896
+    second: 04. Fire VFX_158
+  - first:
+      213: 8468713513141847668
+    second: 04. Fire VFX_159
+  - first:
+      213: 3015623348573380381
+    second: 04. Fire VFX_160
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 04. Fire VFX_0
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 1948
+        width: 21
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0f1a3c8c9f614aa0800000000000000
+      internalID: -6178534495617409270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_1
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 1977
+        width: 15
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9697beb36a6e1fb0800000000000000
+      internalID: -4675182386529986914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_2
+      rect:
+        serializedVersion: 2
+        x: 1291
+        y: 1933
+        width: 52
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb2615297d0728ea0800000000000000
+      internalID: -5872006892962618692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_3
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 1936
+        width: 36
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4b3b5e5aa81916d0800000000000000
+      internalID: -3019354955168662707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_4
+      rect:
+        serializedVersion: 2
+        x: 2393
+        y: 1959
+        width: 32
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0c1093bb9b4bdb40800000000000000
+      internalID: 5466045704848808972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_5
+      rect:
+        serializedVersion: 2
+        x: 2894
+        y: 1941
+        width: 52
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ab0057352de95410800000000000000
+      internalID: 1466463897783372708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_6
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 1552
+        width: 214
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d38fa8487332dd670800000000000000
+      internalID: 8565040787682424893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_7
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 1559
+        width: 211
+        height: 401
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3a6952aac243b550800000000000000
+      internalID: 6175352952129677885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_8
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 1552
+        width: 240
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eb1b4041553b7c10800000000000000
+      internalID: 2052292678284680167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_9
+      rect:
+        serializedVersion: 2
+        x: 1661
+        y: 1548
+        width: 245
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b282f2651ee13180800000000000000
+      internalID: -9137260393336241480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_10
+      rect:
+        serializedVersion: 2
+        x: 2370
+        y: 1925
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d74329df4c39fce10800000000000000
+      internalID: 2220155615594034301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_11
+      rect:
+        serializedVersion: 2
+        x: 2723
+        y: 1560
+        width: 224
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6588edb05ff0c9b00800000000000000
+      internalID: 836561175924607062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_12
+      rect:
+        serializedVersion: 2
+        x: 2943
+        y: 1912
+        width: 18
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20edcea8151f7eb20800000000000000
+      internalID: 3163762595776486914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_13
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1857
+        width: 15
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0657633e153492ef0800000000000000
+      internalID: -132500695047309984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_14
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 1822
+        width: 19
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf36319653578c3f0800000000000000
+      internalID: -880324854894337029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_15
+      rect:
+        serializedVersion: 2
+        x: 1382
+        y: 1832
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b516824449634fa60800000000000000
+      internalID: 7706844872764318043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_16
+      rect:
+        serializedVersion: 2
+        x: 1883
+        y: 1846
+        width: 24
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d298ea64e1d159660800000000000000
+      internalID: 7391846379270605101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_17
+      rect:
+        serializedVersion: 2
+        x: 2202
+        y: 1554
+        width: 231
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95a2c5a97f56f7990800000000000000
+      internalID: -7386072749743265191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_18
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 1749
+        width: 57
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edd09cd8a2d076130800000000000000
+      internalID: 3559828506878217694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_19
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 1719
+        width: 66
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33a2ad7ef23574200800000000000000
+      internalID: 164191376640715315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_20
+      rect:
+        serializedVersion: 2
+        x: 2936
+        y: 1805
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5a9aa15ab446cb50800000000000000
+      internalID: 6613048669864893021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_21
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 1724
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efecf8fbc3944d660800000000000000
+      internalID: 7409627812192046846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_22
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 1740
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cb90c5c39c355390800000000000000
+      internalID: -7830285771738145852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_23
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 1691
+        width: 20
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf4a42c2b4da1f5c0800000000000000
+      internalID: -4183372040475728645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_24
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1693
+        width: 23
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f08e22428fb5c0ec0800000000000000
+      internalID: -3599400880859584497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_25
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 1728
+        width: 13
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4acf7f2edade49360800000000000000
+      internalID: 7175621437401070756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_26
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 1727
+        width: 20
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1b79ef82a94cbc00800000000000000
+      internalID: 917689386624711453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_27
+      rect:
+        serializedVersion: 2
+        x: 2189
+        y: 1696
+        width: 24
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65e5b3df69e509010800000000000000
+      internalID: 1193557903839813206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_28
+      rect:
+        serializedVersion: 2
+        x: 2441
+        y: 1678
+        width: 26
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7073bbdeb1c68d750800000000000000
+      internalID: 6329928143477618439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_29
+      rect:
+        serializedVersion: 2
+        x: 2951
+        y: 1734
+        width: 20
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e8171bb768c46a30800000000000000
+      internalID: 4207708299716925665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_30
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 1686
+        width: 23
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 426cab22a814f9b10800000000000000
+      internalID: 1990381621865006628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_31
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 1696
+        width: 18
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9117fdda22c1aef50800000000000000
+      internalID: 6911367513425015065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_32
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1678
+        width: 9
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a19a88b3bc17a6b60800000000000000
+      internalID: 7740124027280730394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_33
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 1673
+        width: 23
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c3fd6d27709af4e0800000000000000
+      internalID: -1947085047346629691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_34
+      rect:
+        serializedVersion: 2
+        x: 1901
+        y: 1652
+        width: 25
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36ccde414f01c64f0800000000000000
+      internalID: -834273190461191069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_35
+      rect:
+        serializedVersion: 2
+        x: 2433
+        y: 1659
+        width: 16
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29a05fedf8cc6b8e0800000000000000
+      internalID: -1677928892855940462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_36
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1624
+        width: 27
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f4d1596a8bb96ba0800000000000000
+      internalID: -6095134417522404111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_37
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 1647
+        width: 20
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b505228f88028e9c0800000000000000
+      internalID: -3897829704838524837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_38
+      rect:
+        serializedVersion: 2
+        x: 2708
+        y: 1665
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 993d3aa0c711c19e0800000000000000
+      internalID: -1649424139072318567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_39
+      rect:
+        serializedVersion: 2
+        x: 2942
+        y: 1627
+        width: 19
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ac9c36fd2cb98580800000000000000
+      internalID: -8824315089265058649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_40
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 1599
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1503232e7d5ed8f0800000000000000
+      internalID: -513870511136897764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_41
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 1593
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9bc74edcd6000480800000000000000
+      internalID: -8935134115011245153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_42
+      rect:
+        serializedVersion: 2
+        x: 2194
+        y: 1610
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da721389f13627ce0800000000000000
+      internalID: -1408954746065049683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_43
+      rect:
+        serializedVersion: 2
+        x: 2939
+        y: 1597
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 240e9aa422488da70800000000000000
+      internalID: 8851970350413111362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_44
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 1414
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5454d2a7f9f078e20800000000000000
+      internalID: 3352665625224627525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_45
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 1412
+        width: 66
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0809ca3c363af4930800000000000000
+      internalID: 4129699032201990272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_46
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 1417
+        width: 114
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b15ba761111c19e50800000000000000
+      internalID: 6814439990324016411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_47
+      rect:
+        serializedVersion: 2
+        x: 1675
+        y: 1046
+        width: 236
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 231bbfb56d169eb90800000000000000
+      internalID: -7212125754963021518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_48
+      rect:
+        serializedVersion: 2
+        x: 2201
+        y: 1045
+        width: 245
+        height: 426
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9e7b2837756332c0800000000000000
+      internalID: -4453104043821400417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_49
+      rect:
+        serializedVersion: 2
+        x: 2339
+        y: 1471
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7ff6158614e466a0800000000000000
+      internalID: -6456785180369158277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_50
+      rect:
+        serializedVersion: 2
+        x: 2801
+        y: 1425
+        width: 97
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33049d0020f874ea0800000000000000
+      internalID: -5888580748996689869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_51
+      rect:
+        serializedVersion: 2
+        x: 2932
+        y: 1464
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da45530eb66c925e0800000000000000
+      internalID: -1933796398353525587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_52
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 1408
+        width: 39
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 088971df8627fde10800000000000000
+      internalID: 2224622536192661632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_53
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 1044
+        width: 281
+        height: 414
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0d98c668fabb19e0800000000000000
+      internalID: -1649519262462075634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_54
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 1458
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e856947c340afe20800000000000000
+      internalID: 3385022727622908132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_55
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 1046
+        width: 269
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15e2a2385d947a8e0800000000000000
+      internalID: -1682294754422149551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_56
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 1045
+        width: 292
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d560cc9db1ee27b0800000000000000
+      internalID: -5247008311345125933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_57
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 1388
+        width: 19
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20f2dae01bcc3af90800000000000000
+      internalID: -6943481139647664382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_58
+      rect:
+        serializedVersion: 2
+        x: 1898
+        y: 1429
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c5b67aeba2e65690800000000000000
+      internalID: -7613648892022311480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_59
+      rect:
+        serializedVersion: 2
+        x: 2708
+        y: 1043
+        width: 260
+        height: 387
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b33d704f9012be70800000000000000
+      internalID: 9129377670801208243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_60
+      rect:
+        serializedVersion: 2
+        x: 2956
+        y: 1384
+        width: 23
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f179dcc711f46bc00800000000000000
+      internalID: 916006510743361311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_61
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 1306
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2c042ed29fa71130800000000000000
+      internalID: 3537489077649804334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_62
+      rect:
+        serializedVersion: 2
+        x: 1925
+        y: 1283
+        width: 26
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb9860ea8d3038430800000000000000
+      internalID: 3783872341088831934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_63
+      rect:
+        serializedVersion: 2
+        x: 2965
+        y: 1321
+        width: 12
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9d1dff4b9a830820800000000000000
+      internalID: 2883300586113801628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_64
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 1225
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8bba6ca41b7b2630800000000000000
+      internalID: 3903348830768905102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_65
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 1160
+        width: 57
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a99ca1b23ae58800800000000000000
+      internalID: 614154427656083873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_66
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 1211
+        width: 34
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f152e921ffc6bd70800000000000000
+      internalID: 9058656335199097331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_67
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 1225
+        width: 27
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90f7633054f03a3c0800000000000000
+      internalID: -4349616026028703991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_68
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 1233
+        width: 30
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0501f5b1d0c176480800000000000000
+      internalID: -8906118895482498992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_69
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 1143
+        width: 51
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8045ff139dde0cff0800000000000000
+      internalID: -17752881406979064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_70
+      rect:
+        serializedVersion: 2
+        x: 2172
+        y: 1179
+        width: 39
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4d7911da15d49710800000000000000
+      internalID: 1699217270579494220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_71
+      rect:
+        serializedVersion: 2
+        x: 2448
+        y: 1210
+        width: 25
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bba82f2adba217fa0800000000000000
+      internalID: -5804811450732868933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_72
+      rect:
+        serializedVersion: 2
+        x: 2679
+        y: 1165
+        width: 50
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 329d4a7e20f3893b0800000000000000
+      internalID: -5505581262751606493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_73
+      rect:
+        serializedVersion: 2
+        x: 2965
+        y: 1153
+        width: 29
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f56ae83520043030800000000000000
+      internalID: 3473401372478170610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_74
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 1170
+        width: 21
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 233ce382264745410800000000000000
+      internalID: 1464923743733072690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_75
+      rect:
+        serializedVersion: 2
+        x: 1661
+        y: 1167
+        width: 25
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ab706602e988ca60800000000000000
+      internalID: 7694551567225093028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_76
+      rect:
+        serializedVersion: 2
+        x: 2182
+        y: 1120
+        width: 26
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7acccbf97a751090800000000000000
+      internalID: -8064404893402871169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_77
+      rect:
+        serializedVersion: 2
+        x: 2443
+        y: 1144
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0a524754602fd710800000000000000
+      internalID: 1720129198011603468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_78
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 1085
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc03983e55dd97db0800000000000000
+      internalID: -4793556967399804725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_79
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 1116
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ded27458096446980800000000000000
+      internalID: -8546628606317089299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_80
+      rect:
+        serializedVersion: 2
+        x: 2957
+        y: 1132
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b95169b289c63e40800000000000000
+      internalID: 5635913546993850803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_81
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 1026
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 068f91037ffa85df0800000000000000
+      internalID: -191209507964454816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_82
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 1037
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d862270f55783a60800000000000000
+      internalID: 7653996617718196439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_83
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 1008
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 575a2fdf08311e9d0800000000000000
+      internalID: -2746892852982012555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_84
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 903
+        width: 40
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0e11e5e78aa50b10800000000000000
+      internalID: 1947149914561650190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_85
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 918
+        width: 39
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f20cc7b0605f5030800000000000000
+      internalID: 3485593012938736370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_86
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 528
+        width: 240
+        height: 451
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b350879dd34b1730800000000000000
+      internalID: 3970842115465827248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_87
+      rect:
+        serializedVersion: 2
+        x: 1753
+        y: 865
+        width: 71
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f08375861d1519360800000000000000
+      internalID: 7174605641218471951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_88
+      rect:
+        serializedVersion: 2
+        x: 2278
+        y: 898
+        width: 73
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9712f28c79a3dd990800000000000000
+      internalID: -7359661792480517767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_89
+      rect:
+        serializedVersion: 2
+        x: 2745
+        y: 530
+        width: 212
+        height: 445
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 644304dbd9fbf3290800000000000000
+      internalID: -7908391736433429434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_90
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 973
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9820a2e3b7fa0bf60800000000000000
+      internalID: 8048125477969855113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_91
+      rect:
+        serializedVersion: 2
+        x: 2941
+        y: 929
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3201faa1d4d499a20800000000000000
+      internalID: 3069569614585204771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_92
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 531
+        width: 255
+        height: 376
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8b9ab85df5086540800000000000000
+      internalID: 5001253971868425103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_93
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 528
+        width: 262
+        height: 377
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7230723b57716a190800000000000000
+      internalID: -7951642297791741145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_94
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 877
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c6d0b6d7670bbc20800000000000000
+      internalID: 3223178100878661314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_95
+      rect:
+        serializedVersion: 2
+        x: 1665
+        y: 525
+        width: 247
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a31334f3af24ae20800000000000000
+      internalID: 3360863603148395425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_96
+      rect:
+        serializedVersion: 2
+        x: 2194
+        y: 529
+        width: 264
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da08d5edbee856070800000000000000
+      internalID: 8099036648594833581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_97
+      rect:
+        serializedVersion: 2
+        x: 2329
+        y: 894
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1baa725c5a1fd0a50800000000000000
+      internalID: 6489108332390361777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_98
+      rect:
+        serializedVersion: 2
+        x: 2944
+        y: 869
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40540f68f17442240800000000000000
+      internalID: 4766012506398278916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_99
+      rect:
+        serializedVersion: 2
+        x: 1888
+        y: 844
+        width: 25
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdadee19b102f0b30800000000000000
+      internalID: 4255655475672963804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_100
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 702
+        width: 36
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2a718a2d4f2c45d0800000000000000
+      internalID: -3077032436928775635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_101
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 729
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1be88b8437908fb0800000000000000
+      internalID: -4647548563511252193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_102
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 728
+        width: 21
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ff449454c9de85b0800000000000000
+      internalID: -5364110668895858699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_103
+      rect:
+        serializedVersion: 2
+        x: 2455
+        y: 701
+        width: 29
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30dd812ca262d6620800000000000000
+      internalID: 2768911310989614339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_104
+      rect:
+        serializedVersion: 2
+        x: 2719
+        y: 727
+        width: 42
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29b2de4f7c01e81e0800000000000000
+      internalID: -2193797517489132654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_105
+      rect:
+        serializedVersion: 2
+        x: 2942
+        y: 609
+        width: 64
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a71e7439af76a3d0800000000000000
+      internalID: -3195726520865908829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_106
+      rect:
+        serializedVersion: 2
+        x: 2959
+        y: 749
+        width: 18
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc80612ff64fa2e70800000000000000
+      internalID: 9091347559440845003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_107
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 671
+        width: 25
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75800b54eea500fe0800000000000000
+      internalID: -1224879119226894249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_108
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 721
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f70d874112b1a570800000000000000
+      internalID: 8476251760972597239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_109
+      rect:
+        serializedVersion: 2
+        x: 2694
+        y: 625
+        width: 59
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1d75b57db961e910800000000000000
+      internalID: 1864887983152659740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_110
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 614
+        width: 34
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e496f98f1dc7b40b0800000000000000
+      internalID: -5743359658519729842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_111
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 673
+        width: 20
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b93a8a00fe6ffee70800000000000000
+      internalID: 9146800874581435291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_112
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 645
+        width: 34
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19c99dc715ae5c7c0800000000000000
+      internalID: -4051574654042006383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_113
+      rect:
+        serializedVersion: 2
+        x: 1652
+        y: 687
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2079fc365611ed290800000000000000
+      internalID: -7863828772178389246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_114
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 661
+        width: 26
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad4bfdedbe8b70750800000000000000
+      internalID: 6271184329332733146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_115
+      rect:
+        serializedVersion: 2
+        x: 1366
+        y: 585
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 815312ee2e226d750800000000000000
+      internalID: 6329284684368917784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_116
+      rect:
+        serializedVersion: 2
+        x: 1642
+        y: 613
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c78950e6e6c4f4b50800000000000000
+      internalID: 6579561617787558012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_117
+      rect:
+        serializedVersion: 2
+        x: 1913
+        y: 607
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb7e28979d9489e80800000000000000
+      internalID: -8171700325468411973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_118
+      rect:
+        serializedVersion: 2
+        x: 2174
+        y: 608
+        width: 25
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd6933ab05fafd260800000000000000
+      internalID: 7124605896779601629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_119
+      rect:
+        serializedVersion: 2
+        x: 2444
+        y: 592
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1b446dd44e294a20800000000000000
+      internalID: 3047017496199842589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_120
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 576
+        width: 25
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 195fc8233ce24e660800000000000000
+      internalID: 7414102302460278161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_121
+      rect:
+        serializedVersion: 2
+        x: 2951
+        y: 571
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9135c2acab6951340800000000000000
+      internalID: 4833935504052081433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_122
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 416
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbbdc782abca49950800000000000000
+      internalID: 6454974081471929276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_123
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 419
+        width: 32
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5817f009e7a78e100800000000000000
+      internalID: 137494472636199301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_124
+      rect:
+        serializedVersion: 2
+        x: 1674
+        y: 28
+        width: 236
+        height: 441
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c8b0925a2a935ca0800000000000000
+      internalID: -6029305969554442043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_125
+      rect:
+        serializedVersion: 2
+        x: 2295
+        y: 383
+        width: 42
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42232162bfc0f5c60800000000000000
+      internalID: 7808974551698780708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_126
+      rect:
+        serializedVersion: 2
+        x: 2347
+        y: 456
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dc46d6af31856950800000000000000
+      internalID: 6441696952405347539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_127
+      rect:
+        serializedVersion: 2
+        x: 2845
+        y: 435
+        width: 74
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8686e1366688c6e50800000000000000
+      internalID: 6803963110380955752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_128
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 24
+        width: 217
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 226d0c9356e3f2c10800000000000000
+      internalID: 2030910561448941090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_129
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 25
+        width: 264
+        height: 396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d3b14bc5908ee110800000000000000
+      internalID: 1292111523950474200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_130
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 24
+        width: 210
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c0e30277158ca2a0800000000000000
+      internalID: -6724853807827394368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_131
+      rect:
+        serializedVersion: 2
+        x: 2234
+        y: 27
+        width: 197
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27a73494b7ed4a770800000000000000
+      internalID: 8621260207785474674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_132
+      rect:
+        serializedVersion: 2
+        x: 2719
+        y: 29
+        width: 235
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cd19358844dbda80800000000000000
+      internalID: -8440919668638016064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_133
+      rect:
+        serializedVersion: 2
+        x: 2860
+        y: 392
+        width: 27
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 849a8845a69212dc0800000000000000
+      internalID: -3665603085041358520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_134
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 352
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbcb5baa37bc6f170800000000000000
+      internalID: 8211974668202392763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_135
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 226
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 999ddd8ac1e26ec10800000000000000
+      internalID: 2082402578332506521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_136
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 265
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3f2959677f5f7d00800000000000000
+      internalID: 972601011008515898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_137
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 240
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b49fc010435ce2c50800000000000000
+      internalID: 6642463327564659019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_138
+      rect:
+        serializedVersion: 2
+        x: 1373
+        y: 244
+        width: 27
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7047036b9a10c5f40800000000000000
+      internalID: 5718447455271416839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_139
+      rect:
+        serializedVersion: 2
+        x: 2408
+        y: 245
+        width: 29
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cf9d18cf31c5c6c0800000000000000
+      internalID: -4123677404103336000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_140
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 186
+        width: 34
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 376955b8096a19150800000000000000
+      internalID: 5877662128438351475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_141
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 167
+        width: 31
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4da3428fa27527c70800000000000000
+      internalID: 8967325650111445716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_142
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 193
+        width: 18
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a43b94c3d597e710800000000000000
+      internalID: 1722510119261648038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_143
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 155
+        width: 49
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4837f4a9c07f8c770800000000000000
+      internalID: 8631420319356121988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_144
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 207
+        width: 22
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 594b1f3cc73dcf030800000000000000
+      internalID: 3529928740768429205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_145
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 206
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec7cfa23f385ed850800000000000000
+      internalID: 6403652748623988686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_146
+      rect:
+        serializedVersion: 2
+        x: 2231
+        y: 228
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcfe6e980f0021710800000000000000
+      internalID: 1662392245558898635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_147
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 138
+        width: 25
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fe64cb9601436960800000000000000
+      internalID: 7593984893315739384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_148
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 176
+        width: 20
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2677fd1c7f7b6ff10800000000000000
+      internalID: 2303230534184040290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_149
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 134
+        width: 27
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b28ad339bb20a8c50800000000000000
+      internalID: 6668145202927872043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_150
+      rect:
+        serializedVersion: 2
+        x: 1916
+        y: 143
+        width: 33
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebfc49a0ed7757cf0800000000000000
+      internalID: -255166008332595266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_151
+      rect:
+        serializedVersion: 2
+        x: 2194
+        y: 122
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd2422db8aa4794d0800000000000000
+      internalID: -3127949327597419811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_152
+      rect:
+        serializedVersion: 2
+        x: 2431
+        y: 165
+        width: 26
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4391f64b038669c10800000000000000
+      internalID: 2059948437963479348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_153
+      rect:
+        serializedVersion: 2
+        x: 2706
+        y: 129
+        width: 39
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f6de30eb5720e980800000000000000
+      internalID: -8511760020172515595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_154
+      rect:
+        serializedVersion: 2
+        x: 2962
+        y: 135
+        width: 23
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bbe8dcbedb6287a0800000000000000
+      internalID: -6376415518007956557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_155
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 113
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d834cda389b6f2660800000000000000
+      internalID: 7363222217340765069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_156
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 137
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdcf5a11dafdddd50800000000000000
+      internalID: 6763808149798780124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_157
+      rect:
+        serializedVersion: 2
+        x: 1389
+        y: 103
+        width: 25
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58be5a741a91d3c10800000000000000
+      internalID: 2034810787123817349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_158
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 103
+        width: 15
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 823d630e49e5f8fb0800000000000000
+      internalID: -4643388697285831896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_159
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 71
+        width: 27
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 476ce5f221ae68570800000000000000
+      internalID: 8468713513141847668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04. Fire VFX_160
+      rect:
+        serializedVersion: 2
+        x: 2209
+        y: 92
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1f17144575a9d920800000000000000
+      internalID: 3015623348573380381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      04. Fire VFX_0: -6178534495617409270
+      04. Fire VFX_1: -4675182386529986914
+      04. Fire VFX_10: 2220155615594034301
+      04. Fire VFX_100: -3077032436928775635
+      04. Fire VFX_101: -4647548563511252193
+      04. Fire VFX_102: -5364110668895858699
+      04. Fire VFX_103: 2768911310989614339
+      04. Fire VFX_104: -2193797517489132654
+      04. Fire VFX_105: -3195726520865908829
+      04. Fire VFX_106: 9091347559440845003
+      04. Fire VFX_107: -1224879119226894249
+      04. Fire VFX_108: 8476251760972597239
+      04. Fire VFX_109: 1864887983152659740
+      04. Fire VFX_11: 836561175924607062
+      04. Fire VFX_110: -5743359658519729842
+      04. Fire VFX_111: 9146800874581435291
+      04. Fire VFX_112: -4051574654042006383
+      04. Fire VFX_113: -7863828772178389246
+      04. Fire VFX_114: 6271184329332733146
+      04. Fire VFX_115: 6329284684368917784
+      04. Fire VFX_116: 6579561617787558012
+      04. Fire VFX_117: -8171700325468411973
+      04. Fire VFX_118: 7124605896779601629
+      04. Fire VFX_119: 3047017496199842589
+      04. Fire VFX_12: 3163762595776486914
+      04. Fire VFX_120: 7414102302460278161
+      04. Fire VFX_121: 4833935504052081433
+      04. Fire VFX_122: 6454974081471929276
+      04. Fire VFX_123: 137494472636199301
+      04. Fire VFX_124: -6029305969554442043
+      04. Fire VFX_125: 7808974551698780708
+      04. Fire VFX_126: 6441696952405347539
+      04. Fire VFX_127: 6803963110380955752
+      04. Fire VFX_128: 2030910561448941090
+      04. Fire VFX_129: 1292111523950474200
+      04. Fire VFX_13: -132500695047309984
+      04. Fire VFX_130: -6724853807827394368
+      04. Fire VFX_131: 8621260207785474674
+      04. Fire VFX_132: -8440919668638016064
+      04. Fire VFX_133: -3665603085041358520
+      04. Fire VFX_134: 8211974668202392763
+      04. Fire VFX_135: 2082402578332506521
+      04. Fire VFX_136: 972601011008515898
+      04. Fire VFX_137: 6642463327564659019
+      04. Fire VFX_138: 5718447455271416839
+      04. Fire VFX_139: -4123677404103336000
+      04. Fire VFX_14: -880324854894337029
+      04. Fire VFX_140: 5877662128438351475
+      04. Fire VFX_141: 8967325650111445716
+      04. Fire VFX_142: 1722510119261648038
+      04. Fire VFX_143: 8631420319356121988
+      04. Fire VFX_144: 3529928740768429205
+      04. Fire VFX_145: 6403652748623988686
+      04. Fire VFX_146: 1662392245558898635
+      04. Fire VFX_147: 7593984893315739384
+      04. Fire VFX_148: 2303230534184040290
+      04. Fire VFX_149: 6668145202927872043
+      04. Fire VFX_15: 7706844872764318043
+      04. Fire VFX_150: -255166008332595266
+      04. Fire VFX_151: -3127949327597419811
+      04. Fire VFX_152: 2059948437963479348
+      04. Fire VFX_153: -8511760020172515595
+      04. Fire VFX_154: -6376415518007956557
+      04. Fire VFX_155: 7363222217340765069
+      04. Fire VFX_156: 6763808149798780124
+      04. Fire VFX_157: 2034810787123817349
+      04. Fire VFX_158: -4643388697285831896
+      04. Fire VFX_159: 8468713513141847668
+      04. Fire VFX_16: 7391846379270605101
+      04. Fire VFX_160: 3015623348573380381
+      04. Fire VFX_17: -7386072749743265191
+      04. Fire VFX_18: 3559828506878217694
+      04. Fire VFX_19: 164191376640715315
+      04. Fire VFX_2: -5872006892962618692
+      04. Fire VFX_20: 6613048669864893021
+      04. Fire VFX_21: 7409627812192046846
+      04. Fire VFX_22: -7830285771738145852
+      04. Fire VFX_23: -4183372040475728645
+      04. Fire VFX_24: -3599400880859584497
+      04. Fire VFX_25: 7175621437401070756
+      04. Fire VFX_26: 917689386624711453
+      04. Fire VFX_27: 1193557903839813206
+      04. Fire VFX_28: 6329928143477618439
+      04. Fire VFX_29: 4207708299716925665
+      04. Fire VFX_3: -3019354955168662707
+      04. Fire VFX_30: 1990381621865006628
+      04. Fire VFX_31: 6911367513425015065
+      04. Fire VFX_32: 7740124027280730394
+      04. Fire VFX_33: -1947085047346629691
+      04. Fire VFX_34: -834273190461191069
+      04. Fire VFX_35: -1677928892855940462
+      04. Fire VFX_36: -6095134417522404111
+      04. Fire VFX_37: -3897829704838524837
+      04. Fire VFX_38: -1649424139072318567
+      04. Fire VFX_39: -8824315089265058649
+      04. Fire VFX_4: 5466045704848808972
+      04. Fire VFX_40: -513870511136897764
+      04. Fire VFX_41: -8935134115011245153
+      04. Fire VFX_42: -1408954746065049683
+      04. Fire VFX_43: 8851970350413111362
+      04. Fire VFX_44: 3352665625224627525
+      04. Fire VFX_45: 4129699032201990272
+      04. Fire VFX_46: 6814439990324016411
+      04. Fire VFX_47: -7212125754963021518
+      04. Fire VFX_48: -4453104043821400417
+      04. Fire VFX_49: -6456785180369158277
+      04. Fire VFX_5: 1466463897783372708
+      04. Fire VFX_50: -5888580748996689869
+      04. Fire VFX_51: -1933796398353525587
+      04. Fire VFX_52: 2224622536192661632
+      04. Fire VFX_53: -1649519262462075634
+      04. Fire VFX_54: 3385022727622908132
+      04. Fire VFX_55: -1682294754422149551
+      04. Fire VFX_56: -5247008311345125933
+      04. Fire VFX_57: -6943481139647664382
+      04. Fire VFX_58: -7613648892022311480
+      04. Fire VFX_59: 9129377670801208243
+      04. Fire VFX_6: 8565040787682424893
+      04. Fire VFX_60: 916006510743361311
+      04. Fire VFX_61: 3537489077649804334
+      04. Fire VFX_62: 3783872341088831934
+      04. Fire VFX_63: 2883300586113801628
+      04. Fire VFX_64: 3903348830768905102
+      04. Fire VFX_65: 614154427656083873
+      04. Fire VFX_66: 9058656335199097331
+      04. Fire VFX_67: -4349616026028703991
+      04. Fire VFX_68: -8906118895482498992
+      04. Fire VFX_69: -17752881406979064
+      04. Fire VFX_7: 6175352952129677885
+      04. Fire VFX_70: 1699217270579494220
+      04. Fire VFX_71: -5804811450732868933
+      04. Fire VFX_72: -5505581262751606493
+      04. Fire VFX_73: 3473401372478170610
+      04. Fire VFX_74: 1464923743733072690
+      04. Fire VFX_75: 7694551567225093028
+      04. Fire VFX_76: -8064404893402871169
+      04. Fire VFX_77: 1720129198011603468
+      04. Fire VFX_78: -4793556967399804725
+      04. Fire VFX_79: -8546628606317089299
+      04. Fire VFX_8: 2052292678284680167
+      04. Fire VFX_80: 5635913546993850803
+      04. Fire VFX_81: -191209507964454816
+      04. Fire VFX_82: 7653996617718196439
+      04. Fire VFX_83: -2746892852982012555
+      04. Fire VFX_84: 1947149914561650190
+      04. Fire VFX_85: 3485593012938736370
+      04. Fire VFX_86: 3970842115465827248
+      04. Fire VFX_87: 7174605641218471951
+      04. Fire VFX_88: -7359661792480517767
+      04. Fire VFX_89: -7908391736433429434
+      04. Fire VFX_9: -9137260393336241480
+      04. Fire VFX_90: 8048125477969855113
+      04. Fire VFX_91: 3069569614585204771
+      04. Fire VFX_92: 5001253971868425103
+      04. Fire VFX_93: -7951642297791741145
+      04. Fire VFX_94: 3223178100878661314
+      04. Fire VFX_95: 3360863603148395425
+      04. Fire VFX_96: 8099036648594833581
+      04. Fire VFX_97: 6489108332390361777
+      04. Fire VFX_98: 4766012506398278916
+      04. Fire VFX_99: 4255655475672963804
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
