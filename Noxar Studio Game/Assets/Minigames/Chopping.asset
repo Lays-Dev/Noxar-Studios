@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minigameName: Chop
   minigameID: Chop
-  minigameIcon: {fileID: 21300000, guid: a61774112d61c9a4d8f94037581cbd89, type: 3}
+  minigameIcon: {fileID: 21300000, guid: 38660ff4bfc6a9e49abd667d6f6bb8f3, type: 3}
   minigamePrefab: {fileID: 5409571780922412425, guid: db0ae34f0014d4148bdc6044b86935f6, type: 3}
   availableForRandomSelection: 1
