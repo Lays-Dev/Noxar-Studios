@@ -25,5 +25,5 @@ MonoBehaviour:
   - {fileID: 2655289499487010040, guid: f087a59770ad150469398c01bb0fef53, type: 3}
   - {fileID: 3977762118215344820, guid: f087a59770ad150469398c01bb0fef53, type: 3}
   - {fileID: -2956703501272061993, guid: f087a59770ad150469398c01bb0fef53, type: 3}
-  idleFrameRate: 8
-  talkingFrameRate: 8
+  idleFrameRate: 6
+  talkingFrameRate: 6

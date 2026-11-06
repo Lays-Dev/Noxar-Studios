@@ -3251,7 +3251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   availablePatrons:
-  - {fileID: 11400000, guid: 3d434a95d9bce2840b28dce01735ed21, type: 2}
+  - {fileID: 11400000, guid: 4ce282ade8c629645b555952a395268b, type: 2}
   availableDishes:
   - {fileID: 11400000, guid: 996afd1a1cc959147afc29a84b2cd774, type: 2}
   availableMinigames:

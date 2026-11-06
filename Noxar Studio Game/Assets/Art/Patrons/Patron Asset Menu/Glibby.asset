@@ -21,9 +21,9 @@ MonoBehaviour:
   - {fileID: -8123961753216049497, guid: 316ca69ecd6f17d4895cb25328122c7b, type: 3}
   - {fileID: 2076239089274590485, guid: 316ca69ecd6f17d4895cb25328122c7b, type: 3}
   talkingFrames:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  idleFrameRate: 8
-  talkingFrameRate: 8
+  - {fileID: -410571192595077161, guid: e2e46c7b54726f74495138af99ad8c8e, type: 3}
+  - {fileID: -2303354206232537788, guid: e2e46c7b54726f74495138af99ad8c8e, type: 3}
+  - {fileID: 3361364017819563763, guid: e2e46c7b54726f74495138af99ad8c8e, type: 3}
+  - {fileID: -8914139390283995329, guid: e2e46c7b54726f74495138af99ad8c8e, type: 3}
+  idleFrameRate: 6
+  talkingFrameRate: 6
