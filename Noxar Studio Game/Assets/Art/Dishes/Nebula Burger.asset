@@ -31,5 +31,5 @@ MonoBehaviour:
     badlyCutSprite: {fileID: 21300000, guid: b478445c0b87b384ca8ba95361728841, type: 3}
   - ingredientName: Beef
     uncutSprite: {fileID: 21300000, guid: 58b36ebdf2b159947ac520470ee25a53, type: 3}
-    cutSprite: {fileID: 21300000, guid: 86699d30fc3fb644ca62f9f0474d0d06, type: 3}
-    badlyCutSprite: {fileID: 21300000, guid: b478445c0b87b384ca8ba95361728841, type: 3}
+    cutSprite: {fileID: 21300000, guid: 33f9c5f1e4783744fa4c1be4964fdb64, type: 3}
+    badlyCutSprite: {fileID: 21300000, guid: d8677061a9da73b47bb40b5c134ce8bf, type: 3}
