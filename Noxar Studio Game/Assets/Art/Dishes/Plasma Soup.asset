@@ -45,4 +45,12 @@ MonoBehaviour:
   - ingredientName: Power Cell
     uncutSprite: {fileID: 21300000, guid: b478445c0b87b384ca8ba95361728841, type: 3}
     cutSprite: {fileID: 21300000, guid: e4174bf3803d8e540906d296c8c7be6e, type: 3}
-    badlyCutSprite: {fileID: 21300000, guid: d414e0b62bdbddc4aba7527bf6af26dc, type: 3}
+    badlyCutSprite: {fileID: 21300000, guid: 39a68b1abba77764d93903dc0c9d7e62, type: 3}
+  - ingredientName: Glorbo Goo
+    uncutSprite: {fileID: 21300000, guid: a61774112d61c9a4d8f94037581cbd89, type: 3}
+    cutSprite: {fileID: 21300000, guid: 86699d30fc3fb644ca62f9f0474d0d06, type: 3}
+    badlyCutSprite: {fileID: 21300000, guid: 86699d30fc3fb644ca62f9f0474d0d06, type: 3}
+  - ingredientName: Stardust
+    uncutSprite: {fileID: -3572395051433921054, guid: 36bf479af24d6a143a26ea590e9a863c, type: 3}
+    cutSprite: {fileID: 21300000, guid: 61073a4ae5a34874a837f2c30d751579, type: 3}
+    badlyCutSprite: {fileID: 21300000, guid: 61073a4ae5a34874a837f2c30d751579, type: 3}
