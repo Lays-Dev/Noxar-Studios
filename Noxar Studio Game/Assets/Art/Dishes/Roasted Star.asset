@@ -179,10 +179,10 @@ MonoBehaviour:
   vfxFramesPerSecond: 12
   loopVFX: 1
   ingredients:
-  - ingredientName: 
-    uncutSprite: {fileID: 0}
-    cutSprite: {fileID: 0}
-    badlyCutSprite: {fileID: 0}
+  - ingredientName: meteor ball
+    uncutSprite: {fileID: 21300000, guid: d414e0b62bdbddc4aba7527bf6af26dc, type: 3}
+    cutSprite: {fileID: 21300000, guid: f9def600ddb0af241b4bd868bc00a2bb, type: 3}
+    badlyCutSprite: {fileID: 21300000, guid: 94a50c1afdb61694eac820cace868273, type: 3}
   - ingredientName: 
     uncutSprite: {fileID: 0}
     cutSprite: {fileID: 0}
