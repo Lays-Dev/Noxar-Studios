@@ -43,6 +43,14 @@ public class DeliveryGameManager : MonoBehaviour
         if (currentHits >= maxHits)
         {
             gameEnded = true;
+
+            // Pause the main game timer.
+            if (LevelManager.Instance != null)
+            {
+                LevelManager.Instance.PauseLevelTimer();
+            }
+
+            // Load Lose scene.
             SceneManager.LoadScene(loseSceneName);
         }
     }
@@ -67,6 +75,14 @@ public class DeliveryGameManager : MonoBehaviour
         if (starsCollected >= starsNeeded)
         {
             gameEnded = true;
+
+            // Pause the main game timer.
+            if (LevelManager.Instance != null)
+            {
+                LevelManager.Instance.PauseLevelTimer();
+            }
+
+            // Load Win scene.
             SceneManager.LoadScene(winSceneName);
         }
     }
