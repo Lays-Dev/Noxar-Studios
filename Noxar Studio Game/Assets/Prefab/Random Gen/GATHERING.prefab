@@ -2046,6 +2046,7 @@ MonoBehaviour:
   - {fileID: 3873358926818434746}
   - {fileID: 7422705259930196492}
   - {fileID: 8756165385591036237}
+  - {fileID: 4119157477748936197}
   onGatheringCompleted:
     m_PersistentCalls:
       m_Calls: []
@@ -2455,7 +2456,7 @@ MonoBehaviour:
   ingredientName: Stars
   nextIngredient: {fileID: 0}
   armParent: {fileID: 7158920300418886903}
-  fridgeOpen: {fileID: 0}
+  fridgeOpen: {fileID: 9057901597304348761}
   tapSFX: {fileID: 2151561501246243202}
   ingredientImage: {fileID: 0}
 --- !u!1 &6511334191879323048
@@ -2856,7 +2857,7 @@ GameObject:
   - component: {fileID: 6499785305843577406}
   - component: {fileID: 4119157477748936197}
   m_Layer: 0
-  m_Name: Ingredient Button
+  m_Name: Power Cell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

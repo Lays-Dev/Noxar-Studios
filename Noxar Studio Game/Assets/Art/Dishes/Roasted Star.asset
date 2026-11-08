@@ -179,6 +179,10 @@ MonoBehaviour:
   vfxFramesPerSecond: 12
   loopVFX: 1
   ingredients:
+  - ingredientName: Rings
+    uncutSprite: {fileID: 21300000, guid: efa1301d52a3a5d4997c6534159ba697, type: 3}
+    cutSprite: {fileID: 21300000, guid: f286cc03eac0211418362ce14ba4e4f1, type: 3}
+    badlyCutSprite: {fileID: 21300000, guid: 24ac4ae8c3260584b90638c0f9e82571, type: 3}
   - ingredientName: meteor ball
     uncutSprite: {fileID: 21300000, guid: d414e0b62bdbddc4aba7527bf6af26dc, type: 3}
     cutSprite: {fileID: 21300000, guid: f9def600ddb0af241b4bd868bc00a2bb, type: 3}
@@ -187,7 +191,3 @@ MonoBehaviour:
     uncutSprite: {fileID: 21300000, guid: 91842bf1d86095548bf9d51da706a541, type: 3}
     cutSprite: {fileID: 21300000, guid: cd6dec92d3cf69843aa5dd33f728f5c8, type: 3}
     badlyCutSprite: {fileID: 21300000, guid: d087f289bd1833548b6c0e93c362bcb2, type: 3}
-  - ingredientName: Rings
-    uncutSprite: {fileID: 21300000, guid: efa1301d52a3a5d4997c6534159ba697, type: 3}
-    cutSprite: {fileID: 21300000, guid: f286cc03eac0211418362ce14ba4e4f1, type: 3}
-    badlyCutSprite: {fileID: 21300000, guid: 24ac4ae8c3260584b90638c0f9e82571, type: 3}
