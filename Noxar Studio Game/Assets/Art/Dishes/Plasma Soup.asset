@@ -49,8 +49,8 @@ MonoBehaviour:
   - ingredientName: Glorbo Goo
     uncutSprite: {fileID: 21300000, guid: a61774112d61c9a4d8f94037581cbd89, type: 3}
     cutSprite: {fileID: 21300000, guid: 86699d30fc3fb644ca62f9f0474d0d06, type: 3}
-    badlyCutSprite: {fileID: 21300000, guid: 86699d30fc3fb644ca62f9f0474d0d06, type: 3}
+    badlyCutSprite: {fileID: 21300000, guid: fd852e098a1d0db4995e223e2ce04868, type: 3}
   - ingredientName: Stardust
     uncutSprite: {fileID: -3572395051433921054, guid: 36bf479af24d6a143a26ea590e9a863c, type: 3}
     cutSprite: {fileID: 21300000, guid: 61073a4ae5a34874a837f2c30d751579, type: 3}
-    badlyCutSprite: {fileID: 21300000, guid: 61073a4ae5a34874a837f2c30d751579, type: 3}
+    badlyCutSprite: {fileID: 21300000, guid: 6a8784ed963218e45aad5f9923cfdbd1, type: 3}

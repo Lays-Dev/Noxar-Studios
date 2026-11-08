@@ -378,6 +378,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2936340874266231811, guid: db0ae34f0014d4148bdc6044b86935f6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 524d14671ac503848837bfa438486885, type: 3}
     - target: {fileID: 5409571780922412425, guid: db0ae34f0014d4148bdc6044b86935f6, type: 3}
       propertyPath: m_Name
       value: Chopping Canvas
