@@ -361,17 +361,25 @@ public void GenerateLevel()
 
     public void StartNextLevel()
     {
-        if (!levelFinished)
-        {
-            Debug.Log("Finish the current level before starting another.");
-            return;
-        }
+       // if (!levelFinished)
+        //{
+         //   Debug.Log("Finish the current level before starting another.");
+        //    return;
+       // }
 
+        // Increase the level number.
         currentLevel++;
 
+        // Completely reset previous level progress.
+        ResetLevelProgress();
+
+        // Generate a fresh level.
         GenerateLevel();
 
+        // Load the counter scene.
         SceneManager.LoadScene("Counter");
+
+        Debug.Log("Level " + currentLevel + " started!");
     }
 
     public void ResetGame()
@@ -389,5 +397,26 @@ public void GenerateLevel()
         dishServed = false;
 
         deliveryMinigameUnlocked = false;
+    }
+    public void ResetLevelProgress()
+    {
+        // Reset order progress.
+        orderTaken = false;
+        levelFinished = false;
+        dishServed = false;
+
+        // Reset minigame progress.
+        requiredMinigames.Clear();
+        completedMinigames.Clear();
+
+        // Reset special minigame progress.
+        deliveryMinigameUnlocked = false;
+
+        // Reset timer state.
+        timerRunning = false;
+        loseSceneLoading = false;
+        timeRemaining = 0f;
+
+        Debug.Log("All level progress has been reset!");
     }
 }
