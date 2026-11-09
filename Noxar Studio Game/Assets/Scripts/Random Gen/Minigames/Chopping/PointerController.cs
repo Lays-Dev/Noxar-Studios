@@ -1,4 +1,3 @@
-
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -173,19 +172,17 @@ void Update()
 
                 Debug.Log(ingredient.ingredientName + " was badly cut!");
 
-                // Add an extra ingredient if this is an original ingredient
-                if (!currentIngredientIsExtra)
-                {
-                    choppingQueue.Add(ingredient);
+                // ALWAYS add the badly chopped ingredient to the end
+                // of the queue, even if it is already an extra.
+                choppingQueue.Add(ingredient);
 
-                    extraIngredientsAdded++;
+                extraIngredientsAdded++;
 
-                    Debug.Log("Extra ingredient added: " +
-                        ingredient.ingredientName);
+                Debug.Log("Extra ingredient added: " +
+                    ingredient.ingredientName);
 
-                    Debug.Log("Total ingredients to chop: " +
-                        choppingQueue.Count);
-                }
+                Debug.Log("Total ingredients to chop: " +
+                    choppingQueue.Count);
             }
         }
 
