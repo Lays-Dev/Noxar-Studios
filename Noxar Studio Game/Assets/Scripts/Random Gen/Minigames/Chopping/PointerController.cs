@@ -23,6 +23,7 @@ public class PointerController : MonoBehaviour
     [Header("Ingredient Display")]
     public Image ingredientImage;
     private bool firstAttemptMade = false;
+    private bool ingredientCut = false;
 
     private DishData currentDish;
     private int currentIngredientIndex = 0;
@@ -41,10 +42,10 @@ public class PointerController : MonoBehaviour
     public int extraIngredientsAdded = 0;
 
     [Header("Win Screen")]
-public GameObject winBackground;
+    public GameObject winBackground;
 
-[Header("Chopping Input")]
-public bool canChop = false;
+    [Header("Chopping Input")]
+    public bool canChop = false;
 
 
     void Start()
@@ -85,46 +86,50 @@ public bool canChop = false;
     }
 
 
-void Update()
-{
-    // Don't process anything if the game has been won
-    if (gameWon)
-        return;
-
-    // Keep moving the pointer
-    pointerTransform.position = Vector3.MoveTowards(
-        pointerTransform.position,
-        targetPosition,
-        moveSpeed * Time.deltaTime
-    );
-
-    // Change direction at endpoints
-    if (Vector3.Distance(pointerTransform.position, pointA.position) < 0.1f)
+    void Update()
     {
-        targetPosition = pointB.position;
-    }
-    else if (Vector3.Distance(pointerTransform.position, pointB.position) < 0.1f)
-    {
-        targetPosition = pointA.position;
-    }
+        // Don't process anything if the game has been won
+        if (gameWon)
+            return;
 
-    // Don't allow chopping until instructions are closed
-    if (!canChop)
-        return;
+        // Keep moving the pointer
+        pointerTransform.position = Vector3.MoveTowards(
+            pointerTransform.position,
+            targetPosition,
+            moveSpeed * Time.deltaTime
+        );
 
-    // Mobile touch input
-    if (Touchscreen.current != null &&
-        Touchscreen.current.primaryTouch.press.wasPressedThisFrame)
-    {
-        CheckSuccess();
+        // Change direction at endpoints
+        if (Vector3.Distance(pointerTransform.position, pointA.position) < 0.1f)
+        {
+            targetPosition = pointB.position;
+        }
+        else if (Vector3.Distance(pointerTransform.position, pointB.position) < 0.1f)
+        {
+            targetPosition = pointA.position;
+        }
+
+        // Don't allow chopping until instructions are closed
+        if (!canChop)
+            return;
+
+        // Mobile touch input
+        if (Touchscreen.current != null &&
+            Touchscreen.current.primaryTouch.press.wasPressedThisFrame)
+        {
+            CheckSuccess();
+        }
     }
-}
 
 
     void CheckSuccess()
     {
+        Debug.Log("CHOPS REQUIRED: " + chopsRequired);
         if (gameWon)
             return;
+
+        IngredientData ingredient =
+            choppingQueue[currentIngredientIndex];
 
         // Check if pointer is inside safe zone
         if (RectTransformUtility.RectangleContainsScreenPoint(
@@ -136,21 +141,30 @@ void Update()
 
             Debug.Log("Successful chops: " + successfulChops);
 
-            // First attempt was successful
-            if (!firstAttemptMade)
+            // FIRST successful chop: display cut sprite
+            if (!ingredientCut)
             {
-                IngredientData ingredient =
-                    choppingQueue[currentIngredientIndex];
+                if (ingredient.cutSprite != null)
+                {
+                    SetIngredientSprite(ingredient.cutSprite);
+                    Debug.Log("Cut sprite name: " + ingredient.cutSprite.name);
+                    Debug.Log("Currently displayed sprite: " + ingredientImage.sprite.name);
+                    Debug.Log("Successful chops: " + successfulChops);
 
-                SetIngredientSprite(ingredient.cutSprite);
+                    Debug.Log("CUT SPRITE DISPLAYED: " +
+                        ingredient.ingredientName);
+                }
+                else
+                {
+                    Debug.LogError("No cut sprite assigned to: " +
+                        ingredient.ingredientName);
+                }
 
-                firstAttemptMade = true;
-
-                Debug.Log(ingredient.ingredientName + " was cut successfully!");
+                ingredientCut = true;
             }
 
-            // Check if ingredient has been chopped enough
-            if (successfulChops >= chopsRequired)
+            // SECOND successful chop: move to next ingredient
+            if (successfulChops == chopsRequired)
             {
                 NextIngredient();
             }
@@ -162,31 +176,26 @@ void Update()
             // Only process the first failed attempt
             if (!firstAttemptMade)
             {
-                IngredientData ingredient =
-                    choppingQueue[currentIngredientIndex];
-
-                // Display badly cut sprite
-                SetIngredientSprite(ingredient.badlyCutSprite);
+                if (ingredient.badlyCutSprite != null)
+                {
+                    SetIngredientSprite(ingredient.badlyCutSprite);
+                }
 
                 firstAttemptMade = true;
 
-                Debug.Log(ingredient.ingredientName + " was badly cut!");
+                Debug.Log(ingredient.ingredientName +
+                    " was badly cut!");
 
-                // ALWAYS add the badly chopped ingredient to the end
-                // of the queue, even if it is already an extra.
+                // Add another copy to the end of the queue
                 choppingQueue.Add(ingredient);
 
                 extraIngredientsAdded++;
 
                 Debug.Log("Extra ingredient added: " +
                     ingredient.ingredientName);
-
-                Debug.Log("Total ingredients to chop: " +
-                    choppingQueue.Count);
             }
         }
 
-        // Randomize speed after every attempt
         RandomizeSpeed();
     }
 
@@ -195,24 +204,21 @@ void Update()
     {
         currentIngredientIndex++;
 
-        // Check if all ingredients, including extras, are finished
         if (currentIngredientIndex >= choppingQueue.Count)
         {
             WinGame();
             return;
         }
 
-        // Reset chop counter
         successfulChops = 0;
 
-        // Reset first attempt
         firstAttemptMade = false;
 
-        // Check if the next ingredient is an extra
+        ingredientCut = false;
+
         currentIngredientIsExtra =
             currentIngredientIndex >= originalIngredientCount;
 
-        // Display next ingredient
         DisplayIngredient();
     }
 
@@ -225,10 +231,18 @@ void Update()
         IngredientData ingredient =
             choppingQueue[currentIngredientIndex];
 
-        // Display uncut sprite
-        SetIngredientSprite(ingredient.uncutSprite);
+        Debug.Log("Now displaying ingredient: " +
+            ingredient.ingredientName);
 
-        Debug.Log("Now chopping: " + ingredient.ingredientName);
+        if (ingredient.uncutSprite == null)
+        {
+            Debug.LogError("Missing uncutSprite for: " +
+                ingredient.ingredientName);
+
+            return;
+        }
+
+        SetIngredientSprite(ingredient.uncutSprite);
 
         if (currentIngredientIsExtra)
         {
@@ -237,17 +251,17 @@ void Update()
     }
 
 
-void WinGame()
-{
-    gameWon = true;
+    void WinGame()
+    {
+        gameWon = true;
 
-    Debug.Log("All ingredients chopped! Chopping Game Won!");
+        Debug.Log("All ingredients chopped! Chopping Game Won!");
 
-    Debug.Log("Extra ingredients added: " + extraIngredientsAdded);
+        Debug.Log("Extra ingredients added: " + extraIngredientsAdded);
 
-    // Activate the win background
-    winBackground.SetActive(true);
-}
+        // Activate the win background
+        winBackground.SetActive(true);
+    }
 
 
     void RandomizeSpeed()
@@ -262,22 +276,16 @@ void WinGame()
         Debug.Log("New pointer speed: " + moveSpeed);
     }
     void SetIngredientSprite(Sprite newSprite)
-{
-    if (newSprite == null)
-        return;
+    {
+        if (newSprite == null)
+        {
+            Debug.LogError("Trying to display a NULL sprite!");
+            return;
+        }
 
-    // Remember the current UI Image dimensions.
-    RectTransform imageRect = ingredientImage.rectTransform;
+        ingredientImage.sprite = newSprite;
+        ingredientImage.preserveAspect = true;
 
-    Vector2 originalSize = imageRect.sizeDelta;
-
-    // Change the sprite.
-    ingredientImage.sprite = newSprite;
-
-    // Restore the original UI Image dimensions.
-    imageRect.sizeDelta = originalSize;
-
-    // Maintain the sprite's aspect ratio within the existing dimensions.
-    ingredientImage.preserveAspect = true;
-}
+        Debug.Log("Image changed to: " + newSprite.name);
+    }
 }

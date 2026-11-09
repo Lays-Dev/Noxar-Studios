@@ -1255,7 +1255,7 @@ MonoBehaviour:
   safeZone: {fileID: 7421233621971602198}
   moveSpeed: 311.5
   successfulChops: 0
-  chopsRequired: 1
+  chopsRequired: 2
   ingredientImage: {fileID: 1829520113903527420}
   extraIngredientsAdded: 0
   winBackground: {fileID: 735529373371236586}
