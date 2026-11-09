@@ -18,6 +18,11 @@ public class PointerController : MonoBehaviour
     public int successfulChops = 0;
     public int chopsRequired = 3;
 
+    [Header("SFX")]
+    public AudioSource audioSource;
+    public AudioClip chopSound;
+    public AudioClip failSound;
+
     private bool gameWon = false;
 
     [Header("Ingredient Display")]
@@ -137,6 +142,15 @@ public class PointerController : MonoBehaviour
             pointerTransform.position,
             null))
         {
+            if (audioSource != null && chopSound != null)
+            {
+                audioSource.PlayOneShot(chopSound);
+            }
+            else
+            {
+                Debug.LogWarning("AudioSource or chopSound is not assigned!");
+            }
+
             successfulChops++;
 
             Debug.Log("Successful chops: " + successfulChops);
@@ -171,6 +185,14 @@ public class PointerController : MonoBehaviour
         }
         else
         {
+            if (audioSource != null && failSound != null)
+            {
+                audioSource.PlayOneShot(failSound);
+            }
+            else
+            {
+                Debug.LogWarning("AudioSource or failSound is not assigned!");
+            }
             Debug.Log("Fail!");
 
             // Only process the first failed attempt
