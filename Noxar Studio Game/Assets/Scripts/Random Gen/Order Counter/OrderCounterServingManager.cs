@@ -20,7 +20,7 @@ public class OrderCounterServingManager : MonoBehaviour
     public Button newLevelButton;
 
     [Header("Earnings Settings")]
-    public int earningsPerMinigame = 50;
+    public int earningsPerMinigame = 10;
 
     private LevelManager levelManager;
 

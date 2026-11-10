@@ -57,6 +57,10 @@ public class LevelManager : MonoBehaviour
     public PatronData johnnyPatron;
     public DishData nebulaBurgerDish;
 
+    [Header("Earnings Settings")]
+    public int earningsPerMinigame = 10;
+    public int galaxyCubesEarned = 0;
+
   
 
     private void Awake()
@@ -418,5 +422,12 @@ public void GenerateLevel()
         timeRemaining = 0f;
 
         Debug.Log("All level progress has been reset!");
+    }
+    public void CalculateGalaxyCubes()
+    {
+        galaxyCubesEarned =
+            completedMinigames.Count * earningsPerMinigame;
+
+        Debug.Log("Galaxy Cubes earned: " + galaxyCubesEarned);
     }
 }

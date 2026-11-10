@@ -80,6 +80,13 @@ public class DeliveryGameManager : MonoBehaviour
             if (LevelManager.Instance != null)
             {
                 LevelManager.Instance.PauseLevelTimer();
+
+                // Calculate Galaxy Cube rewards.
+                LevelManager.Instance.CalculateGalaxyCubes();
+            }
+            else
+            {
+                Debug.LogWarning("LevelManager instance is null. Cannot pause timer or calculate rewards.");
             }
 
             // Load Win scene.
