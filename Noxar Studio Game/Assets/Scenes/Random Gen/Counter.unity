@@ -144,17 +144,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 71320388}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.7543, y: 1.7543, z: 1.7543}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 526506767}
+  m_Father: {fileID: 1880643902}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.19263914}
   m_AnchorMax: {x: 0.61146736, y: 0.36559176}
-  m_AnchoredPosition: {x: 1.5, y: -1.5}
-  m_SizeDelta: {x: 3, y: 19}
+  m_AnchoredPosition: {x: -42.42685, y: 63.780884}
+  m_SizeDelta: {x: 41.926636, y: 59.496086}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &71320390
 CanvasRenderer:
@@ -505,10 +505,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1830389309}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1004, y: -919.7}
-  m_SizeDelta: {x: 2008.1, y: 324}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 35.73401, y: 160.29999}
+  m_SizeDelta: {x: 72.1001, y: 324}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &215384062
 MonoBehaviour:
@@ -1316,7 +1316,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1880643902}
-  - {fileID: 71320389}
   - {fileID: 786154367}
   m_Father: {fileID: 1830389309}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3251,6 +3250,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   availablePatrons:
+  - {fileID: 11400000, guid: f8f9283dca46a0549aca1fde3fb534ea, type: 2}
+  - {fileID: 11400000, guid: 4ce282ade8c629645b555952a395268b, type: 2}
+  - {fileID: 11400000, guid: 3d434a95d9bce2840b28dce01735ed21, type: 2}
+  - {fileID: 11400000, guid: 16c5f4bb632584842b6c9aaac911bc34, type: 2}
   - {fileID: 11400000, guid: cbdf932705e875f4dbf1624e4485236b, type: 2}
   availableDishes:
   - {fileID: 11400000, guid: 52996c0fb0db81c46978ff4fa79eb235, type: 2}
@@ -3260,6 +3263,7 @@ MonoBehaviour:
   availableMinigames:
   - {fileID: 11400000, guid: 3d53e9a40c17a3c4e9225b0b22ee6e3d, type: 2}
   - {fileID: 11400000, guid: 4265571b6ffbecb4f874d6c5e80ace51, type: 2}
+  - {fileID: 11400000, guid: 4a4ee2b7a6482424db7ab7421f9fc8cb, type: 2}
   minMinigames: 2
   maxMinigames: 3
   phoneMinigame: {fileID: 11400000, guid: 2ca25f086adf8464bb77a0e8a58ec522, type: 2}
@@ -3281,6 +3285,8 @@ MonoBehaviour:
   nebulaBurgerDish: {fileID: 11400000, guid: 996afd1a1cc959147afc29a84b2cd774, type: 2}
   earningsPerMinigame: 10
   galaxyCubesEarned: 0
+  timeBonusPerInterval: 5
+  secondsPerBonus: 30
 --- !u!4 &1502364663
 Transform:
   m_ObjectHideFlags: 0
@@ -3695,7 +3701,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 71320389}
   m_Father: {fileID: 526506767}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}

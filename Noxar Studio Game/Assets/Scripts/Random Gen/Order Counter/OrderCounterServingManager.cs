@@ -132,10 +132,11 @@ public class OrderCounterServingManager : MonoBehaviour
         if (serveButton != null)
             serveButton.gameObject.SetActive(false);
 
-        // Calculate earnings from completed minigames.
-        int amountEarned =
-            levelManager.completedMinigames.Count *
-            earningsPerMinigame;
+        
+        // Calculate Galaxy Cubes, including the time bonus.
+        levelManager.CalculateGalaxyCubes();
+
+        int amountEarned = levelManager.galaxyCubesEarned;
 
         if (amountEarnedText != null)
         {

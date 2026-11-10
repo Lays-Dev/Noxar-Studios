@@ -61,6 +61,10 @@ public class LevelManager : MonoBehaviour
     public int earningsPerMinigame = 10;
     public int galaxyCubesEarned = 0;
 
+    [Header("Time Bonus Settings")]
+    public int timeBonusPerInterval = 5;
+    public int secondsPerBonus = 30;
+
   
 
     private void Awake()
@@ -423,11 +427,29 @@ public void GenerateLevel()
 
         Debug.Log("All level progress has been reset!");
     }
+
     public void CalculateGalaxyCubes()
     {
-        galaxyCubesEarned =
+        // Calculate earnings from completed minigames.
+        int minigameEarnings =
             completedMinigames.Count * earningsPerMinigame;
 
-        Debug.Log("Galaxy Cubes earned: " + galaxyCubesEarned);
+        // Calculate how many full 10-second intervals remain.
+        int timeIntervals =
+            Mathf.FloorToInt(timeRemaining / secondsPerBonus);
+
+        // Calculate the time bonus.
+        int timeBonus =
+            timeIntervals * timeBonusPerInterval;
+
+        // Combine both rewards.
+        galaxyCubesEarned =
+            minigameEarnings + timeBonus;
+
+        Debug.Log("Minigame Earnings: " + minigameEarnings);
+        Debug.Log("Time Remaining: " + timeRemaining);
+        Debug.Log("Time Bonus: +" + timeBonus);
+        Debug.Log("TOTAL GALAXY CUBES: +" + galaxyCubesEarned);
     }
+
 }
