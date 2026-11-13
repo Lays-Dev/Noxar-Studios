@@ -1258,7 +1258,7 @@ MonoBehaviour:
   successfulChops: 0
   chopsRequired: 2
   audioSource: {fileID: 2047764180552644699}
-  chopSound: {fileID: 8300000, guid: 156ae13b52a745041a10a4049a21a7b7, type: 3}
+  chopSound: {fileID: 8300000, guid: 674451cfe89d74641abd27ac23f52783, type: 3}
   failSound: {fileID: 8300000, guid: 562e0a6603049204c96ebd5437599a6d, type: 3}
   ingredientImage: {fileID: 1829520113903527420}
   extraIngredientsAdded: 0
