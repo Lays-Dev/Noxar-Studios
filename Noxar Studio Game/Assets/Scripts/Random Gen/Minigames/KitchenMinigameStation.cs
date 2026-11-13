@@ -76,57 +76,77 @@ private void Start()
     UpdateStationVisibility();
 }
 
-    // Play the sound effect associated with this station's minigame.   
-    private void PlayStationSFX()
+
+// Play the sound effect only if this station's minigame
+// was selected for the current level.
+private void PlayStationSFX()
+{
+    Debug.Log("PlayStationSFX was called!", this);
+
+    // Check that a minigame is assigned.
+    if (minigame == null)
     {
-        Debug.Log("PlayStationSFX was called!", this);
-        if (minigame == null)
+        Debug.LogWarning(
+            "No minigame assigned to station " + gameObject.name,
+            this
+        );
+        return;
+    }
+
+    // Check that the LevelManager exists.
+    if (LevelManager.Instance == null)
+    {
+        Debug.LogWarning("LevelManager instance not found!", this);
+        return;
+    }
+
+    // Check whether this minigame was selected for this level.
+    if (!LevelManager.Instance.requiredMinigames.Contains(minigame))
+    {
+        Debug.Log(
+            "No SFX played. " + minigame.minigameName +
+            " was not selected for this level.",
+            this
+        );
+        return;
+    }
+
+    // Check that an AudioSource is assigned.
+    if (audioSource == null)
+    {
+        Debug.LogWarning(
+            "No AudioSource found on station " + gameObject.name,
+            this
+        );
+        return;
+    }
+
+    // Find and play the matching sound effect.
+    foreach (MinigameSound sound in minigameSounds)
+    {
+        if (sound == null || sound.soundEffect == null)
         {
-            Debug.LogWarning(
-                "Cannot play sound effect: No minigame assigned to station " +
-                gameObject.name + ".",
-                this
-            );
-            return;
+            continue;
         }
 
-        if (audioSource == null)
+        if (string.Equals(
+            sound.minigameName,
+            minigame.minigameName,
+            StringComparison.OrdinalIgnoreCase))
         {
-            Debug.LogWarning(
-                "Cannot play sound effect: No AudioSource found on station " +
-                gameObject.name + ".",
-                this
-            );
-            return;
-        }
-
-        foreach (MinigameSound sound in minigameSounds)
-        {
-            if (sound == null || sound.soundEffect == null)
-            {
-                Debug.LogWarning(
-                    "MinigameSound entry is missing or has no AudioClip assigned.",
-                    this
-                );
-                continue;
-            }
+            audioSource.PlayOneShot(sound.soundEffect);
 
             Debug.Log(
-                "Looking for sound: " + sound.minigameName +
-                " | Station minigame: " + minigame.minigameName,
+                "Playing sound effect for selected minigame: " +
+                minigame.minigameName,
                 this
             );
 
-            // Match the sound to the minigameData name.
-            if (string.Equals(sound.minigameName, minigame.minigameName, StringComparison.OrdinalIgnoreCase))
-            {
-                audioSource.PlayOneShot(sound.soundEffect);
-
-                Debug.Log("Playing sound effect for minigame: " + minigame.minigameName, this);
-                break;
-            }
+            break;
         }
     }
+}
+
 
 
 public void UpdateStationVisibility()
