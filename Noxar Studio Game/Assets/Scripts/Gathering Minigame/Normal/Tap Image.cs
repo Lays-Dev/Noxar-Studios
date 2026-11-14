@@ -16,7 +16,7 @@ public class TapImage : MonoBehaviour
     public AudioSource tapSFX;
 
     [Header("Ingredient UI")]
-public Image ingredientImage;
+    public Image ingredientImage;
 
     private RectTransform image;
     private int tapCount = 0;
@@ -24,6 +24,35 @@ public Image ingredientImage;
     private bool ingredientFinished = false;
 
     private GatheringMinigameManager gatheringManager;
+    public class UITAPVFXSPAWNER : MonoBehaviour
+    {
+        [Header("Ui VFX")]
+        public GameObject vfxPrefab;
+        public Canvas targetCanvas;//see if new name needs to be done
+
+        [Header("Animation")]
+        public float effectLifeTime = 1f;
+
+        private RectTransform CanvasRect;
+        private Camera uiCamera;
+
+        private void Awake()
+        {
+            if (targetCanvas == null)
+                targetCanvas = GetComponentInParent<Canvas>();
+
+            if (targetCanvas != null)
+            {
+                CanvasRect = targetCanvas.GetComponent< RectTransform>();
+                if (targetCanvas.renderMode != RenderMode.ScreenSpaceOverlay)
+                    uiCamera = targetCanvas.worldCamera;
+            }
+        }
+  
+    }
+  
+
+
 
     private void Start()
     {
@@ -70,6 +99,7 @@ public Image ingredientImage;
         {
             Vector2 touchPosition =
                 Touchscreen.current.primaryTouch.position.ReadValue();
+            Vector2 screenPosition;
 
             Canvas canvas = GetComponentInParent<Canvas>();
             Camera cam = null;
@@ -96,7 +126,25 @@ public Image ingredientImage;
                 {
                     FinishIngredient();
                 }
+
+                if(Touchscreen.current !=null &&
+                    Touchscreen.current.primaryTouch.press.wasPressedThisFrame)
+                {
+                    screenPosition = 
+                        Touchscreen.current.primaryTouch.position.ReadValue();
+                }
+                else if (Mouse.current != null &&
+                          Mouse.current.leftButton.wasPressedThisFrame)
+                {
+                    screenPosition = Mouse.current.position.ReadValue();
+                }
+                else
+                {
+                    return;
+                }
+
             }
+            
         }
     }
 
