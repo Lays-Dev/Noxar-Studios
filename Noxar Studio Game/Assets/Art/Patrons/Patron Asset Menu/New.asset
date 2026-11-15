@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   patronName: New
   patronSprite: {fileID: 5210981034667692576, guid: cef26c76c9ed75f4aa0202eed2aa0082, type: 3}
-  patronClickSFX: {fileID: 8300000, guid: fb34d08174962eb46946ce7429220531, type: 3}
+  patronClickSFX: {fileID: 8300000, guid: 1b297a1df4d0907419c3c8480c37bbee, type: 3}
   idleFrames:
   - {fileID: 5210981034667692576, guid: cef26c76c9ed75f4aa0202eed2aa0082, type: 3}
   - {fileID: -499777672956710591, guid: cef26c76c9ed75f4aa0202eed2aa0082, type: 3}
