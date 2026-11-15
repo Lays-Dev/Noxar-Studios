@@ -1259,7 +1259,7 @@ MonoBehaviour:
   chopsRequired: 2
   audioSource: {fileID: 2047764180552644699}
   chopSound: {fileID: 8300000, guid: 674451cfe89d74641abd27ac23f52783, type: 3}
-  failSound: {fileID: 8300000, guid: 562e0a6603049204c96ebd5437599a6d, type: 3}
+  failSound: {fileID: 8300000, guid: 47f0835d2047f6f4893ad28f0a11d867, type: 3}
   ingredientImage: {fileID: 1829520113903527420}
   extraIngredientsAdded: 0
   winBackground: {fileID: 735529373371236586}
