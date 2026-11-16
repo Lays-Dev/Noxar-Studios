@@ -1,4 +1,3 @@
-
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -10,6 +9,12 @@ public class SpriteButton : MonoBehaviour
     [Header("SFX")]
     public AudioSource audioSource;
     public AudioClip paybuttonSFX;
+
+    [Header("Claw Movement Reference")]
+    public ClawMovement clawMovement;
+
+    [Header("Magnet Reference")]
+    public MagnetClaw magnetClaw;
 
     private Camera mainCamera;
 
@@ -62,8 +67,13 @@ public class SpriteButton : MonoBehaviour
                 {
                     audioSource.PlayOneShot(paybuttonSFX);
                 }
-                
+
                 capsuleSpawner.StartSpawning();
+                // Unlock claw movement.
+                if (clawMovement != null)
+                {
+                    clawMovement.UnlockMovement();
+                }
             }
         }
     }

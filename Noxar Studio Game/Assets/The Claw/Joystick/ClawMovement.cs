@@ -6,6 +6,7 @@ public class ClawMovement : MonoBehaviour
     [Header("Movement")]
     public InputActionReference moveAction;
     public float moveSpeed = 5f;
+    public bool canMove = false;
 
     [Header("Movement Boundaries")]
     public float minX = -4f;
@@ -13,6 +14,9 @@ public class ClawMovement : MonoBehaviour
 
     private void Update()
     {
+        if (!canMove)
+            return;
+
         if (moveAction == null)
             return;
 
@@ -30,6 +34,16 @@ public class ClawMovement : MonoBehaviour
         newPosition.x = Mathf.Clamp(newPosition.x, minX, maxX);
 
         transform.position = newPosition;
+    }
+
+    public void UnlockMovement()
+    {
+        canMove = true;
+    }
+
+    public void LockMovement()
+    {
+        canMove = false;
     }
 }
 
