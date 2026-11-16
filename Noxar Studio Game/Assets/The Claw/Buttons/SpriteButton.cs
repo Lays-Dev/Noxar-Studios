@@ -7,6 +7,10 @@ public class SpriteButton : MonoBehaviour
     [Header("Spawner Reference")]
     public CapsuleSpawner capsuleSpawner;
 
+    [Header("SFX")]
+    public AudioSource audioSource;
+    public AudioClip paybuttonSFX;
+
     private Camera mainCamera;
 
     private void Awake()
@@ -53,6 +57,12 @@ public class SpriteButton : MonoBehaviour
         {
             if (capsuleSpawner != null)
             {
+                // Play the sound effect.
+                if (audioSource != null && paybuttonSFX != null)
+                {
+                    audioSource.PlayOneShot(paybuttonSFX);
+                }
+                
                 capsuleSpawner.StartSpawning();
             }
         }
