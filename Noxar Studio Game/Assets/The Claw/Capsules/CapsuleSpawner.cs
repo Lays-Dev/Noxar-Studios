@@ -25,6 +25,7 @@ public class CapsuleSpawner : MonoBehaviour
 
     private float spawnTimer;
     private bool isSpawning = false;
+    private int spawnedCapsuleCount = 0;
 
     private void Update()
     {
@@ -48,6 +49,7 @@ public class CapsuleSpawner : MonoBehaviour
     // Call this function using your UI Button.
     public void StartSpawning()
     {
+        
         if (isSpawning)
             return;
 
@@ -65,46 +67,38 @@ public class CapsuleSpawner : MonoBehaviour
 
     private void SpawnCapsule()
     {
-        if (capsulePrefab == null ||
-            availableCapsules.Count == 0)
-        {
-            return;
-        }
-
-        if (capsuleContainer.childCount >= maxCapsules)
+        if (spawnedCapsuleCount >= maxCapsules)
             return;
 
-        // Select a capsule based on rarity weight.
         CapsuleData selectedCapsule = GetRandomCapsule();
 
         if (selectedCapsule == null)
             return;
 
-        // Random horizontal spawn position.
-        float randomX = Random.Range(spawnMinX, spawnMaxX);
-
         Vector3 spawnPosition = new Vector3(
-            randomX,
+            Random.Range(spawnMinX, spawnMaxX),
             spawnY,
             0f
         );
 
-        // Instantiate capsule.
         GameObject newCapsule = Instantiate(
             capsulePrefab,
             spawnPosition,
-            Quaternion.identity
+            Quaternion.identity,
+            capsuleContainer
         );
 
-        // Add capsule to container.
-        newCapsule.transform.SetParent(capsuleContainer, true);
-
-        // Assign capsule information and sprite.
         Capsule capsule = newCapsule.GetComponent<Capsule>();
 
         if (capsule != null)
         {
             capsule.Setup(selectedCapsule);
+            spawnedCapsuleCount++;
+        }
+        else
+        {
+            Destroy(newCapsule);
+            Debug.LogWarning("Capsule prefab is missing the Capsule script!");
         }
     }
 
