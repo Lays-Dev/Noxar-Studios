@@ -134,4 +134,26 @@ public class CapsuleSpawner : MonoBehaviour
 
         return null;
     }
+
+    // Starts a fresh batch of capsules after a purchase.
+    public void StartNewBatch()
+    {
+        // Stop the previous spawning process.
+        isSpawning = false;
+
+        // Destroy capsules still inside the machine.
+        foreach (Transform capsule in capsuleContainer)
+        {
+            Destroy(capsule.gameObject);
+        }
+
+        // Reset the spawn counter.
+        spawnedCapsuleCount = 0;
+        spawnTimer = 0f;
+
+        // Start spawning the new batch.
+        StartSpawning();
+
+        Debug.Log("New capsule batch purchased!");
+    }
 }

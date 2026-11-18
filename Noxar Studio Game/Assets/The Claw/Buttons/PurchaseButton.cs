@@ -1,3 +1,4 @@
+
 using UnityEngine;
 
 public class PurchaseButton : MonoBehaviour
@@ -9,21 +10,29 @@ public class PurchaseButton : MonoBehaviour
     public PayButton payButton;
     public CaptureButton captureButton;
 
-    // Called when the popup close button is pressed.
-    public void ClosePopup()
+    [Header("Capsule Spawner")]
+    public CapsuleSpawner capsuleSpawner;
+
+    // Called when the Purchase Button is pressed.
+    public void PurchaseCapsules()
     {
         // Close the warning popup.
         if (warningPopup != null)
             warningPopup.SetActive(false);
 
-        // Re-enable Pay Button.
+        // Reset payment status.
         if (payButton != null)
-            payButton.EnableButton();
+            payButton.ResetPayment();
 
         // Re-enable Capture Button.
         if (captureButton != null)
             captureButton.EnableButton();
 
-        Debug.Log("Warning popup closed!");
+        // Spawn a fresh batch of capsules.
+        if (capsuleSpawner != null)
+            capsuleSpawner.StartNewBatch();
+
+        Debug.Log("New capsules purchased!");
     }
 }
+

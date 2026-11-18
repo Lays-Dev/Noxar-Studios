@@ -14,12 +14,26 @@ public class MagnetClaw : MonoBehaviour
     [Header("Button References")]
     public PayButton payButton;
 
+    [Header("Collection UI")]
+public CapsuleCollectionUI collectionUI;
+
+    [Header("Collection UI")]
+    public GameObject collectionCanvas;
+
     private Capsule targetCapsule;
     private Rigidbody2D targetBody;
     private Collider2D[] targetColliders;
 
     private bool isAttracting;
     private bool isAttached;
+
+    private void Awake()
+    {
+        if (collectionCanvas != null)
+        {
+            collectionCanvas.SetActive(false);
+        }
+    }
 
     public void MagnetizeClosestCapsule()
     {
@@ -126,29 +140,39 @@ public class MagnetClaw : MonoBehaviour
         }
     }
 
-    private void AttachCapsule()
+    
+private void AttachCapsule()
+{
+    // Get the capsule's data before attaching it.
+    CapsuleData collectedData = targetCapsule.GetCapsuleData();
+
+    // Stop physics simulation.
+    if (targetBody != null)
     {
-        // Stop physics simulation.
-        if (targetBody != null)
-        {
-            targetBody.linearVelocity = Vector2.zero;
-            targetBody.simulated = false;
-        }
-
-        // Attach capsule to claw.
-        targetCapsule.transform.SetParent(magnetPoint);
-
-        targetCapsule.transform.localPosition = Vector3.zero;
-
-        isAttracting = false;
-        isAttached = true;
-
-        Debug.Log("Capsule attached to claw!");
-
-        // Deactivate the Pay Button after grabbing a capsule.
-        if (payButton != null)
-        {
-            payButton.DeactivateButton();
-        }
+        targetBody.linearVelocity = Vector2.zero;
+        targetBody.simulated = false;
     }
+
+    // Attach capsule to claw.
+    targetCapsule.transform.SetParent(magnetPoint);
+    targetCapsule.transform.localPosition = Vector3.zero;
+
+    isAttracting = false;
+    isAttached = true;
+
+    Debug.Log("Capsule attached to claw!");
+
+    // Deactivate the Pay Button.
+    if (payButton != null)
+    {
+        payButton.DeactivateButton();
+    }
+
+    // Display the collected capsule.
+    if (collectionUI != null)
+    {
+        collectionUI.ShowCapsule(collectedData);
+    }
+}
+
 }

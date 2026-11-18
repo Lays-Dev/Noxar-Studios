@@ -119,4 +119,15 @@ public class PayButton : MonoBehaviour
 
         Debug.Log("Pay Button re-enabled!");
     }
+
+    // Resets payment so the player can pay for another batch.
+    public void ResetPayment()
+    {
+        hasPaid = false;
+
+        if (buttonCollider != null)
+            buttonCollider.enabled = true;
+
+        Debug.Log("Payment reset!");
+    }
 }
