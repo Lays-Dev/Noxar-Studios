@@ -8,6 +8,11 @@ public class CapsuleCollectionUI : MonoBehaviour
     public Image capsuleImage;
     public TMP_Text capsuleNameText;
 
+    private void Awake()
+    {
+        gameObject.SetActive(false);
+    }
+
     // Display the capsule that was collected.
     public void ShowCapsule(CapsuleData capsuleData)
     {

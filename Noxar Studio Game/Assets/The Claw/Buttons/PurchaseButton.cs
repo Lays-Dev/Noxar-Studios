@@ -13,26 +13,39 @@ public class PurchaseButton : MonoBehaviour
     [Header("Capsule Spawner")]
     public CapsuleSpawner capsuleSpawner;
 
+    [Header("Magnet References")]
+    public MagnetClaw magnetClaw;
+    [Header("Movement")]
+    public ClawMovement clawMovement;
     // Called when the Purchase Button is pressed.
+
     public void PurchaseCapsules()
     {
-        // Close the warning popup.
         if (warningPopup != null)
             warningPopup.SetActive(false);
 
-        // Reset payment status.
+        // Remove the previously captured capsule.
+        if (magnetClaw != null)
+            magnetClaw.ResetClawMachine();
+
+        // Reset payment.
         if (payButton != null)
             payButton.ResetPayment();
 
-        // Re-enable Capture Button.
+        // Enable capture button.
         if (captureButton != null)
             captureButton.EnableButton();
 
-        // Spawn a fresh batch of capsules.
+        // Spawn a fresh batch.
         if (capsuleSpawner != null)
             capsuleSpawner.StartNewBatch();
 
-        Debug.Log("New capsules purchased!");
+        // Unlock claw movement.
+        if (clawMovement != null)
+            clawMovement.UnlockMovement();
+
+        Debug.Log("New capsules purchased! Claw movement unlocked.");
     }
+
 }
 

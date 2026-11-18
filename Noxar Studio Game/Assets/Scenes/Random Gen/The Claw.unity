@@ -1181,6 +1181,8 @@ MonoBehaviour:
   payButton: {fileID: 628976282}
   captureButton: {fileID: 180991504}
   capsuleSpawner: {fileID: 1492486054}
+  magnetClaw: {fileID: 1873741312}
+  clawMovement: {fileID: 0}
 --- !u!114 &831393890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1473,7 +1475,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1243185233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3081,8 +3083,8 @@ MonoBehaviour:
   attractionSpeed: 5
   attachDistance: 0.15
   payButton: {fileID: 628976282}
-  collectionUI: {fileID: 1243185237}
   collectionCanvas: {fileID: 1243185232}
+  collectionUI: {fileID: 1243185237}
 --- !u!1 &1892222727
 GameObject:
   m_ObjectHideFlags: 0
@@ -3304,6 +3306,8 @@ MonoBehaviour:
   payButton: {fileID: 628976282}
   captureButton: {fileID: 180991504}
   capsuleSpawner: {fileID: 1492486054}
+  magnetClaw: {fileID: 1873741312}
+  clawMovement: {fileID: 1873741311}
 --- !u!114 &1927701320
 MonoBehaviour:
   m_ObjectHideFlags: 0

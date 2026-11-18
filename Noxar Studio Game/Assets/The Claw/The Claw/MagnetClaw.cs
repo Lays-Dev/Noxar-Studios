@@ -1,4 +1,3 @@
-
 using UnityEngine;
 
 public class MagnetClaw : MonoBehaviour
@@ -15,10 +14,8 @@ public class MagnetClaw : MonoBehaviour
     public PayButton payButton;
 
     [Header("Collection UI")]
-public CapsuleCollectionUI collectionUI;
-
-    [Header("Collection UI")]
     public GameObject collectionCanvas;
+    public CapsuleCollectionUI collectionUI;
 
     private Capsule targetCapsule;
     private Rigidbody2D targetBody;
@@ -27,13 +24,6 @@ public CapsuleCollectionUI collectionUI;
     private bool isAttracting;
     private bool isAttached;
 
-    private void Awake()
-    {
-        if (collectionCanvas != null)
-        {
-            collectionCanvas.SetActive(false);
-        }
-    }
 
     public void MagnetizeClosestCapsule()
     {
@@ -141,38 +131,86 @@ public CapsuleCollectionUI collectionUI;
     }
 
     
-private void AttachCapsule()
-{
-    // Get the capsule's data before attaching it.
-    CapsuleData collectedData = targetCapsule.GetCapsuleData();
-
-    // Stop physics simulation.
-    if (targetBody != null)
+    private void AttachCapsule()
     {
-        targetBody.linearVelocity = Vector2.zero;
-        targetBody.simulated = false;
+        CapsuleData collectedData = targetCapsule.GetCapsuleData();
+
+        if (targetBody != null)
+        {
+            targetBody.linearVelocity = Vector2.zero;
+            targetBody.simulated = false;
+        }
+
+        targetCapsule.transform.SetParent(magnetPoint);
+        targetCapsule.transform.localPosition = Vector3.zero;
+
+        isAttracting = false;
+        isAttached = true;
+
+        Debug.Log("Capsule attached to claw!");
+
+        if (payButton != null)
+            payButton.DeactivateButton();
+
+        // Activate the entire collection Canvas.
+        if (collectionCanvas != null)
+            collectionCanvas.SetActive(true);
+
+        // Display the capsule's image and name.
+        if (collectionUI != null)
+            collectionUI.ShowCapsule(collectedData);
     }
 
-    // Attach capsule to claw.
-    targetCapsule.transform.SetParent(magnetPoint);
-    targetCapsule.transform.localPosition = Vector3.zero;
 
-    isAttracting = false;
-    isAttached = true;
-
-    Debug.Log("Capsule attached to claw!");
-
-    // Deactivate the Pay Button.
-    if (payButton != null)
+    public void ResetClawMachine()
     {
-        payButton.DeactivateButton();
+        Debug.Log("Resetting claw machine!");
+
+        // Destroy any capsule currently attached to the magnet.
+        if (magnetPoint != null)
+        {
+            Capsule[] heldCapsules =
+                magnetPoint.GetComponentsInChildren<Capsule>(true);
+
+            foreach (Capsule capsule in heldCapsules)
+            {
+                if (capsule != null)
+                {
+                    Destroy(capsule.gameObject);
+                    Debug.Log("Destroyed captured capsule: " + capsule.name);
+                }
+            }
+        }
+
+        // Destroy the target capsule if it is not already
+        // being destroyed as a child of the magnet.
+        if (targetCapsule != null)
+        {
+            if (magnetPoint == null ||
+                !targetCapsule.transform.IsChildOf(magnetPoint))
+            {
+                Destroy(targetCapsule.gameObject);
+            }
+        }
+
+        // Clear the capsule references.
+        targetCapsule = null;
+        targetBody = null;
+        targetColliders = null;
+
+        // Reset the claw states.
+        isAttracting = false;
+        isAttached = false;
+
+        // Hide the collection screen.
+        if (collectionUI != null)
+            collectionUI.CloseCollectionUI();
+
+        if (collectionCanvas != null)
+            collectionCanvas.SetActive(false);
+
+        Debug.Log("Claw machine reset complete!");
     }
 
-    // Display the collected capsule.
-    if (collectionUI != null)
-    {
-        collectionUI.ShowCapsule(collectedData);
-    }
-}
 
 }
