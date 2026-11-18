@@ -1,2 +1,17 @@
 fileFormatVersion: 2
 guid: e5150f18b043dc64fbbabd0605973f54
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - capsuleSpawner: {instanceID: 0}
+  - clawMovement: {instanceID: 0}
+  - warningPopup: {instanceID: 0}
+  - captureButton: {instanceID: 0}
+  - audioSource: {instanceID: 0}
+  - paybuttonSFX: {fileID: 8300000, guid: 2238ace573d00594f87c0444e6e1037f, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

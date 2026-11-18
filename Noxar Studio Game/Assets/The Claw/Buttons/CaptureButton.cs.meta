@@ -1,2 +1,15 @@
 fileFormatVersion: 2
 guid: bd31de7455a598a499f5f97b6742ad38
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - magnetClaw: {instanceID: 0}
+  - clawMovement: {instanceID: 0}
+  - audioSource: {instanceID: 0}
+  - captureButtonSFX: {fileID: 8300000, guid: f8794d91372ff5c45b4c04e6508b2fdd, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
