@@ -23,6 +23,10 @@ public class CapsuleSpawner : MonoBehaviour
     public float spawnMaxX = 4f;
     public float spawnY = 6f;
 
+    [Header("SFX")]
+    public AudioSource audioSource;
+    public AudioClip spawnSound;
+
     private float spawnTimer;
     private bool isSpawning = false;
     private int spawnedCapsuleCount = 0;
@@ -63,6 +67,16 @@ public class CapsuleSpawner : MonoBehaviour
         spawnTimer = 0f;
 
         Debug.Log("Capsule spawning activated!");
+
+        // Play the spawn sound if available.
+        if (audioSource != null && spawnSound != null)  
+        {
+            audioSource.PlayOneShot(spawnSound);
+        }
+        else
+        {
+            Debug.LogWarning("AudioSource or SpawnSound is missing!", this);
+        }
     }
 
     private void SpawnCapsule()

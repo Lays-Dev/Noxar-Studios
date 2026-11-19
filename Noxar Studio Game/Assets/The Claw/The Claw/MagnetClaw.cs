@@ -17,6 +17,9 @@ public class MagnetClaw : MonoBehaviour
     public GameObject collectionCanvas;
     public CapsuleCollectionUI collectionUI;
 
+    [Header("Reward UI")]
+    public CaptureRewardUI rewardUI;
+
     private Capsule targetCapsule;
     private Rigidbody2D targetBody;
     private Collider2D[] targetColliders;
@@ -131,35 +134,71 @@ public class MagnetClaw : MonoBehaviour
     }
 
     
-    private void AttachCapsule()
+
+private void AttachCapsule()
+{
+    // Get the capsule's information.
+    CapsuleData collectedData = targetCapsule.GetCapsuleData();
+
+    if (collectedData == null)
     {
-        CapsuleData collectedData = targetCapsule.GetCapsuleData();
-
-        if (targetBody != null)
-        {
-            targetBody.linearVelocity = Vector2.zero;
-            targetBody.simulated = false;
-        }
-
-        targetCapsule.transform.SetParent(magnetPoint);
-        targetCapsule.transform.localPosition = Vector3.zero;
-
-        isAttracting = false;
-        isAttached = true;
-
-        Debug.Log("Capsule attached to claw!");
-
-        if (payButton != null)
-            payButton.DeactivateButton();
-
-        // Activate the entire collection Canvas.
-        if (collectionCanvas != null)
-            collectionCanvas.SetActive(true);
-
-        // Display the capsule's image and name.
-        if (collectionUI != null)
-            collectionUI.ShowCapsule(collectedData);
+        Debug.LogError("Captured capsule has no CapsuleData!");
+        return;
     }
+
+    // Increase the capsule collection count.
+    if (CapsuleCollectionManager.Instance != null)
+    {
+        CapsuleCollectionManager.Instance.AddCapsule(collectedData);
+    }
+
+    // Select a random item matching the capsule rarity.
+    ItemData wonItem = null;
+
+    if (ItemCollectionManager.Instance != null)
+    {
+        wonItem = ItemCollectionManager.Instance.GetRandomReward(
+            collectedData.rarity
+        );
+    }
+    else
+    {
+        Debug.LogError("ItemCollectionManager was not found!");
+    }
+
+    // Stop the capsule physics.
+    if (targetBody != null)
+    {
+        targetBody.linearVelocity = Vector2.zero;
+        targetBody.simulated = false;
+    }
+
+    // Attach the capsule to the claw.
+    targetCapsule.transform.SetParent(magnetPoint);
+    targetCapsule.transform.localPosition = Vector3.zero;
+
+    isAttracting = false;
+    isAttached = true;
+
+    Debug.Log("Capsule attached to claw!");
+
+    // Disable the Pay button.
+    if (payButton != null)
+        payButton.DeactivateButton();
+
+    // Activate the capture Canvas.
+    if (collectionCanvas != null)
+        collectionCanvas.SetActive(true);
+
+    // Show the captured capsule.
+    if (collectionUI != null)
+        collectionUI.ShowCapsule(collectedData);
+
+    // Show the item won from the capsule.
+    if (rewardUI != null)
+        rewardUI.ShowReward(wonItem);
+}
+
 
 
     public void ResetClawMachine()
