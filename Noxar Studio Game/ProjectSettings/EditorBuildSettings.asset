@@ -44,6 +44,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Random Gen/Win.unity
     guid: a100a9f0a4e07744186fd6511758caf5
+  - enabled: 1
+    path: Assets/Scenes/Random Gen/The Claw.unity
+    guid: d9f39560aa7c1364fb09eaa6210c901d
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 30f8c154109d3244c85f4e6f6dbcd7ba, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -57,9 +57,18 @@ public class LevelManager : MonoBehaviour
     public PatronData johnnyPatron;
     public DishData nebulaBurgerDish;
 
-    [Header("Earnings Settings")]
+    [Header("Galaxy Cubes")]
     public int earningsPerMinigame = 10;
+
+    // Galaxy Cubes earned from the current level.
     public int galaxyCubesEarned = 0;
+
+    // Total Galaxy Cubes earned across all levels.
+    public int totalGalaxyCubes = 0;
+
+    // PlayerPrefs save key.
+    private string galaxyCubesSaveKey = "TotalGalaxyCubes";
+    private bool galaxyCubesCollected = false;
 
     [Header("Time Bonus Settings")]
     public int timeBonusPerInterval = 5;
@@ -83,6 +92,9 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
+        // Load the player's saved Galaxy Cubes.
+        LoadGalaxyCubes();
+
         // Generate the first level only once.
         if (currentPatron == null ||
             currentDish == null ||
@@ -425,31 +437,64 @@ public void GenerateLevel()
         loseSceneLoading = false;
         timeRemaining = 0f;
 
+        galaxyCubesCollected = false;
+        galaxyCubesEarned = 0;
+
         Debug.Log("All level progress has been reset!");
     }
 
     public void CalculateGalaxyCubes()
     {
+        // Prevent earning rewards multiple times for the same level.
+        if (galaxyCubesCollected)
+            return;
+
+        galaxyCubesCollected = true;
         // Calculate earnings from completed minigames.
         int minigameEarnings =
             completedMinigames.Count * earningsPerMinigame;
 
-        // Calculate how many full 10-second intervals remain.
+        // Calculate remaining time bonus.
         int timeIntervals =
             Mathf.FloorToInt(timeRemaining / secondsPerBonus);
 
-        // Calculate the time bonus.
         int timeBonus =
             timeIntervals * timeBonusPerInterval;
 
-        // Combine both rewards.
+        // Calculate this level's earnings.
         galaxyCubesEarned =
             minigameEarnings + timeBonus;
 
+        // Add this level's earnings to the lifetime total.
+        totalGalaxyCubes += galaxyCubesEarned;
+
+        // Save the updated total.
+        SaveGalaxyCubes();
+
         Debug.Log("Minigame Earnings: " + minigameEarnings);
-        Debug.Log("Time Remaining: " + timeRemaining);
         Debug.Log("Time Bonus: +" + timeBonus);
-        Debug.Log("TOTAL GALAXY CUBES: +" + galaxyCubesEarned);
+        Debug.Log("LEVEL EARNINGS: +" + galaxyCubesEarned);
+        Debug.Log("TOTAL GALAXY CUBES: " + totalGalaxyCubes);
+    }
+    
+    // Load saved Galaxy Cubes when the game starts.
+    public void LoadGalaxyCubes()
+    {
+        totalGalaxyCubes = PlayerPrefs.GetInt(galaxyCubesSaveKey, 0);
+
+        Debug.Log("Loaded Galaxy Cubes: " + totalGalaxyCubes);
+    }
+
+
+    // Save the player's total Galaxy Cubes.
+    public void SaveGalaxyCubes()
+    {
+        PlayerPrefs.SetInt(galaxyCubesSaveKey, totalGalaxyCubes);
+
+        // Make sure the data is saved.
+        PlayerPrefs.Save();
+
+        Debug.Log("Saved Galaxy Cubes: " + totalGalaxyCubes);
     }
 
 }
