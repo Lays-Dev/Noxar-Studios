@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a9825a409d16d474f8a3965c8d467ca2
+guid: ac08190ff6e7b9541b54c23599c8b84c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3038585405138941733
-    second: openclipart-vectors-neptune-153571_640_0
+      213: 193247565177369717
+    second: 7-2-dress-transparent_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: openclipart-vectors-neptune-153571_640_0
+      name: 7-2-dress-transparent_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 639
-        height: 640
+        x: 71
+        y: 10
+        width: 674
+        height: 890
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bd8c1035ca6c4d5d0800000000000000
-      internalID: -3038585405138941733
+      spriteID: 5743b1cf2ad8ea200800000000000000
+      internalID: 193247565177369717
       vertices: []
       indices: 
       edges: []
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      openclipart-vectors-neptune-153571_640_0: -3038585405138941733
+      7-2-dress-transparent_0: 193247565177369717
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

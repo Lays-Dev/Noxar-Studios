@@ -1,4 +1,3 @@
-
 using UnityEngine;
 using System;
 using System.Collections.Generic;
@@ -10,10 +9,9 @@ public class ItemCollectionManager : MonoBehaviour
     [Header("All Possible Items")]
     public List<ItemData> allItems = new List<ItemData>();
 
-    // Items the player has already unlocked.
+    // Stores all items the player has unlocked.
     private List<ItemData> unlockedItems = new List<ItemData>();
 
-    // Notifies the item collection screen when an item is unlocked.
     public event Action OnItemCollectionChanged;
 
     private void Awake()
@@ -28,12 +26,10 @@ public class ItemCollectionManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    // Selects a random item matching the capsule's rarity.
     public ItemData GetRandomReward(CapsuleRarity capsuleRarity)
     {
         List<ItemData> availableRewards = new List<ItemData>();
 
-        // Find items with matching rarity that are not unlocked.
         foreach (ItemData item in allItems)
         {
             if (item == null)
@@ -46,32 +42,39 @@ public class ItemCollectionManager : MonoBehaviour
             }
         }
 
-        // No rewards remain for this rarity.
         if (availableRewards.Count == 0)
         {
             Debug.Log("All " + capsuleRarity + " rewards collected!");
             return null;
         }
 
-        // Pick one random available item.
         int randomIndex = UnityEngine.Random.Range(0, availableRewards.Count);
 
         ItemData selectedItem = availableRewards[randomIndex];
 
-        // Permanently unlock it for this game session.
         unlockedItems.Add(selectedItem);
 
         Debug.Log("New item unlocked: " + selectedItem.itemName);
 
-        // Update the item collection screen.
         OnItemCollectionChanged?.Invoke();
 
         return selectedItem;
     }
 
-    // Check whether an item has been unlocked.
     public bool IsItemUnlocked(ItemData item)
     {
         return unlockedItems.Contains(item);
+    }
+
+    // Returns all unlocked items.
+    public List<ItemData> GetUnlockedItems()
+    {
+        return new List<ItemData>(unlockedItems);
+    }
+
+    // Returns every possible item, including locked items.
+    public List<ItemData> GetAllItems()
+    {
+        return allItems;
     }
 }

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0d596ad9999824143ae3b0b2e713c138
+guid: f0518f58089734e4e8c718a8f862a973
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7197740089874250315
-    second: openclipart-vectors-saturn-148300_640_0
+      213: 2596163512064580133
+    second: cowboy_hat_PNG36_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: openclipart-vectors-saturn-148300_640_0
+      name: cowboy_hat_PNG36_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 4
-        width: 640
-        height: 312
+        y: 0
+        width: 950
+        height: 594
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b4afa8af97283e360800000000000000
-      internalID: 7197740089874250315
+      spriteID: 52a907b85fc670420800000000000000
+      internalID: 2596163512064580133
       vertices: []
       indices: 
       edges: []
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      openclipart-vectors-saturn-148300_640_0: 7197740089874250315
+      cowboy_hat_PNG36_0: 2596163512064580133
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

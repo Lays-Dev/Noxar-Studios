@@ -1,5 +1,12 @@
 using UnityEngine;
 
+public enum EquipmentSlot
+{
+    Head,
+    Body,
+    Accessories
+}
+
 [CreateAssetMenu(
     fileName = "New Item",
     menuName = "Claw Machine/Item"
@@ -15,5 +22,8 @@ public class ItemData : ScriptableObject
 
     [Header("Item Rarity")]
     public CapsuleRarity rarity;
+
+    [Header("Equipment")]
+    public EquipmentSlot equipmentSlot;
 }
 
