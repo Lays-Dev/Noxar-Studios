@@ -17,3 +17,4 @@ MonoBehaviour:
   itemDescription: Cow1
   rarity: 3
   equipmentSlot: 2
+  isUnlocked: 0

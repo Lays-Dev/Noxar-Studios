@@ -1,3 +1,4 @@
+
 using UnityEngine;
 
 public enum EquipmentSlot
@@ -25,5 +26,9 @@ public class ItemData : ScriptableObject
 
     [Header("Equipment")]
     public EquipmentSlot equipmentSlot;
+
+    [Header("Unlock Status")]
+    [System.NonSerialized]
+    public bool isUnlocked = false;
 }
 

@@ -1,3 +1,4 @@
+
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -10,41 +11,47 @@ public class ItemCollectionEntry : MonoBehaviour
     public TMP_Text itemRarityText;
     public TMP_Text itemStatusText;
 
-    public void Setup(ItemData item, bool isUnlocked)
+    [Header("Locked Appearance")]
+    public Color lockedColor = Color.black;
+
+    // Updates this cosmetic's appearance.
+    public void Setup(ItemData item)
     {
         if (item == null)
             return;
 
+        bool unlocked = item.isUnlocked;
+
+        // Display the cosmetic image.
         if (itemImage != null)
         {
             itemImage.sprite = item.itemSprite;
-            itemImage.enabled = item.itemSprite != null;
 
-            // Darken the image when the item is locked.
-            itemImage.color = isUnlocked
-                ? Color.white
-                : new Color(0.15f, 0.15f, 0.15f, 1f);
+            // Darken the image if locked.
+            itemImage.color = unlocked ? Color.white : lockedColor;
         }
 
+        // Display the cosmetic name.
         if (itemNameText != null)
         {
-            itemNameText.text = isUnlocked
-                ? item.itemName
-                : "???";
+            itemNameText.text = unlocked ? item.itemName : "???";
         }
 
+        // Display the cosmetic rarity.
         if (itemRarityText != null)
         {
-            itemRarityText.text = isUnlocked
+            itemRarityText.text = unlocked
                 ? item.rarity.ToString()
                 : "???";
         }
 
+        // Display unlock status.
         if (itemStatusText != null)
         {
-            itemStatusText.text = isUnlocked
+            itemStatusText.text = unlocked
                 ? "Collected!"
                 : "Not discovered";
         }
     }
 }
+

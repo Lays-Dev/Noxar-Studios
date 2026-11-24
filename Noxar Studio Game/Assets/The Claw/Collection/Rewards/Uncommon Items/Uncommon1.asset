@@ -17,3 +17,4 @@ MonoBehaviour:
   itemDescription: Uncommon1
   rarity: 1
   equipmentSlot: 1
+  isUnlocked: 0
