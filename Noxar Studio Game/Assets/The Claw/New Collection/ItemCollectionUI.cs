@@ -1,5 +1,6 @@
 
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ItemCollectionUI : MonoBehaviour
 {
@@ -7,16 +8,26 @@ public class ItemCollectionUI : MonoBehaviour
     public Transform contentParent;
     public ItemCollectionEntry itemEntryPrefab;
 
+    [Header("Selected Item Preview")]
+    public Image selectedItemImage;
+
+    [Header("Equip Button")]
+    public GameObject equipButton;
+
     private bool isListening;
+    private ItemData selectedItem;
 
     private void OnEnable()
     {
+        // Hide Equip button when collection opens.
+        if (equipButton != null)
+            equipButton.SetActive(false);
+
         TryConnectToManager();
     }
 
     private void Update()
     {
-        // Keep checking until the manager exists.
         if (!isListening)
         {
             TryConnectToManager();
@@ -33,7 +44,6 @@ public class ItemCollectionUI : MonoBehaviour
         if (ItemCollectionManager.Instance == null)
             return;
 
-        // Avoid subscribing multiple times.
         if (isListening)
             return;
 
@@ -61,10 +71,7 @@ public class ItemCollectionUI : MonoBehaviour
     public void RefreshCollection()
     {
         if (ItemCollectionManager.Instance == null)
-        {
-            Debug.LogWarning("ItemCollectionManager not found!");
             return;
-        }
 
         if (contentParent == null || itemEntryPrefab == null)
         {
@@ -72,17 +79,16 @@ public class ItemCollectionUI : MonoBehaviour
             return;
         }
 
-        // Destroy old entries.
+        // Remove old entries.
         foreach (Transform child in contentParent)
         {
             Destroy(child.gameObject);
         }
 
-        // Get all cosmetics.
         var allItems =
             ItemCollectionManager.Instance.GetAllItems();
 
-        // Create a UI entry for each cosmetic.
+        // Create an entry for every cosmetic.
         foreach (ItemData item in allItems)
         {
             if (item == null)
@@ -91,9 +97,49 @@ public class ItemCollectionUI : MonoBehaviour
             ItemCollectionEntry newEntry =
                 Instantiate(itemEntryPrefab, contentParent);
 
-            newEntry.Setup(item);
+            newEntry.Setup(item, this);
+        }
+    }
+
+    // Displays the selected cosmetic on the left.
+    public void ShowSelectedItem(ItemData item)
+    {
+        if (item == null)
+            return;
+
+        // Remember which cosmetic was selected.
+        selectedItem = item;
+
+        // Display the enlarged cosmetic image.
+        if (selectedItemImage != null)
+        {
+            selectedItemImage.sprite = item.itemSprite;
+
+            selectedItemImage.color = item.isUnlocked
+                ? Color.white
+                : Color.black;
         }
 
-        Debug.Log("Cosmetic collection refreshed!");
+        // Only show Equip button for unlocked cosmetics.
+        if (equipButton != null)
+        {
+            equipButton.SetActive(item.isUnlocked);
+        }
+
+        Debug.Log("Selected cosmetic: " + item.itemName);
+    }
+
+    public void EquipSelectedItem()
+    {
+        if (selectedItem == null)
+            return;
+
+        if (!selectedItem.isUnlocked)
+            return;
+
+        // Equip this specific cosmetic.
+        selectedItem.isEquipped = true;
+
+        Debug.Log(selectedItem.itemName + " equipped!");
     }
 }

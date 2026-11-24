@@ -30,5 +30,14 @@ public class ItemData : ScriptableObject
     [Header("Unlock Status")]
     [System.NonSerialized]
     public bool isUnlocked = false;
+
+    [Header("Equipped Status")]
+    [System.NonSerialized]
+    public bool isEquipped = false;
+
+    [Header("Outfit Animations")]
+    public RuntimeAnimatorController idleAnimation;
+    public RuntimeAnimatorController movementAnimation;
 }
+
 

@@ -1,9 +1,10 @@
+
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CollectionButton : MonoBehaviour
 {
     public GameObject collectionPanel;
-    //public GameObject capsulePanel;
     public GameObject paymentPanel;
     public GameObject capturePanel;
 
@@ -11,19 +12,17 @@ public class CollectionButton : MonoBehaviour
     public PayButton payButton;
     public CaptureButton captureButton;
 
+    [Header("Scene Navigation")]
+    public string counterSceneName = "Counter";
+
     public void OpenCollection()
     {
         if (collectionPanel != null)
-        {
             collectionPanel.SetActive(true);
-            //if (capsulePanel != null)
-            //    capsulePanel.SetActive(false);
-
-        }
 
         if (paymentPanel != null)
             paymentPanel.SetActive(false);
-        
+
         if (capturePanel != null)
             capturePanel.SetActive(false);
     }
@@ -45,13 +44,17 @@ public class CollectionButton : MonoBehaviour
             payButton.ResetPayment();
             Debug.Log("CollectionButton: Pay button reset!");
         }
-        else
-        {
-            Debug.LogError("CollectionButton: PayButton reference is missing!");
-        }
 
         // Re-enable Capture Button.
         if (captureButton != null)
             captureButton.EnableButton();
+    }
+
+    // Travel to the Counter scene.
+    public void GoToCounter()
+    {
+        Debug.Log("Returning to Counter scene!");
+
+        SceneManager.LoadScene(counterSceneName);
     }
 }
