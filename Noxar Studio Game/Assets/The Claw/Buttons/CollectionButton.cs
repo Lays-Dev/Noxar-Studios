@@ -38,11 +38,11 @@ public class CollectionButton : MonoBehaviour
         if (capturePanel != null)
             capturePanel.SetActive(false);
 
-        // Reset Pay Button.
+        // Re-enable Pay Button.
         if (payButton != null)
         {
-            payButton.ResetPayment();
-            Debug.Log("CollectionButton: Pay button reset!");
+            payButton.EnableButton();
+            Debug.Log("Pay Button re-enabled!");
         }
 
         // Re-enable Capture Button.
@@ -50,7 +50,6 @@ public class CollectionButton : MonoBehaviour
             captureButton.EnableButton();
     }
 
-    // Travel to the Counter scene.
     public void GoToCounter()
     {
         Debug.Log("Returning to Counter scene!");
