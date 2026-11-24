@@ -6842,7 +6842,7 @@ GameObject:
   - component: {fileID: 1995070119}
   - component: {fileID: 1995070118}
   - component: {fileID: 1995070117}
-  - component: {fileID: 1995070116}
+  - component: {fileID: 1995070120}
   m_Layer: 5
   m_Name: Counter Button
   m_TagString: Untagged
@@ -6870,24 +6870,6 @@ RectTransform:
   m_AnchoredPosition: {x: -2.5, y: -2.5}
   m_SizeDelta: {x: 2452.3228, y: 961.0001}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1995070116
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1995070114}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a5cec7efc2699444bd9b713a68ac846, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  collectionPanel: {fileID: 2030147965}
-  paymentPanel: {fileID: 804578987}
-  capturePanel: {fileID: 1243185232}
-  payButton: {fileID: 628976282}
-  captureButton: {fileID: 180991504}
-  counterSceneName: Counter
 --- !u!114 &1995070117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6932,7 +6914,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1995070116}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CollectionButton, Assembly-CSharp
         m_MethodName: GoToCounter
         m_Mode: 1
@@ -6982,6 +6964,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1995070114}
   m_CullTransparentMesh: 1
+--- !u!114 &1995070120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1995070114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f8b304c8b72aa54a88f8b193f070d03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startNewLevelButton: {fileID: 1995070117}
+  counterSceneName: Counter
 --- !u!1 &1998593640
 GameObject:
   m_ObjectHideFlags: 0
