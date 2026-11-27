@@ -28,6 +28,8 @@ public class ItemCollectionUI : MonoBehaviour
 
     private void Update()
     {
+        // Keep trying to connect if the manager
+        // wasn't available when this UI opened.
         if (!isListening)
         {
             TryConnectToManager();
@@ -129,17 +131,41 @@ public class ItemCollectionUI : MonoBehaviour
         Debug.Log("Selected cosmetic: " + item.itemName);
     }
 
+    // Called when the player presses the Equip button.
     public void EquipSelectedItem()
     {
         if (selectedItem == null)
+        {
+            Debug.LogWarning("No cosmetic is selected!");
             return;
+        }
 
         if (!selectedItem.isUnlocked)
+        {
+            Debug.LogWarning("This cosmetic has not been unlocked!");
             return;
+        }
 
-        // Equip this specific cosmetic.
+        // Make sure the equipment manager exists.
+        if (ItemEquipmentManager.Instance == null)
+        {
+            Debug.LogError(
+                "ItemEquipmentManager.Instance is NULL! " +
+                "Cannot equip item."
+            );
+
+            return;
+        }
+
+        // Actually store the item in the Equipment Manager.
+        ItemEquipmentManager.Instance.EquipItem(selectedItem);
+
+        // Update the item's equipped flag.
         selectedItem.isEquipped = true;
 
-        Debug.Log(selectedItem.itemName + " equipped!");
+        Debug.Log(
+            selectedItem.itemName +
+            " successfully sent to ItemEquipmentManager!"
+        );
     }
 }

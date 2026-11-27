@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e4488de72b5180a48afab76229876895, type: 3}
-  m_Name: Blue Outfit
+  m_Name: Jukebox
   m_EditorClassIdentifier: 
-  itemName: Blue Outfit
-  itemSprite: {fileID: 21300000, guid: b3f3496cf4a24ca44b656435a44d42f0, type: 3}
-  itemDescription: This is a cute blue outfit for Glorbie
-  rarity: 0
-  equipmentSlot: 1
-  idleAnimation: {fileID: 9100000, guid: 3004a95f14985d5469f6ca7912a62be3, type: 2}
+  itemName: Jukebox
+  itemSprite: {fileID: 21300000, guid: b38d4e847a87043479517d68d7fa35a1, type: 3}
+  itemDescription: A Jukebox, to bad it doesn't work anymore.
+  rarity: 1
+  equipmentSlot: 2
+  idleAnimation: {fileID: 0}
+  movementAnimation: {fileID: 0}

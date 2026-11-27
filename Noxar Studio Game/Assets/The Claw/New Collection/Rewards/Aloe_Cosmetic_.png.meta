@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8a7e7cd5002a9154498a9a96775b4766
+guid: 1257a7c0dc3f6e8468f08bd88db88f82
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2312726189967159468
-    second: IMG_0126_0
+      213: -6195045521424083635
+    second: Aloe_Cosmetic__0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +52,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 383}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -139,23 +139,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IMG_0126_0
+      name: Aloe_Cosmetic__0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 5
-        width: 504
-        height: 634
+        x: 15
+        y: 0
+        width: 489
+        height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 45fc34898cb87efd0800000000000000
-      internalID: -2312726189967159468
+      spriteID: d459428cbe6c60aa0800000000000000
+      internalID: -6195045521424083635
       vertices: []
       indices: 
       edges: []
@@ -165,7 +165,7 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    internalID: 0
     vertices: []
     indices: 
     edges: []
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      IMG_0126_0: -2312726189967159468
+      Aloe_Cosmetic__0: -6195045521424083635
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

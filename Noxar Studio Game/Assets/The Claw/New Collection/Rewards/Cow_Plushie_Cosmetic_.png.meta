@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b3f3496cf4a24ca44b656435a44d42f0
+guid: 7f6b462e4930efe4fa60ebe371aafd32
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6256894834381720058
-    second: IMG_0126-ezgif.com-crop_0
+      213: -8363189706882081862
+    second: Cow_Plushie_Cosmetic__0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IMG_0126-ezgif.com-crop_0
+      name: Cow_Plushie_Cosmetic__0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 5
-        width: 504
-        height: 634
+        x: 69
+        y: 0
+        width: 357
+        height: 456
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 60673bf6c4b0b29a0800000000000000
-      internalID: -6256894834381720058
+      spriteID: abb171c854bffeb80800000000000000
+      internalID: -8363189706882081862
       vertices: []
       indices: 
       edges: []
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      IMG_0126-ezgif.com-crop_0: -6256894834381720058
+      Cow_Plushie_Cosmetic__0: -8363189706882081862
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
